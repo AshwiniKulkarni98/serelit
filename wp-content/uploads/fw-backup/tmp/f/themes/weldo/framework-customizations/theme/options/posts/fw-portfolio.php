@@ -1,0 +1,45 @@
+<?php if ( ! defined( 'FW' ) ) {
+	die( 'Forbidden' );
+}
+
+$options = array(
+	'portfolio-featured-video-section' => array(
+		'title'   => esc_html__( 'Portfolio Featured Video', 'weldo' ),
+		'type'    => 'box',
+		'context' => 'side',
+
+		'options' => array(
+			'portfolio-featured-video' => array(
+				'type'    => 'oembed',
+				'value'   => '',
+				'label'   => esc_html__( 'Featured Video', 'weldo' ),
+				'desc'    => esc_html__( 'Adds featured video', 'weldo' ),
+				'help'    => esc_html__( 'Leave blank if no needed', 'weldo' ),
+				'preview' => array(
+					'width'      => 278, // optional, if you want to set the fixed width to iframe
+					'height'     => 185, // optional, if you want to set the fixed height to iframe
+					/**
+					 * if is set to false it will force to fit the dimensions,
+					 * because some widgets return iframe with aspect ratio and ignore applied dimensions
+					 */
+					'keep_ratio' => true
+				),
+			),
+		),
+	),
+	'excerpt' => array(
+		'type'  => 'textarea',
+		'label' => esc_html__( 'Excerpt Text', 'weldo' ),
+		'desc'  => false,
+	)
+);
+
+/** Add Unyson Events Excerpt */
+if ( ! function_exists( 'weldo_filter_fw_ext_portfolio_excerpt' ) ) :
+	function weldo_filter_fw_ext_portfolio_excerpt( $options ) {
+		return array_merge( $options, array(
+
+		) );
+	}
+endif;
+add_filter( 'fw_ext_portfolio_post_options', 'weldo_filter_fw_ext_portfolio_excerpt' );

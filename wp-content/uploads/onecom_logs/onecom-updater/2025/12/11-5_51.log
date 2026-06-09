@@ -1,0 +1,87 @@
+info: Checking if ssh is active.
+info: Trying ssh connection
+info: Deleting cache before taking screenshots
+info: Probably invalid command - timeout -k 5m 5m /usr/local/bin/wp-cache-flush
+info: Detected error reporting::false and http status::200
+info: Checking if installation is valid
+info: Valid installation, proceeding with updates
+info: No running native updates
+info: Installation is unlocked for update
+info: Initiating WP core update
+info: No updates for WP Core!
+info: WP core updates finished, proceeding with plugins' update
+info: Initiating plugin update
+info: Premium care dependencies - version:4.7.5 status:active
+info: Found update for plugins
+info: Deleting cache before taking screenshots
+info: Probably invalid command - timeout -k 5m 5m /usr/local/bin/wp-cache-flush
+info: Updated testUrlsCount to 6
+info: Testing urls ["https://www.serelit.de","https://www.serelit.de/registration/","https://www.serelit.de/product/automatic-electric-disappearing-ladders/","https://www.serelit.de/project/aenean-vulputate/","https://www.serelit.de/service/fenster-balkon-profile/","https://www.serelit.de/member/phebe-e-french/"]
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 600 seconds for job fb428d7a-1e59-4357-a903-f139241087c2
+info: Current capture status for job fb428d7a-1e59-4357-a903-f139241087c2: queued ETA: 600
+info: ETA:: 600 seconds for job fb428d7a-1e59-4357-a903-f139241087c2
+info: Current capture status for job fb428d7a-1e59-4357-a903-f139241087c2: queued ETA: 600
+info: ETA:: 600 seconds for job fb428d7a-1e59-4357-a903-f139241087c2
+info: Current capture status for job fb428d7a-1e59-4357-a903-f139241087c2: queued ETA: 600
+info: ETA:: 600 seconds for job fb428d7a-1e59-4357-a903-f139241087c2
+info: Current capture status for job fb428d7a-1e59-4357-a903-f139241087c2: queued ETA: 600
+info: ETA:: 600 seconds for job fb428d7a-1e59-4357-a903-f139241087c2
+info: Current capture status for job fb428d7a-1e59-4357-a903-f139241087c2: queued ETA: 600
+info: ETA:: 600 seconds for job fb428d7a-1e59-4357-a903-f139241087c2
+info: Current capture status for job fb428d7a-1e59-4357-a903-f139241087c2: queued ETA: 600
+info: ETA:: 600 seconds for job fb428d7a-1e59-4357-a903-f139241087c2
+info: Current capture status for job fb428d7a-1e59-4357-a903-f139241087c2: queued ETA: 600
+info: ETA:: 600 seconds for job fb428d7a-1e59-4357-a903-f139241087c2
+info: Current capture status for job fb428d7a-1e59-4357-a903-f139241087c2: queued ETA: 600
+info: ETA:: 600 seconds for job fb428d7a-1e59-4357-a903-f139241087c2
+info: Current capture status for job fb428d7a-1e59-4357-a903-f139241087c2: queued ETA: 600
+info: ETA:: 600 seconds for job fb428d7a-1e59-4357-a903-f139241087c2
+info: Calling bound waitForJobCompletion failed, retrying, attempt::1 with delay 10000
+info: Calling bound waitForJobCompletion, attempt::2
+info: ETA:: 600 seconds for job fb428d7a-1e59-4357-a903-f139241087c2
+info: Current capture status for job fb428d7a-1e59-4357-a903-f139241087c2: queued ETA: 600
+info: ETA:: 600 seconds for job fb428d7a-1e59-4357-a903-f139241087c2
+info: Current capture status for job fb428d7a-1e59-4357-a903-f139241087c2: queued ETA: 600
+info: ETA:: 600 seconds for job fb428d7a-1e59-4357-a903-f139241087c2
+info: Current capture status for job fb428d7a-1e59-4357-a903-f139241087c2: queued ETA: 600
+info: ETA:: 600 seconds for job fb428d7a-1e59-4357-a903-f139241087c2
+info: Current capture status for job fb428d7a-1e59-4357-a903-f139241087c2: queued ETA: 600
+info: ETA:: 600 seconds for job fb428d7a-1e59-4357-a903-f139241087c2
+info: Current capture status for job fb428d7a-1e59-4357-a903-f139241087c2: queued ETA: 600
+info: ETA:: 600 seconds for job fb428d7a-1e59-4357-a903-f139241087c2
+info: Current capture status for job fb428d7a-1e59-4357-a903-f139241087c2: queued ETA: 600
+info: ETA:: 600 seconds for job fb428d7a-1e59-4357-a903-f139241087c2
+info: Current capture status for job fb428d7a-1e59-4357-a903-f139241087c2: queued ETA: 600
+info: ETA:: 600 seconds for job fb428d7a-1e59-4357-a903-f139241087c2
+info: Current capture status for job fb428d7a-1e59-4357-a903-f139241087c2: queued ETA: 600
+info: ETA:: 600 seconds for job fb428d7a-1e59-4357-a903-f139241087c2
+info: Current capture status for job fb428d7a-1e59-4357-a903-f139241087c2: queued ETA: 600
+info: ETA:: 600 seconds for job fb428d7a-1e59-4357-a903-f139241087c2
+info: Calling bound waitForJobCompletion failed, retrying, attempt::2 with delay 10000
+info: Calling bound waitForJobCompletion, attempt::3
+info: ETA:: 600 seconds for job fb428d7a-1e59-4357-a903-f139241087c2
+info: Current capture status for job fb428d7a-1e59-4357-a903-f139241087c2: queued ETA: 600
+info: ETA:: 600 seconds for job fb428d7a-1e59-4357-a903-f139241087c2
+info: Current capture status for job fb428d7a-1e59-4357-a903-f139241087c2: queued ETA: 600
+info: ETA:: 600 seconds for job fb428d7a-1e59-4357-a903-f139241087c2
+info: Current capture status for job fb428d7a-1e59-4357-a903-f139241087c2: queued ETA: 600
+info: ETA:: 600 seconds for job fb428d7a-1e59-4357-a903-f139241087c2
+info: Current capture status for job fb428d7a-1e59-4357-a903-f139241087c2: queued ETA: 600
+info: ETA:: 600 seconds for job fb428d7a-1e59-4357-a903-f139241087c2
+info: Current capture status for job fb428d7a-1e59-4357-a903-f139241087c2: queued ETA: 600
+info: ETA:: 600 seconds for job fb428d7a-1e59-4357-a903-f139241087c2
+info: Current capture status for job fb428d7a-1e59-4357-a903-f139241087c2: queued ETA: 600
+info: ETA:: 600 seconds for job fb428d7a-1e59-4357-a903-f139241087c2
+info: Current capture status for job fb428d7a-1e59-4357-a903-f139241087c2: queued ETA: 600
+info: ETA:: 600 seconds for job fb428d7a-1e59-4357-a903-f139241087c2
+info: Current capture status for job fb428d7a-1e59-4357-a903-f139241087c2: queued ETA: 600
+info: ETA:: 600 seconds for job fb428d7a-1e59-4357-a903-f139241087c2
+info: Current capture status for job fb428d7a-1e59-4357-a903-f139241087c2: queued ETA: 600
+info: ETA:: 600 seconds for job fb428d7a-1e59-4357-a903-f139241087c2
+error: All attempts to call bound waitForJobCompletion failed, throwing raised exception
+error: Error while updating plugin :: capture_job_timeout
+error: Exiting due to :: Error: NEEDS_REQUEUE
+info: No updates, skipping email
+info: Uploading log

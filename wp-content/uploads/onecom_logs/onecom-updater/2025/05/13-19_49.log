@@ -1,0 +1,135 @@
+info: Checking if ssh is active.
+info: Trying ssh connection
+info: Deleting cache before taking screenshots
+info: Detected error reporting::false and http status::200
+info: Checking if installation is valid
+info: Valid installation, proceeding with updates
+info: Installation is unlocked for update
+info: Initiating WP core update
+info: No updates for WP Core!
+info: WP core updates finished, proceeding with plugins' update
+info: Initiating plugin update
+info: Found update for plugins
+info: Deleting cache before taking screenshots
+info: Updated testUrlsCount to 6
+info: Testing urls ["https://www.serelit.de","https://www.serelit.de/registration/","https://www.serelit.de/product/automatic-electric-disappearing-ladders/","https://www.serelit.de/project/aenean-vulputate/","https://www.serelit.de/service/fenster-balkon-profile/","https://www.serelit.de/member/phebe-e-french/"]
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 139 seconds for job 84f04d1f-9ea6-4699-a6a2-234dd151020e
+info: Current capture status for job 84f04d1f-9ea6-4699-a6a2-234dd151020e: success ETA: undefined
+info: Initiating backup of plugin wp-user-avatar
+info: Backup ["/var/www/wp-content/uploads/onecom-updater/backup/plugins/wp-user-avatar.zip"] verified.
+info: Initiating DB backup
+info: DB backed up
+info: plugin wp-user-avatar backup complete
+info: Secured backups with .htaccess
+info: Updating plugin wp-user-avatar
+info: Deleting cache before taking screenshots
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 139 seconds for job 74cf066e-90af-4fc7-bdb8-876dfd21faab
+info: Current capture status for job 74cf066e-90af-4fc7-bdb8-876dfd21faab: in_progress ETA: 69
+info: ETA:: 69 seconds for job 74cf066e-90af-4fc7-bdb8-876dfd21faab
+info: Current capture status for job 74cf066e-90af-4fc7-bdb8-876dfd21faab: in_progress ETA: 69
+info: ETA:: 69 seconds for job 74cf066e-90af-4fc7-bdb8-876dfd21faab
+info: Current capture status for job 74cf066e-90af-4fc7-bdb8-876dfd21faab: success ETA: undefined
+info: Calling bound compare, attempt::1
+info: Calling bound waitForCompareJob, attempt::1
+info: ETA:: 56 seconds for job da50750f-41db-4c52-9d46-15e7365f7513
+info: Current compare status for job da50750f-41db-4c52-9d46-15e7365f7513: in_progress
+info: ETA:: 28 seconds for job da50750f-41db-4c52-9d46-15e7365f7513
+info: Current compare status for job da50750f-41db-4c52-9d46-15e7365f7513: in_progress
+info: ETA:: 28 seconds for job da50750f-41db-4c52-9d46-15e7365f7513
+info: Current compare status for job da50750f-41db-4c52-9d46-15e7365f7513: success
+info: Restoring plugin wp-user-avatar from backup
+info: plugin wp-user-avatar restored from backup
+info: Deleting cache before taking screenshots
+info: Detected error reporting::false and http status::200
+info: Initiating backup of plugin snazzy-maps
+info: Backup ["/var/www/wp-content/uploads/onecom-updater/backup/plugins/snazzy-maps.zip"] verified.
+info: DB backup was created earlier, skipping
+info: plugin snazzy-maps backup complete
+info: Updating plugin snazzy-maps
+info: Deleting cache before taking screenshots
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 139 seconds for job b3717054-780e-491b-ac1e-b9ef728b361e
+info: Current capture status for job b3717054-780e-491b-ac1e-b9ef728b361e: in_progress ETA: 69
+info: ETA:: 69 seconds for job b3717054-780e-491b-ac1e-b9ef728b361e
+info: Current capture status for job b3717054-780e-491b-ac1e-b9ef728b361e: in_progress ETA: 69
+info: ETA:: 69 seconds for job b3717054-780e-491b-ac1e-b9ef728b361e
+info: Current capture status for job b3717054-780e-491b-ac1e-b9ef728b361e: in_progress ETA: 69
+info: ETA:: 69 seconds for job b3717054-780e-491b-ac1e-b9ef728b361e
+info: Current capture status for job b3717054-780e-491b-ac1e-b9ef728b361e: in_progress ETA: 69
+info: ETA:: 69 seconds for job b3717054-780e-491b-ac1e-b9ef728b361e
+info: Current capture status for job b3717054-780e-491b-ac1e-b9ef728b361e: in_progress ETA: 69
+info: ETA:: 69 seconds for job b3717054-780e-491b-ac1e-b9ef728b361e
+info: Current capture status for job b3717054-780e-491b-ac1e-b9ef728b361e: in_progress ETA: 69
+info: ETA:: 69 seconds for job b3717054-780e-491b-ac1e-b9ef728b361e
+info: Current capture status for job b3717054-780e-491b-ac1e-b9ef728b361e: in_progress ETA: 69
+info: ETA:: 69 seconds for job b3717054-780e-491b-ac1e-b9ef728b361e
+info: Current capture status for job b3717054-780e-491b-ac1e-b9ef728b361e: in_progress ETA: 69
+info: ETA:: 69 seconds for job b3717054-780e-491b-ac1e-b9ef728b361e
+info: Current capture status for job b3717054-780e-491b-ac1e-b9ef728b361e: success ETA: undefined
+info: Calling bound compare, attempt::1
+info: Calling bound waitForCompareJob, attempt::1
+info: ETA:: 56 seconds for job 2bd8839f-fd6a-4169-8d9c-3cbdc8fcb61f
+info: Current compare status for job 2bd8839f-fd6a-4169-8d9c-3cbdc8fcb61f: success
+info: Restoring plugin snazzy-maps from backup
+info: plugin snazzy-maps restored from backup
+info: Deleting cache before taking screenshots
+info: Detected error reporting::false and http status::200
+info: Initiating backup of plugin user-registration
+info: Backup ["/var/www/wp-content/uploads/onecom-updater/backup/plugins/user-registration.zip"] verified.
+info: DB backup was created earlier, skipping
+info: plugin user-registration backup complete
+info: Updating plugin user-registration
+info: Deleting cache before taking screenshots
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 139 seconds for job 66bd7d63-8549-4857-bd65-1a7b17400df2
+info: Current capture status for job 66bd7d63-8549-4857-bd65-1a7b17400df2: success ETA: undefined
+info: Calling bound compare, attempt::1
+info: Calling bound waitForCompareJob, attempt::1
+info: ETA:: 56 seconds for job 7557df1b-e864-4565-96c1-8ebeda7c7974
+info: Current compare status for job 7557df1b-e864-4565-96c1-8ebeda7c7974: success
+info: Initiating backup of plugin woocommerce
+info: Backup ["/var/www/wp-content/uploads/onecom-updater/backup/plugins/woocommerce.zip"] verified.
+info: DB backup was created earlier, skipping
+info: plugin woocommerce backup complete
+info: Updating plugin woocommerce
+info: Deleting cache before taking screenshots
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 139 seconds for job 463e07b0-efb9-4c9a-9e68-90749219910c
+info: Current capture status for job 463e07b0-efb9-4c9a-9e68-90749219910c: in_progress ETA: 69
+info: ETA:: 69 seconds for job 463e07b0-efb9-4c9a-9e68-90749219910c
+info: Current capture status for job 463e07b0-efb9-4c9a-9e68-90749219910c: in_progress ETA: 69
+info: ETA:: 69 seconds for job 463e07b0-efb9-4c9a-9e68-90749219910c
+info: Current capture status for job 463e07b0-efb9-4c9a-9e68-90749219910c: in_progress ETA: 69
+info: ETA:: 69 seconds for job 463e07b0-efb9-4c9a-9e68-90749219910c
+info: Current capture status for job 463e07b0-efb9-4c9a-9e68-90749219910c: success ETA: undefined
+info: Calling bound compare, attempt::1
+info: Calling bound waitForCompareJob, attempt::1
+info: ETA:: 56 seconds for job ccf8d14d-d04e-4727-bf3a-2b4b4925b58c
+info: Current compare status for job ccf8d14d-d04e-4727-bf3a-2b4b4925b58c: success
+info: Restoring plugin woocommerce from backup
+info: plugin woocommerce restored from backup
+info: Deleting cache before taking screenshots
+info: Detected error reporting::false and http status::200
+info: Updating translations for all plugin.
+info: Translations updated for all plugin.
+info: Plugins update completed
+info: Initiating theme update
+info: None of the selected themes have pending update!
+info: Themes update completed
+info: Visual diff status Rollbacks:: true Diffs:: true
+info: Notifications enabled for all success status
+info: SSH already connected, exiting!
+info: Detected locale - de_DE
+info: Reading translation file /app/i18n/one.com/de_DE.json
+info: Message sent: 250 2.0.0 Ok: queued as 55c29976-3033-11f0-9416-bb9973742618 locale: de_DE
+info: SMTP call successful
+info: Uploading log
+info: Checking if ssh is active.
+info: Trying ssh connection

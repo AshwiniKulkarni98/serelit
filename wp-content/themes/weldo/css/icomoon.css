@@ -1,0 +1,209 @@
+@font-face {
+    font-family: "icomoon";
+    src: url("../fonts/icomoon/icomoon.eot");
+    src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon/icomoon.ttf") format("truetype"),
+    url("../fonts/icomoon/icomoon.woff") format("woff"),
+    url("../fonts/icomoon/icomoon.svg#icomoon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="ico-"], [class*=" ico-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ico-gear:before {
+    content: "\e900";
+}
+.ico-welding:before {
+    content: "\e901";
+}
+.ico-trade:before {
+    content: "\e902";
+}
+.ico-settings:before {
+    content: "\e903";
+}
+.ico-play-button:before {
+    content: "\e904";
+}
+.ico-paper-plane:before {
+    content: "\e905";
+}
+.ico-next:before {
+    content: "\e906";
+}
+.ico-message:before {
+    content: "\e907";
+}
+.ico-menu:before {
+    content: "\e908";
+}
+.ico-contact:before {
+    content: "\e909";
+}
+.ico-building:before {
+    content: "\e90a";
+}
+.ico-clock:before {
+    content: "\e90b";
+}
+.ico-user:before {
+    content: "\e90c";
+}
+.ico-phone:before {
+    content: "\e90d";
+}
+.ico-pen:before {
+    content: "\e90e";
+}
+.ico-map-marker:before {
+    content: "\e90f";
+}
+.ico-hand:before {
+    content: "\e910";
+}
+.ico-envelope-alt:before {
+    content: "\e911";
+}
+.ico-envelope:before {
+    content: "\e912";
+}
+.ico-comment:before {
+    content: "\e913";
+}
+.ico-prev:before {
+    content: "\e914";
+}
+.ico-comments:before {
+    content: "\e915";
+}
+.ico-shopping-bag:before {
+    content: "\e916";
+}
+.ico-trash:before {
+    content: "\e917";
+}
+.ico-arrow-down:before {
+    content: "\e918";
+}
+.ico-close:before {
+    content: "\e919";
+}
+.ico-support:before {
+    content: "\e91a";
+}
+.ico-user-alt:before {
+    content: "\e91b";
+}
+.ico-bag:before {
+    content: "\e91c";
+}
+.ico-building-alt:before {
+    content: "\e91d";
+}
+.ico-certificate-alt:before {
+    content: "\e91e";
+}
+.ico-chevron-alt:before {
+    content: "\e91f";
+}
+.ico-clock-alt:before {
+    content: "\e920";
+}
+.ico-comment-alt:before {
+    content: "\e921";
+}
+.ico-creditcard:before {
+    content: "\e922";
+}
+.ico-diploma:before {
+    content: "\e923";
+}
+.ico-envelope2:before {
+    content: "\e924";
+}
+.ico-heart:before {
+    content: "\e925";
+}
+.ico-menuburger:before {
+    content: "\e926";
+}
+.ico-pen-alt:before {
+    content: "\e927";
+}
+.ico-phone-alt:before {
+    content: "\e928";
+}
+.ico-pin:before {
+    content: "\e929";
+}
+.ico-quotes:before {
+    content: "\e92a";
+}
+.ico-search:before {
+    content: "\e92b";
+}
+.ico-video-play:before {
+    content: "\e92c";
+}
+.ico-central-stairs:before {
+    content: "\e92d";
+}
+.ico-folded-stairs:before {
+    content: "\e92e";
+}
+.ico-spiral-stairs:before {
+    content: "\e92f";
+}
+.ico-stringer-stairs:before {
+    content: "\e930";
+}
+.ico-machining:before {
+    content: "\e939";
+}
+.ico-plasma-cutting:before {
+    content: "\e93a";
+}
+.ico-plate-rolling:before {
+    content: "\e93b";
+}
+.ico-press-brake:before {
+    content: "\e93c";
+}
+.ico-saw-cutting:before {
+    content: "\e93d";
+}
+.ico-welding1:before {
+    content: "\e93e";
+}
+.ico-laser-cutting:before {
+    content: "\e93f";
+}
+.ico-light-guage:before {
+    content: "\e940";
+}
+.ico-team:before {
+    content: "\e931";
+}
+.ico-technology:before {
+    content: "\e932";
+}
+.ico-approach:before {
+    content: "\e933";
+}
+.ico-award:before {
+    content: "\e934";
+}

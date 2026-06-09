@@ -1,0 +1,186 @@
+# Translation of Plugins - Widget CSS Classes - Stable (latest release) in Danish
+# This file is distributed under the same license as the Plugins - Widget CSS Classes - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-08-04 05:03:33+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: da_DK\n"
+"Project-Id-Version: Plugins - Widget CSS Classes - Stable (latest release)\n"
+
+#. Translators: %s stands for a link to translate.wordpress.org.
+#: includes/widget-css-classes-settings.class.php:153
+msgid "Translations are taken from %s"
+msgstr "Oversætningerne hentes fra %s"
+
+#: includes/widget-css-classes-settings.class.php:151
+msgid "Translate classes like `widget-first` and `widget-even`."
+msgstr "Oversæt klasser til f.eks. 'widget-først' og 'widget-lige'."
+
+#: includes/widget-css-classes-settings.class.php:145
+msgid "Translate classes"
+msgstr "Oversæt klasser"
+
+#: widget-css-classes.php:97
+msgid "Please update"
+msgstr "Opdater venligst"
+
+#. Translators: %1$s stands for the WP version and %2$s stands for "Please
+#. update" (a link).
+#: widget-css-classes.php:95
+msgid "Widget CSS Classes requires WordPress %1$s or newer. %2$s"
+msgstr "Widget CSS Classes kræver WordPress %1$s eller senere. %2$s"
+
+#: includes/widget-css-classes-settings.class.php:176
+msgid "None"
+msgstr "Ingen"
+
+#: includes/widget-css-classes-settings.class.php:140
+msgid "Plugins that run after this plugin could still add duplicates."
+msgstr "Plugin'er som kører efter dette plugin, kan stadig tilføje dubletter."
+
+#: includes/widget-css-classes-settings.class.php:134
+msgid "Remove duplicate classes"
+msgstr "Fjern dublerende klasser"
+
+#: includes/widget-css-classes-settings.class.php:129
+msgid "Wrap widget in a <div> element if the parameters are invalid."
+msgstr "Omslut widget med et <div> element hvis parameteren er ugyldig."
+
+#: includes/widget-css-classes-settings.class.php:123
+msgid "Fix widget parameters"
+msgstr "Ret widget parameter"
+
+#: includes/widget-css-classes.class.php:246
+#: includes/widget-css-classes.class.php:273
+msgid "CSS Classes"
+msgstr "CSS klasser"
+
+#: includes/widget-css-classes-settings.class.php:175
+msgid "Both"
+msgstr "Begge"
+
+#: includes/widget-css-classes-settings.class.php:174
+msgid "Predefined"
+msgstr "Prædefineret"
+
+#: includes/widget-css-classes-settings.class.php:116
+msgid "Predefined Classes"
+msgstr "Prædefineret klasser"
+
+#. Description of the plugin
+msgid "Add custom, first, last, even, odd, and numbered classes to your widgets."
+msgstr "Tilføj brugerdefineret, første, sidste, lige, ulige og nummererede klasser til dine widgets."
+
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/widget-css-classes/"
+msgstr "https://wordpress.org/plugins/widget-css-classes/"
+
+#: includes/widget-css-classes.class.php:110
+msgid "widget-odd"
+msgstr "widget-ulige"
+
+#: includes/widget-css-classes.class.php:109
+msgid "widget-even"
+msgstr "widget-lige"
+
+#: includes/widget-css-classes.class.php:108
+msgid "widget-last"
+msgstr "widget-sidst"
+
+#: includes/widget-css-classes.class.php:107
+msgid "widget-first"
+msgstr "widget-først"
+
+#: includes/widget-css-classes.class.php:106
+msgid "widget-"
+msgstr "widget-"
+
+#: includes/widget-css-classes.class.php:218
+msgid "CSS ID"
+msgstr "CSS ID"
+
+#: includes/widget-css-classes-settings.class.php:364
+msgid "Import Settings"
+msgstr "Import indstillinger"
+
+#: includes/widget-css-classes-settings.class.php:360
+msgid "Export Settings"
+msgstr "Eksport indstillinger"
+
+#: includes/widget-css-classes-settings.class.php:358
+msgid "Import/Export Settings"
+msgstr "Importer/Eksporter indstillinger"
+
+#. Plugin Name of the plugin
+#: includes/widget-css-classes-settings.class.php:315
+msgid "Widget CSS Classes"
+msgstr "Widget CSS Classes"
+
+#: includes/widget-css-classes-settings.class.php:250
+msgid "No Settings File Selected"
+msgstr "Der er ingen indstillingsfil valgt"
+
+#: includes/widget-css-classes-settings.class.php:246
+msgid "Invalid Settings File"
+msgstr "Ugyldig indstillingsfil"
+
+#: includes/widget-css-classes-settings.class.php:242
+msgid "Settings Imported"
+msgstr "Indstillinger er importeret"
+
+#: includes/widget-css-classes-settings.class.php:234
+msgid "Import/Export"
+msgstr "Importer/Eksporter"
+
+#: includes/widget-css-classes-settings.class.php:173
+msgid "Text"
+msgstr "Tekst"
+
+#: includes/widget-css-classes-settings.class.php:164
+msgid "No"
+msgstr "Nej"
+
+#: includes/widget-css-classes-settings.class.php:163
+msgid "Yes"
+msgstr "Ja"
+
+#: includes/widget-css-classes-settings.class.php:109
+msgid "Class Field Type"
+msgstr "Klasse felt type"
+
+#: includes/widget-css-classes-settings.class.php:99
+msgid "Show Additional Field for ID"
+msgstr "Vis yderligere felt til ID"
+
+#: includes/widget-css-classes-settings.class.php:89
+msgid "Add Even/Odd Classes"
+msgstr "Tilføj lige/ulige klasse"
+
+#: includes/widget-css-classes-settings.class.php:79
+msgid "Add First/Last Classes"
+msgstr "Tilføj Første/Sidste klasse"
+
+#: includes/widget-css-classes-settings.class.php:69
+msgid "Add Widget Number Classes"
+msgstr "Tilføj Widget klasse nummer"
+
+#: includes/widget-css-classes-settings.class.php:61
+#: includes/widget-css-classes-settings.class.php:66
+msgid "Widget CSS Classes Settings"
+msgstr "Widget CSS klasse indstillinger"
+
+#: includes/widget-css-classes-library.class.php:79
+msgid "Donate"
+msgstr "Donation"
+
+#: includes/widget-css-classes-library.class.php:76
+msgid "Version"
+msgstr "Version"
+
+#: includes/widget-css-classes-library.class.php:60
+msgid "Settings"
+msgstr "Indstillinger"

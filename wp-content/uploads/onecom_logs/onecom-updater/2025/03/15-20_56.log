@@ -1,0 +1,92 @@
+info: Checking if ssh is active.
+info: Trying ssh connection
+info: Deleting cache before taking screenshots
+info: Detected error reporting::false and http status::200
+info: Checking if installation is valid
+info: Valid installation, proceeding with updates
+info: Installation is unlocked for update
+info: Initiating WP core update
+info: No updates for WP Core!
+info: WP core updates finished, proceeding with plugins' update
+info: Initiating plugin update
+info: Found update for plugins
+info: Deleting cache before taking screenshots
+info: Updated testUrlsCount to 6
+info: ETA:: 139 seconds for job 0d195a82-cf56-4496-ad8f-bbd61655eb87
+info: Current capture status for job 0d195a82-cf56-4496-ad8f-bbd61655eb87: in_progress ETA: 69
+info: ETA:: 69 seconds for job 0d195a82-cf56-4496-ad8f-bbd61655eb87
+info: Current capture status for job 0d195a82-cf56-4496-ad8f-bbd61655eb87: success ETA: undefined
+info: Initiating backup of plugin complianz-gdpr
+info: Initiating DB backup
+info: DB backed up
+info: plugin complianz-gdpr backup complete
+info: Secured backups with .htaccess
+info: Updating plugin complianz-gdpr
+info: Deleting cache before taking screenshots
+info: ETA:: 139 seconds for job 1346ec99-7b2a-4b39-8d04-f905a5ee92e3
+info: Current capture status for job 1346ec99-7b2a-4b39-8d04-f905a5ee92e3: in_progress ETA: 69
+info: ETA:: 69 seconds for job 1346ec99-7b2a-4b39-8d04-f905a5ee92e3
+info: Current capture status for job 1346ec99-7b2a-4b39-8d04-f905a5ee92e3: success ETA: undefined
+info: ETA:: 81 seconds for job 54a48d43-f9a3-46b5-a7a8-d21e39a032ea
+info: Current compare status for job 54a48d43-f9a3-46b5-a7a8-d21e39a032ea: in_progress
+info: ETA:: 40 seconds for job 54a48d43-f9a3-46b5-a7a8-d21e39a032ea
+info: Current compare status for job 54a48d43-f9a3-46b5-a7a8-d21e39a032ea: success
+info: Initiating backup of plugin contact-form-7
+info: DB backup was created earlier, skipping
+info: plugin contact-form-7 backup complete
+info: Updating plugin contact-form-7
+info: Deleting cache before taking screenshots
+info: ETA:: 139 seconds for job 0b5a6a9c-ca41-479c-8d2d-1735cb804060
+info: Current capture status for job 0b5a6a9c-ca41-479c-8d2d-1735cb804060: in_progress ETA: 69
+info: ETA:: 69 seconds for job 0b5a6a9c-ca41-479c-8d2d-1735cb804060
+info: Current capture status for job 0b5a6a9c-ca41-479c-8d2d-1735cb804060: in_progress ETA: 69
+info: ETA:: 69 seconds for job 0b5a6a9c-ca41-479c-8d2d-1735cb804060
+info: Current capture status for job 0b5a6a9c-ca41-479c-8d2d-1735cb804060: in_progress ETA: 69
+info: ETA:: 69 seconds for job 0b5a6a9c-ca41-479c-8d2d-1735cb804060
+info: Current capture status for job 0b5a6a9c-ca41-479c-8d2d-1735cb804060: success ETA: undefined
+info: ETA:: 81 seconds for job c925133a-c3e8-4789-9f2c-a734e9719141
+info: Current compare status for job c925133a-c3e8-4789-9f2c-a734e9719141: in_progress
+info: ETA:: 40 seconds for job c925133a-c3e8-4789-9f2c-a734e9719141
+info: Current compare status for job c925133a-c3e8-4789-9f2c-a734e9719141: success
+info: Initiating backup of plugin font-awesome
+info: DB backup was created earlier, skipping
+info: plugin font-awesome backup complete
+info: Updating plugin font-awesome
+info: Deleting cache before taking screenshots
+info: ETA:: 139 seconds for job fbdb525b-0ba9-4a6d-80eb-60f9820fff8a
+info: Current capture status for job fbdb525b-0ba9-4a6d-80eb-60f9820fff8a: in_progress ETA: 69
+info: ETA:: 69 seconds for job fbdb525b-0ba9-4a6d-80eb-60f9820fff8a
+info: Current capture status for job fbdb525b-0ba9-4a6d-80eb-60f9820fff8a: in_progress ETA: 69
+info: ETA:: 69 seconds for job fbdb525b-0ba9-4a6d-80eb-60f9820fff8a
+info: Current capture status for job fbdb525b-0ba9-4a6d-80eb-60f9820fff8a: success ETA: undefined
+info: ETA:: 81 seconds for job fd50748c-2fa1-46bb-bf29-e38069ee3bbe
+info: Current compare status for job fd50748c-2fa1-46bb-bf29-e38069ee3bbe: in_progress
+info: ETA:: 40 seconds for job fd50748c-2fa1-46bb-bf29-e38069ee3bbe
+info: Current compare status for job fd50748c-2fa1-46bb-bf29-e38069ee3bbe: success
+info: Initiating backup of plugin user-registration
+info: DB backup was created earlier, skipping
+info: plugin user-registration backup complete
+info: Updating plugin user-registration
+info: Deleting cache before taking screenshots
+info: ETA:: 415 seconds for job 3a3d3431-8661-4ec2-a607-7cdfc9ffc21e
+info: Current capture status for job 3a3d3431-8661-4ec2-a607-7cdfc9ffc21e: success ETA: undefined
+info: ETA:: 81 seconds for job cf08c6ff-918b-4206-8ba4-bb6cb296dae2
+info: Current compare status for job cf08c6ff-918b-4206-8ba4-bb6cb296dae2: in_progress
+info: ETA:: 40 seconds for job cf08c6ff-918b-4206-8ba4-bb6cb296dae2
+info: Current compare status for job cf08c6ff-918b-4206-8ba4-bb6cb296dae2: success
+info: Updating translations for all plugin.
+info: Translations updated for all plugin.
+info: Plugins update completed
+info: Initiating theme update
+info: None of the selected themes have pending update!
+info: Themes update completed
+info: Visual diff status Rollbacks:: false Diffs:: false
+info: Notifications enabled for all success status
+info: SSH already connected, exiting!
+info: Detected locale - de_DE
+info: Reading translation file /app/i18n/one.com/de_DE.json
+info: Message sent: 250 2.0.0 Ok: queued as fe6c7025-01df-11f0-aaff-9d0b146aa698 locale: de_DE
+info: SMTP call successful
+info: Uploading log
+info: Checking if ssh is active.
+info: Trying ssh connection

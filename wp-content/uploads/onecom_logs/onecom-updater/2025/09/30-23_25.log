@@ -1,0 +1,51 @@
+info: Checking if ssh is active.
+info: Trying ssh connection
+info: Deleting cache before taking screenshots
+info: Probably invalid command - timeout -k 5m 5m /usr/local/bin/wp-cache-flush
+info: Detected error reporting::false and http status::200
+info: Checking if installation is valid
+info: Valid installation, proceeding with updates
+info: No running native updates
+info: Installation is unlocked for update
+info: Initiating WP core update
+info: No updates for WP Core!
+info: WP core updates finished, proceeding with plugins' update
+info: Initiating plugin update
+info: Premium care dependencies - version:4.7.1 status:active
+info: Found update for plugins
+info: Deleting cache before taking screenshots
+info: Probably invalid command - timeout -k 5m 5m /usr/local/bin/wp-cache-flush
+info: Updated testUrlsCount to 6
+info: Testing urls ["https://www.serelit.de","https://www.serelit.de/registration/","https://www.serelit.de/product/automatic-electric-disappearing-ladders/","https://www.serelit.de/project/aenean-vulputate/","https://www.serelit.de/service/fenster-balkon-profile/","https://www.serelit.de/member/phebe-e-french/"]
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 237 seconds for job e8ec5ed9-680c-4bbe-b1ce-05d1fee2eada
+info: Current capture status for job e8ec5ed9-680c-4bbe-b1ce-05d1fee2eada: success ETA: undefined
+info: Initiating backup of plugin contact-form-7
+info: Backup ["/var/www/wp-content/uploads/onecom-updater/backup/plugins/contact-form-7.zip"] verified.
+info: Initiating DB backup
+info: DB backed up
+info: plugin contact-form-7 backup complete
+info: Secured backups with .htaccess
+info: Updating plugin contact-form-7
+info: Deleting cache before taking screenshots
+info: Probably invalid command - timeout -k 5m 5m /usr/local/bin/wp-cache-flush
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 119 seconds for job 490ada89-1036-47a9-9d62-ac7dd1263fa6
+info: Current capture status for job 490ada89-1036-47a9-9d62-ac7dd1263fa6: in_progress ETA: 59
+info: ETA:: 59 seconds for job 490ada89-1036-47a9-9d62-ac7dd1263fa6
+info: Current capture status for job 490ada89-1036-47a9-9d62-ac7dd1263fa6: success ETA: undefined
+info: Calling bound compare, attempt::1
+info: Calling bound waitForCompareJob, attempt::1
+info: ETA:: 55 seconds for job 7e8c7eb9-2fca-4c7c-806c-da93361f8ca8
+info: Current compare status for job 7e8c7eb9-2fca-4c7c-806c-da93361f8ca8: success
+info: Updating translations for all plugin.
+info: Translations updated for all plugin.
+info: Plugins update completed
+info: Initiating theme update
+info: None of the selected themes have pending update!
+info: Themes update completed
+info: Notifications enabled for all success status
+info: Repeated update with no new info, skipping email
+info: Uploading log

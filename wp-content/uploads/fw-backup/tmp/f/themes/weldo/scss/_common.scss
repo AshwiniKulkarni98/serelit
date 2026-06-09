@@ -1,0 +1,365 @@
+fg/*
+** General Styles for HTML tags
+*/
+html {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: visible;
+}
+
+::selection {
+  color: $lightColor;
+  background-color: $colorMain;
+}
+
+::-moz-selection {
+  color: $lightColor;
+  background-color: $colorMain;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  background-color: $lightColor;
+  overflow: visible;
+  overflow-x: hidden;
+  //for scrollbar always seen
+  overflow-y: scroll;
+  //for scrollspy
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  line-height: 1.1;
+  word-break: break-word;
+  margin-top: 0.65em;
+  margin-bottom: 0.65em;
+  font-family: 'Anton', sans-serif;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
+}
+
+h1 {
+  font-size: 60px;
+  margin-bottom: 0.22em;
+  margin-top: 0.97em;
+}
+
+h2 {
+  font-size: 50px;
+  margin-top: 1.13em;
+  margin-bottom: 0.3em;
+}
+
+
+h3 {
+  font-size: 40px;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h4 {
+  font-size: 30px;
+  margin-top: 2em;
+  margin-bottom: 0.34em;
+}
+
+h5 {
+  font-size: 20px;
+  margin-top: 3em;
+  margin-bottom: 0.61em;
+}
+
+h6 {
+  font-size: 18px;
+  margin-top: 3.5em;
+  margin-bottom: 1.1em;
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 2.6rem;
+  }
+  h2 {
+    font-size: 2.4rem;
+  }
+  h3 {
+    font-size: 2.1rem;
+  }
+  h4 {
+    font-size: 1.7rem;
+  }
+  h5 {
+    font-size: 1.5rem;
+  }
+  h6 {
+    font-size: 1.3rem;
+  }
+  h3.big {
+    font-size: 2.6rem;
+  }
+  h4.big {
+    font-size: 2.4rem;
+  }
+  h5.big {
+    font-size: 2.1rem;
+  }
+  h6.big {
+    font-size: 1.7rem;
+  }
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+  margin-top: 0;
+}
+
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child {
+  margin-bottom: 0;
+}
+
+p {
+  margin-bottom: 24px;
+}
+
+ul:last-child,
+ol:last-child,
+p:last-child {
+  margin-bottom: 0;
+}
+
+p:last-child {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+img, figure {
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption {
+  p {
+    margin-bottom: 0;
+  }
+  font-size: 0.95em;
+  line-height: 1.4;
+  padding: 17px 0 7px;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+label {
+  color: $darkgreyColor;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.2s ease-in-out 0s;
+  color: $fontColor;
+  &:hover {
+    color: $colorMain;
+    text-decoration: none;
+    transition: all 0.15s linear 0s;
+  }
+}
+
+p a:not([class]){
+  color:$darkgreyColor;
+  &:hover{
+    color: $colorMain;
+  }
+}
+
+blockquote {
+  font-style: italic;
+  max-width: 100%;
+  padding: 0;
+  margin: 33px 0 28px;
+  @media (min-width: 768px) {
+    margin: 49px 0 53px;
+  }
+  &.styled-blockquote {
+    text-align: center;
+    @media (min-width: 768px) {
+      max-width: 83%;
+      padding: 0 0 0 80px;
+      text-align: inherit;
+    }
+  }
+  .quote-author {
+    position: relative;
+    img {
+      max-width: 150px;
+      margin: 0 auto 20px;
+      display: block;
+    }
+    @media (min-width: 768px) {
+      img {
+        float: left;
+        margin-top: -18px;
+        margin-bottom: 0;
+        margin-right: 57px;
+      }
+    }
+    &:before {
+      content: "";
+      -webkit-mask: url(../img/quote-mark.png) no-repeat center / contain;
+      background-color: $colorMain;
+      width: 55px;
+      height: 43px;
+      position: absolute;
+      top: -15px;
+      right: -105px;
+      z-index: 10;
+      @media (min-width: 768px) {
+        top: -30px;
+        right: 27px;
+      }
+    }
+  }
+  footer {
+    margin-top: 18px;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    span{
+      font-weight: 300;
+      &:before {
+        content: "|";
+        font-size: 20px;
+        font-weight: 400;
+        margin: 0 24px 0 21px;
+        position: relative;
+        top: 1px;
+        @media (max-width: 767px) {
+          margin: 0 10px 0 15px;
+        }
+      }
+    }
+  }
+  p {
+    margin-bottom: 0;
+  }
+}
+
+input:focus,
+button:focus,
+select:focus,
+textarea:focus,
+a:focus {
+  outline: medium none;
+  text-decoration: none;
+}
+
+a > img {
+  transition: all 0.15s ease-in-out 0s;
+}
+
+a:hover > img {
+  opacity: 0.9;
+}
+
+hr {
+  border-color: $borderColor;
+  //for flexbox
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+iframe {
+  border: none;
+  max-width: 100%;
+}
+
+table {
+  width: 100%;
+  max-width: 100%;
+  margin: 10px 0;
+  td, th {
+    padding: 11px 13px;
+    line-height: 1.42857143;
+    vertical-align: middle;
+    border: 1px solid $tabBorderColor;
+  }
+  th {
+    color: $darkgreyColor;
+    font-weight: normal;
+    vertical-align: middle;
+  }
+}
+
+.wp-block-table,
+.wp-block-table.is-style-stripes {
+  td, th {
+    border-color: $tabBorderColor;
+  }
+}
+
+canvas {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+pre {
+  line-height: 1.5;
+  background-color: $universalBackgroundColor;
+  padding: 0.5em 1em;
+}
+//block with signature on main page
+.big {
+  font-size: 20px;
+  line-height: 1.5;
+  em {
+    display: inline-block;
+    margin: 0.3em 0 0;
+    @media (min-width:768px) {
+      margin: 1em 0 0.5em;
+
+    }
+  }
+}
+
+.media {
+  h3 {
+    text-transform: uppercase;
+  }
+  .dropcap {
+    margin-right: 0;
+  }
+}
+
+.small-text {
+  @include small-text();
+  &.extra-letter-spacing {
+    @media (min-width: 768px) {
+      letter-spacing: 1em;
+    }
+  }
+}

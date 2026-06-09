@@ -1,0 +1,57 @@
+info: Checking if ssh is active.
+info: Trying ssh connection
+info: Deleting cache before taking screenshots
+info: Probably invalid command - timeout -k 5m 5m /usr/local/bin/wp-cache-flush
+info: Detected error reporting::false and http status::200
+info: Checking if installation is valid
+info: Valid installation, proceeding with updates
+info: No running native updates
+info: Installation is unlocked for update
+info: Initiating WP core update
+info: No updates for WP Core!
+info: WP core updates finished, proceeding with plugins' update
+info: Initiating plugin update
+info: Premium care dependencies - version:5.1.4 status:active
+info: Found update for plugins
+info: Deleting cache before taking screenshots
+info: Probably invalid command - timeout -k 5m 5m /usr/local/bin/wp-cache-flush
+info: Updated testUrlsCount to 6
+info: Testing urls ["https://www.serelit.de","https://www.serelit.de/registration/","https://www.serelit.de/product/automatic-electric-disappearing-ladders/","https://www.serelit.de/project/aenean-vulputate/","https://www.serelit.de/service/fenster-balkon-profile/","https://www.serelit.de/member/phebe-e-french/"]
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 139 seconds for job 52fe7655-9eb5-4335-8b77-0c01f8a0fc7a
+info: Current capture status for job 52fe7655-9eb5-4335-8b77-0c01f8a0fc7a: success ETA: undefined
+info: Initiating backup of plugin woocommerce
+info: Backup ["/var/www/wp-content/uploads/onecom-updater/backup/plugins/woocommerce.zip"] verified.
+info: Initiating DB backup
+info: DB backed up
+info: plugin woocommerce backup complete
+info: Secured backups with .htaccess
+info: Updating plugin woocommerce
+info: Deleting cache before taking screenshots
+info: Probably invalid command - timeout -k 5m 5m /usr/local/bin/wp-cache-flush
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 139 seconds for job f2b8147c-cbfb-4c57-ba79-6af90f151476
+info: Current capture status for job f2b8147c-cbfb-4c57-ba79-6af90f151476: success ETA: undefined
+info: Calling bound compare, attempt::1
+info: Calling bound waitForCompareJob, attempt::1
+info: ETA:: 9 seconds for job c2ccc5fe-1a0e-49f8-8a64-ca7370c1f1cb
+info: Current compare status for job c2ccc5fe-1a0e-49f8-8a64-ca7370c1f1cb: success
+info: Updating translations for all plugin.
+info: Translations updated for all plugin.
+info: Plugins update completed
+info: Initiating theme update
+info: None of the selected themes have pending update!
+info: Themes update completed
+info: Notifications enabled for all success status
+info: Visual diff status Rollbacks:: false Diffs:: false
+info: SSH already connected, exiting!
+info: Detected locale - de_DE
+info: Reading translation file /app/i18n/one.com/de_DE.json
+info: Message sent: 250 2.0.0 Ok: queued as f8f6884a-3835-11f1-8ff9-f530f854b380 locale: de_DE
+info: Closed email transport
+info: SMTP call successful
+info: Uploading log
+info: Checking if ssh is active.
+info: Trying ssh connection

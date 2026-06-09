@@ -1,0 +1,105 @@
+/* Add MWT Helpers styling */
+
+.mwt-helpers-box {
+    min-width: 255px;
+    border: 1px solid #e5e5e5;
+    background: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    margin-top: 20px;
+}
+
+.mwt-helpers-box .hndle {
+    position: relative;
+    padding: 0 25px;
+    margin: 0;
+    height: 46px;
+    line-height: 45px;
+    border-bottom: none !important;
+    font-size: 17px;
+    color: #0074a2;
+}
+
+.mwt-helpers-box .inside {
+    padding: 0 0 5px !important;
+    margin: 10px 0 0 !important;
+    position: relative;
+}
+
+.mwt-helpers-box .inside .mwt-backend-option {
+    position: relative;
+    padding: 24px 27px 21px;
+    overflow: hidden;
+    border: 0 solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+.mwt-helpers-box .inside .mwt-backend-option:last-child {
+    border: 0;
+    border-bottom: 0;
+}
+
+/* mwt-backend-option */
+.mwt-helpers-box .mwt-backend-option .mwt-backend-option-label {
+    font-weight: 600;
+    float: left;
+    margin-top: 0.1em;
+    font-size: 14px;
+}
+
+.mwt-helpers-box .mwt-backend-option .mwt-backend-option-input .input-title {
+    line-height: 1.4em;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.mwt-helpers-box .mwt-backend-option .mwt-backend-option-input .input-title ul {
+    margin: 0;
+}
+
+.mwt-helpers-box .mwt-backend-option .mwt-backend-option-input .input-title ul li {
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.mwt-helpers-box .mwt-backend-option .mwt-backend-option-input .input-desc {
+    font-size: 1em;
+    padding-top: 7px;
+    padding-left: 1px;
+    font-style: italic;
+    color: #666;
+}
+
+.mwt-helpers-box .mwt-backend-option .mwt-yes-icon {
+    color: #6ABF2B;
+    font-size: 22px;
+    margin-right: 8px;
+}
+
+.mwt-helpers-box .mwt-backend-option .mwt-no-icon {
+    color: #d54e21;
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+.mwt-helpers-box .mwt-backend-option .mwt-backend-option-label,
+.mwt-helpers-box .mwt-backend-option .mwt-backend-option-input {
+    width: 100%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+}
+@media (min-width: 783px) {
+    .mwt-helpers-box .mwt-backend-option .mwt-backend-option-label {
+        width: 25%;
+    }
+    .mwt-helpers-box .mwt-backend-option .mwt-backend-option-input {
+        width: 75%;
+    }
+}
+@media (min-width: 1200px) {
+    .mwt-helpers-box .mwt-backend-option .mwt-backend-option-label {
+        width: 16.66666667%;
+    }
+    .mwt-helpers-box .mwt-backend-option .mwt-backend-option-input {
+        width: 83.33333333%;
+    }
+}

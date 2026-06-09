@@ -1,0 +1,55 @@
+/*
+** 404
+*/
+
+.error404 {
+  .header_absolute .page_header, .header_absolute .page_header_wrapper {
+    position: relative;
+  }
+  .page_topline {
+    background-image: none !important;
+  }
+}
+
+.page_404 {
+  .page-header {
+    .error_text {
+      font-weight: 500;
+      letter-spacing: 2em;
+      text-transform: uppercase;
+      margin-bottom: 17px;
+      text-indent: 46px;
+      @media (min-width: 575px) {
+        letter-spacing: 3em;
+      }
+    }
+    p.color-main {
+      font-size: 150px;
+      font-weight: 800;
+      line-height: 0.8;
+      margin-bottom: 13px;
+      @media (min-width: 992px) {
+        font-size: 200px;
+      }
+    }
+  }
+  .page-content {
+    text-transform: uppercase;
+    p.first-line-text {
+      margin-bottom: 10px;
+      @media (min-width: 768px) {
+        margin-bottom: -4px;
+      }
+    }
+  }
+}
+
+
+.h-100vh.page_404 {
+  display: flex;
+  align-items: center;
+  background-position: center;
+  @media(min-width: 768px) {
+    min-height: calc(100vh - 150px);
+  }
+}

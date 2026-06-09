@@ -1,0 +1,16 @@
+.ls {
+
+  .color-icon.bg-icon {
+    background-color: #ececec;
+  }
+
+  .pricing-plan [class*='btn-outline-'] {
+    background-color: $lightColor;
+    &:hover {
+      background-color: $colorMain;
+    }
+  }
+  .top-includes.border-divided > li + li {
+    border-color: $borderColorRGBA;
+  }
+}

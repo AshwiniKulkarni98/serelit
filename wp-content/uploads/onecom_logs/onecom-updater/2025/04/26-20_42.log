@@ -1,0 +1,244 @@
+info: Checking if ssh is active.
+info: Trying ssh connection
+info: Deleting cache before taking screenshots
+info: Detected error reporting::false and http status::200
+info: Checking if installation is valid
+info: Valid installation, proceeding with updates
+info: Installation is unlocked for update
+info: Initiating WP core update
+info: Deleting cache before taking screenshots
+info: Updated testUrlsCount to 6
+info: Testing urls ["https://www.serelit.de","https://www.serelit.de/registration/","https://www.serelit.de/product/automatic-electric-disappearing-ladders/","https://www.serelit.de/project/aenean-vulputate/","https://www.serelit.de/service/fenster-balkon-profile/","https://www.serelit.de/member/phebe-e-french/"]
+info: Calling bound captureBatch, attempt::1
+info: Updating WP core.
+info: Initiating backup of wpCore 
+info: Backup ["/var/www/wp-content/uploads/onecom-updater/backup/core/wp-includes.zip","/var/www/wp-content/uploads/onecom-updater/backup/core/wp-admin.zip","/var/www/wp-content/uploads/onecom-updater/backup/core/root-files.zip"] verified.
+info: Initiating DB backup
+info: DB backed up
+info: wpCore  backup complete
+info: Secured backups with .htaccess
+info: Waiting for screenshot job completion for jobId:: 36956c54-a441-4d01-b7c2-95390f451699
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 139 seconds for job 36956c54-a441-4d01-b7c2-95390f451699
+info: Current capture status for job 36956c54-a441-4d01-b7c2-95390f451699: success ETA: undefined
+info: Deleting cache before taking screenshots
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 139 seconds for job 26145635-4b55-46cb-a6f8-1ae94199cb2f
+info: Current capture status for job 26145635-4b55-46cb-a6f8-1ae94199cb2f: success ETA: undefined
+info: Calling bound compare, attempt::1
+info: Calling bound waitForCompareJob, attempt::1
+info: ETA:: 81 seconds for job efa7849c-4e55-4ad0-983b-6b97835d053d
+info: Current compare status for job efa7849c-4e55-4ad0-983b-6b97835d053d: success
+info: Restoring  wpCore from backup
+info: WP Core restored from backup!
+info: Deleting cache before taking screenshots
+info: Detected error reporting::false and http status::200
+info: Updating translations for WP Core.
+info: Translations updated for WP Core.
+info: WP core updates finished, proceeding with plugins' update
+info: Initiating plugin update
+info: Found update for plugins
+info: Initiating backup of plugin complianz-gdpr
+info: Backup ["/var/www/wp-content/uploads/onecom-updater/backup/plugins/complianz-gdpr.zip"] verified.
+info: DB backup was created earlier, skipping
+info: plugin complianz-gdpr backup complete
+info: Updating plugin complianz-gdpr
+info: Deleting cache before taking screenshots
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 139 seconds for job 67b4667a-62bb-4472-b178-5ad92b47e61a
+info: Current capture status for job 67b4667a-62bb-4472-b178-5ad92b47e61a: in_progress ETA: 69
+info: ETA:: 69 seconds for job 67b4667a-62bb-4472-b178-5ad92b47e61a
+info: Current capture status for job 67b4667a-62bb-4472-b178-5ad92b47e61a: in_progress ETA: 69
+info: ETA:: 69 seconds for job 67b4667a-62bb-4472-b178-5ad92b47e61a
+info: Current capture status for job 67b4667a-62bb-4472-b178-5ad92b47e61a: success ETA: undefined
+info: Calling bound compare, attempt::1
+info: Calling bound waitForCompareJob, attempt::1
+info: ETA:: 77 seconds for job 717d9edb-2089-4ee7-8b76-dc60b2757619
+info: Current compare status for job 717d9edb-2089-4ee7-8b76-dc60b2757619: in_progress
+info: ETA:: 40 seconds for job 717d9edb-2089-4ee7-8b76-dc60b2757619
+info: Current compare status for job 717d9edb-2089-4ee7-8b76-dc60b2757619: success
+info: Restoring plugin complianz-gdpr from backup
+info: plugin complianz-gdpr restored from backup
+info: Deleting cache before taking screenshots
+info: Detected error reporting::false and http status::200
+info: Initiating backup of plugin loco-translate
+info: Backup ["/var/www/wp-content/uploads/onecom-updater/backup/plugins/loco-translate.zip"] verified.
+info: DB backup was created earlier, skipping
+info: plugin loco-translate backup complete
+info: Updating plugin loco-translate
+info: Deleting cache before taking screenshots
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 139 seconds for job cb0e0eea-5760-4e8d-93d9-01c0d19cd097
+info: Current capture status for job cb0e0eea-5760-4e8d-93d9-01c0d19cd097: in_progress ETA: 69
+info: ETA:: 69 seconds for job cb0e0eea-5760-4e8d-93d9-01c0d19cd097
+info: Current capture status for job cb0e0eea-5760-4e8d-93d9-01c0d19cd097: in_progress ETA: 69
+info: ETA:: 69 seconds for job cb0e0eea-5760-4e8d-93d9-01c0d19cd097
+info: Current capture status for job cb0e0eea-5760-4e8d-93d9-01c0d19cd097: in_progress ETA: 69
+info: ETA:: 69 seconds for job cb0e0eea-5760-4e8d-93d9-01c0d19cd097
+info: Current capture status for job cb0e0eea-5760-4e8d-93d9-01c0d19cd097: in_progress ETA: 69
+info: ETA:: 69 seconds for job cb0e0eea-5760-4e8d-93d9-01c0d19cd097
+info: Current capture status for job cb0e0eea-5760-4e8d-93d9-01c0d19cd097: in_progress ETA: 69
+info: ETA:: 69 seconds for job cb0e0eea-5760-4e8d-93d9-01c0d19cd097
+info: Current capture status for job cb0e0eea-5760-4e8d-93d9-01c0d19cd097: in_progress ETA: 69
+info: ETA:: 69 seconds for job cb0e0eea-5760-4e8d-93d9-01c0d19cd097
+info: Current capture status for job cb0e0eea-5760-4e8d-93d9-01c0d19cd097: in_progress ETA: 69
+info: ETA:: 69 seconds for job cb0e0eea-5760-4e8d-93d9-01c0d19cd097
+info: Current capture status for job cb0e0eea-5760-4e8d-93d9-01c0d19cd097: in_progress ETA: 69
+info: ETA:: 69 seconds for job cb0e0eea-5760-4e8d-93d9-01c0d19cd097
+info: Current capture status for job cb0e0eea-5760-4e8d-93d9-01c0d19cd097: in_progress ETA: 69
+info: ETA:: 69 seconds for job cb0e0eea-5760-4e8d-93d9-01c0d19cd097
+info: Calling bound waitForJobCompletion failed, retrying, attempt::1 with delay 10000
+info: Calling bound waitForJobCompletion, attempt::2
+info: ETA:: 139 seconds for job cb0e0eea-5760-4e8d-93d9-01c0d19cd097
+info: Current capture status for job cb0e0eea-5760-4e8d-93d9-01c0d19cd097: success ETA: undefined
+info: Calling bound compare, attempt::1
+info: Calling bound waitForCompareJob, attempt::1
+info: ETA:: 81 seconds for job cc45f843-a026-44cd-8e12-0df2ae007a3a
+info: Current compare status for job cc45f843-a026-44cd-8e12-0df2ae007a3a: success
+info: Restoring plugin loco-translate from backup
+info: plugin loco-translate restored from backup
+info: Deleting cache before taking screenshots
+info: Detected error reporting::false and http status::200
+info: Initiating backup of plugin mailchimp-for-wp
+info: Backup ["/var/www/wp-content/uploads/onecom-updater/backup/plugins/mailchimp-for-wp.zip"] verified.
+info: DB backup was created earlier, skipping
+info: plugin mailchimp-for-wp backup complete
+info: Updating plugin mailchimp-for-wp
+info: Deleting cache before taking screenshots
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 139 seconds for job 07963df7-aae1-4948-8fdd-d33fa9fd3204
+info: Current capture status for job 07963df7-aae1-4948-8fdd-d33fa9fd3204: in_progress ETA: 69
+info: ETA:: 69 seconds for job 07963df7-aae1-4948-8fdd-d33fa9fd3204
+info: Current capture status for job 07963df7-aae1-4948-8fdd-d33fa9fd3204: in_progress ETA: 69
+info: ETA:: 69 seconds for job 07963df7-aae1-4948-8fdd-d33fa9fd3204
+info: Current capture status for job 07963df7-aae1-4948-8fdd-d33fa9fd3204: success ETA: undefined
+info: Calling bound compare, attempt::1
+info: Calling bound waitForCompareJob, attempt::1
+info: ETA:: 81 seconds for job e48ddb64-87c9-4d50-bfaa-5e5529cc1b10
+info: Current compare status for job e48ddb64-87c9-4d50-bfaa-5e5529cc1b10: in_progress
+info: ETA:: 40 seconds for job e48ddb64-87c9-4d50-bfaa-5e5529cc1b10
+info: Current compare status for job e48ddb64-87c9-4d50-bfaa-5e5529cc1b10: success
+info: Restoring plugin mailchimp-for-wp from backup
+info: plugin mailchimp-for-wp restored from backup
+info: Deleting cache before taking screenshots
+info: Detected error reporting::false and http status::200
+info: Initiating backup of plugin onecom-themes-plugins
+info: Backup ["/var/www/wp-content/uploads/onecom-updater/backup/plugins/onecom-themes-plugins.zip"] verified.
+info: DB backup was created earlier, skipping
+info: plugin onecom-themes-plugins backup complete
+info: Updating plugin onecom-themes-plugins
+info: Deleting cache before taking screenshots
+info: Initiating backup of plugin onecom-spam-protection
+info: Backup ["/var/www/wp-content/uploads/onecom-updater/backup/plugins/onecom-spam-protection.zip"] verified.
+info: DB backup was created earlier, skipping
+info: plugin onecom-spam-protection backup complete
+info: Updating plugin onecom-spam-protection
+info: Deleting cache before taking screenshots
+info: Initiating backup of plugin onecom-vcache
+info: Backup ["/var/www/wp-content/uploads/onecom-updater/backup/plugins/onecom-vcache.zip"] verified.
+info: DB backup was created earlier, skipping
+info: plugin onecom-vcache backup complete
+info: Updating plugin onecom-vcache
+info: Deleting cache before taking screenshots
+info: Initiating backup of plugin wp-user-avatar
+info: Backup ["/var/www/wp-content/uploads/onecom-updater/backup/plugins/wp-user-avatar.zip"] verified.
+info: DB backup was created earlier, skipping
+info: plugin wp-user-avatar backup complete
+info: Updating plugin wp-user-avatar
+info: Deleting cache before taking screenshots
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 139 seconds for job 0b0ed46f-c87a-4377-a2d5-3fe6f9127733
+info: Current capture status for job 0b0ed46f-c87a-4377-a2d5-3fe6f9127733: in_progress ETA: 69
+info: ETA:: 69 seconds for job 0b0ed46f-c87a-4377-a2d5-3fe6f9127733
+info: Current capture status for job 0b0ed46f-c87a-4377-a2d5-3fe6f9127733: in_progress ETA: 69
+info: ETA:: 69 seconds for job 0b0ed46f-c87a-4377-a2d5-3fe6f9127733
+info: Current capture status for job 0b0ed46f-c87a-4377-a2d5-3fe6f9127733: success ETA: undefined
+info: Calling bound compare, attempt::1
+info: Calling bound waitForCompareJob, attempt::1
+info: ETA:: 81 seconds for job 2eb7e04e-63ae-4d45-82c6-e1d161f00c0d
+info: Current compare status for job 2eb7e04e-63ae-4d45-82c6-e1d161f00c0d: success
+info: Restoring plugin wp-user-avatar from backup
+info: plugin wp-user-avatar restored from backup
+info: Deleting cache before taking screenshots
+info: Detected error reporting::false and http status::200
+info: Initiating backup of plugin user-registration
+info: Backup ["/var/www/wp-content/uploads/onecom-updater/backup/plugins/user-registration.zip"] verified.
+info: DB backup was created earlier, skipping
+info: plugin user-registration backup complete
+info: Updating plugin user-registration
+info: Deleting cache before taking screenshots
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 139 seconds for job 3d0a5599-119b-4876-b839-1d5881b0f0f3
+info: Current capture status for job 3d0a5599-119b-4876-b839-1d5881b0f0f3: in_progress ETA: 69
+info: ETA:: 69 seconds for job 3d0a5599-119b-4876-b839-1d5881b0f0f3
+info: Current capture status for job 3d0a5599-119b-4876-b839-1d5881b0f0f3: in_progress ETA: 69
+info: ETA:: 69 seconds for job 3d0a5599-119b-4876-b839-1d5881b0f0f3
+info: Current capture status for job 3d0a5599-119b-4876-b839-1d5881b0f0f3: in_progress ETA: 69
+info: ETA:: 69 seconds for job 3d0a5599-119b-4876-b839-1d5881b0f0f3
+info: Current capture status for job 3d0a5599-119b-4876-b839-1d5881b0f0f3: in_progress ETA: 69
+info: ETA:: 69 seconds for job 3d0a5599-119b-4876-b839-1d5881b0f0f3
+info: Current capture status for job 3d0a5599-119b-4876-b839-1d5881b0f0f3: success ETA: undefined
+info: Calling bound compare, attempt::1
+info: Calling bound waitForCompareJob, attempt::1
+info: ETA:: 74 seconds for job c340907d-e44e-420d-b052-a50aad863390
+info: Current compare status for job c340907d-e44e-420d-b052-a50aad863390: success
+info: Restoring plugin user-registration from backup
+info: plugin user-registration restored from backup
+info: Deleting cache before taking screenshots
+info: Detected error reporting::false and http status::200
+info: Initiating backup of plugin wp-social
+info: Backup ["/var/www/wp-content/uploads/onecom-updater/backup/plugins/wp-social.zip"] verified.
+info: DB backup was created earlier, skipping
+info: plugin wp-social backup complete
+info: Updating plugin wp-social
+info: Deleting cache before taking screenshots
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 139 seconds for job 5e41690d-0f64-46e1-a7d4-20c74785eba3
+info: Current capture status for job 5e41690d-0f64-46e1-a7d4-20c74785eba3: in_progress ETA: 69
+info: ETA:: 69 seconds for job 5e41690d-0f64-46e1-a7d4-20c74785eba3
+info: Current capture status for job 5e41690d-0f64-46e1-a7d4-20c74785eba3: in_progress ETA: 69
+info: ETA:: 69 seconds for job 5e41690d-0f64-46e1-a7d4-20c74785eba3
+info: Current capture status for job 5e41690d-0f64-46e1-a7d4-20c74785eba3: in_progress ETA: 69
+info: ETA:: 69 seconds for job 5e41690d-0f64-46e1-a7d4-20c74785eba3
+info: Current capture status for job 5e41690d-0f64-46e1-a7d4-20c74785eba3: in_progress ETA: 69
+info: ETA:: 69 seconds for job 5e41690d-0f64-46e1-a7d4-20c74785eba3
+info: Current capture status for job 5e41690d-0f64-46e1-a7d4-20c74785eba3: in_progress ETA: 69
+info: ETA:: 69 seconds for job 5e41690d-0f64-46e1-a7d4-20c74785eba3
+info: Current capture status for job 5e41690d-0f64-46e1-a7d4-20c74785eba3: in_progress ETA: 69
+info: ETA:: 69 seconds for job 5e41690d-0f64-46e1-a7d4-20c74785eba3
+info: Current capture status for job 5e41690d-0f64-46e1-a7d4-20c74785eba3: in_progress ETA: 69
+info: ETA:: 69 seconds for job 5e41690d-0f64-46e1-a7d4-20c74785eba3
+info: Current capture status for job 5e41690d-0f64-46e1-a7d4-20c74785eba3: in_progress ETA: 69
+info: ETA:: 69 seconds for job 5e41690d-0f64-46e1-a7d4-20c74785eba3
+info: Current capture status for job 5e41690d-0f64-46e1-a7d4-20c74785eba3: success ETA: undefined
+info: Calling bound compare, attempt::1
+info: Calling bound waitForCompareJob, attempt::1
+info: ETA:: 81 seconds for job 0e886737-5453-45c8-a953-1c523407caf9
+info: Current compare status for job 0e886737-5453-45c8-a953-1c523407caf9: success
+info: Restoring plugin wp-social from backup
+info: plugin wp-social restored from backup
+info: Deleting cache before taking screenshots
+info: Detected error reporting::false and http status::200
+info: Updating translations for all plugin.
+info: Translations updated for all plugin.
+info: Plugins update completed
+info: Initiating theme update
+info: None of the selected themes have pending update!
+info: Themes update completed
+info: Visual diff status Rollbacks:: true Diffs:: true
+info: Notifications enabled for all success status
+info: SSH already connected, exiting!
+info: Detected locale - de_DE
+info: Reading translation file /app/i18n/one.com/de_DE.json
+info: Message sent: 250 2.0.0 Ok: queued as eb7c1dd3-22de-11f0-9827-8bb83626d7ef locale: de_DE
+info: SMTP call successful
+info: Uploading log
+info: Checking if ssh is active.
+info: Trying ssh connection

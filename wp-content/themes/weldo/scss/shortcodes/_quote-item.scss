@@ -1,0 +1,150 @@
+.testimonials-slider.owl-carousel .owl-nav {
+  top: 62%;
+  opacity: 1;
+  @media (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+    position: static;
+    margin-top: 15px;
+  }
+  > div {
+    background-color: transparent;
+    left: 75.5%;
+    &:first-child {
+      right: auto;
+      left: 73.5%;
+    }
+    @media (max-width: 1199px) {
+      position: static;
+    }
+    &:hover i {
+      color: $colorMain;
+    }
+  }
+}
+
+.quote-item {
+  font-size: 20px;
+  font-style: italic;
+   margin-left: auto;
+  @media (min-width: 768px) {
+    display: flex;
+    max-width: 90.8%;
+  }
+  .quote-image {
+    position: relative;
+    display: inline-block;
+    @media (min-width: 768px) {
+      img {
+        max-width: 200px;
+      }
+    }
+    @media (min-width: 1200px) {
+      &.fill-mark:after {
+        content: "";
+        -webkit-mask: url(../img/quote-mark.png) no-repeat center/contain;
+        background-color: $colorMain;
+        width: 73px;
+        height: 58px;
+        position: absolute;
+        top: 29px;
+        right: -39px;
+      }
+      &.bordered-mark:after {
+        content: "\e92a";
+        font-family: "icomoon";
+        font-size: 80px;
+        color: $colorMain;
+        position: absolute;
+        top: 76px;
+        right: -40px;
+      }
+      img {
+        max-width: 400px;
+      }
+    }
+    //testimonial author
+    & + .quote-content {
+      margin-top: 25px;
+      @media (min-width: 768px) {
+        margin-top: 0;
+        margin-left: 30px;
+      }
+      @media (min-width: 992px) {
+        margin-top: 45px;
+        margin-left: 30px;
+      }
+      @media (min-width: 1200px) {
+        margin-top: 117px;
+        margin-left: 97px;
+      }
+    }
+  }
+}
+
+.testimonials-slider2 {
+  &.owl-center {
+    .owl-item {
+      opacity: 0.5;
+      &.center {
+        opacity: 1;
+      }
+    }
+  }
+  .owl-item {
+    padding-top: 65px;
+  }
+  .quote-item2 {
+    position: relative;
+    padding: 40px;
+    .quote-image {
+      position: absolute;
+      top: -65px;
+      left: 50%;
+      transform: translateX(-50%);
+      img {
+        max-width: 130px;
+        border-radius: 50%;
+      }
+    }
+    .quote-content {
+      margin-top: 77px;
+      &.fill-mark:before {
+        content: "";
+        -webkit-mask: url(../img/quote-mark.png) no-repeat center/contain;
+        background-color: $colorMain;
+        width: 52px;
+        height: 41px;
+        position: relative;
+        display: block;
+        margin: 0 auto 41px;
+      }
+      &.bordered-mark:before {
+        content: "\e92a";
+        font-family: "icomoon";
+        font-size: 50px;
+        color: $colorMain;
+        position: relative;
+        display: block;
+        margin: 0 auto 41px;
+      }
+      .author-meta {
+        padding-top: 5px;
+        .author-name {
+          margin-bottom: -3px;
+          font-weight: 600;
+          color: $colorMain;
+        }
+      }
+    }
+  }
+}
+
+.ds .testimonials-slider2.owl-carousel .owl-nav > div {
+  background: transparent;
+  &:hover {
+    i {
+      color: $colorMain;
+    }
+  }
+}

@@ -1,0 +1,176 @@
+.pricing-plan {
+  text-align: center;
+  transition: .5s all;
+  padding: 38px 30px 40px;
+  @media (min-width: 1200px) {
+    padding: 48px 50px 50px;
+  }
+  &:hover {
+    box-shadow: $boxShadow;
+  }
+  .price-wrap {
+    font-size: 20px;
+    line-height: 0.7;
+    margin: 30px 0 28px;
+
+    &[class*='bg-'] {
+      padding: 30px 30px 10px;
+      margin-top: 50px;
+      margin-bottom: 0;
+    }
+    h6 {
+      margin: 0;
+      line-height: inherit;
+    }
+  }
+  [class*='bg-'] {
+    padding: 10px 30px 30px;
+    margin-left: -41px;
+    margin-right: -41px;
+  }
+  .plan-name {
+    &[class*='bg-'] {
+      padding-top: 30px;
+      margin-top: -40px;
+    }
+    h5 {
+      line-height: 1;
+    }
+  }
+
+  @media(min-width: 1200px) {
+    [class*='bg-'] {
+      margin-left: -61px;
+      margin-right: -61px;
+    }
+    .plan-name[class*='bg-'] {
+      margin-top: -57px;
+    }
+  }
+  .plan-features {
+    margin: 27px 0 0;
+    text-align: left;
+    @media (min-width: 992px) {
+      margin: 42px 0 0;
+      padding-left: 35px;
+    }
+    ul li {
+      padding: 10px 0;
+      position: relative;
+      &:first-child {
+        padding-top: 0;
+      }
+      &:last-child {
+        padding-bottom: 0;
+      }
+      &:before {
+        top: -2px;
+        padding-right: 7px;
+      }
+      &.enabled:before,
+      &.disabled:before {
+        font-family: 'FontAwesome';
+        content: "\f00d";
+      }
+      &.disabled:before {
+        content: "\f00c";
+      }
+    }
+  }
+
+   hr {
+     margin-top: 30px;
+     margin-bottom: 28px;
+     @media (min-width: 992px) {
+       margin-top: 48px;
+       margin-bottom: 46px;
+     }
+   }
+
+  &.plan-featured {
+    box-shadow: $boxShadow;
+    @media (min-width: 992px) {
+      padding-top: 63px;
+      padding-bottom: 57px;
+      transform: translateY(-26px);
+    }
+    @media (min-width: 1200px) {
+      padding-top: 78px;
+      padding-bottom: 72px;
+    }
+  }
+}
+
+.pricing-plan[class*='bg-'] {
+  .btn-maincolor:hover {
+    color: #fff;
+  }
+}
+
+.pricing-plan2 {
+  padding: 38px 30px 40px;
+  text-align: center;
+  transition: 1.5s all;
+  &:hover {
+    box-shadow: $boxShadow2;
+  }
+  @media (min-width: 992px) {
+    padding: 46px 50px 50px;
+  }
+  .plan-description {
+    margin-bottom: 32px;
+  }
+  .plan-features {
+    text-align: left;
+    ul {
+      list-style: none;
+      padding-left: 35px;
+      li {
+        padding: 6px 0;
+        position: relative;
+        &:before {
+          content: "\e91f";
+          font-family: 'icomoon';
+          font-size: 16px;
+          line-height: 0.5;
+          position: absolute;
+          top: 13px;
+          left: -26px;
+          padding-right: 0;
+          transform: rotate(-90deg);
+          color: $colorMain2;
+        }
+        &.disabled {
+          span {
+            opacity: 0.5;
+          }
+          &:before {
+            color: $darkgreyColor;
+          }
+        }
+        &.default:before {
+          display: none;
+        }
+      }
+    }
+  }
+  hr {
+    margin-top: 37px;
+    margin-bottom: 47px;
+  }
+  .price-wrap {
+    .plan-sign {
+      margin-right: -7px;
+    }
+  }
+  @media (min-width: 992px) {
+    &.plan-featured {
+      padding: 66px 50px 70px;
+      margin-top: -20px;
+      box-shadow: $boxShadow2;
+    }
+  }
+  &.cs hr {
+    border-color: rgba($lightColor, 0.5);
+  }
+}

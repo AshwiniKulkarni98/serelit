@@ -1,0 +1,115 @@
+/* bootstrap collapse*/
+//unstyled
+
+.accordion {
+  &.with-bg {
+    padding: 50px;
+    background-color: $greyColor;
+  }
+}
+
+.card:first-child {
+  .card-header a {
+    padding-top: 0;
+    margin-top: -1px;
+  }
+}
+
+[data-toggle="collapse"] {
+  display: inline-block;
+  position: relative;
+  padding-right: 20px;
+  &:after {
+    position: absolute;
+    right: 0;
+    top: 30%;
+    margin-top: -2px;
+
+    font-size: 10px;
+    font-family: 'FontAwesome';
+    content: "\f078";
+  }
+  &.collapsed {
+    &:after {
+      content: "\f054";
+    }
+  }
+}
+
+//cards as tabs
+[role="tablist"] {
+  .card {
+    border-radius: 0;
+    border: none;
+    background: none;
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .card-header {
+    padding: 0;
+    background: none;
+    border: none;
+    a {
+      font-size: 20px;
+      color: $darkgreyColor;
+      display: block;
+      position: relative;
+      padding: 15px 70px 15px 0;
+      border-bottom: 2px solid $borderColor;
+      &:after {
+        content: '\f107';
+        font-family: 'FontAwesome';
+        width: auto;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        bottom: auto;
+        transition:all .3s ease-in-out;
+        font-size: 16px;
+        font-weight: 900;
+        color: $colorMain;
+        line-height: 30px;
+        margin-top: -21px;
+        vertical-align: top;
+        transform: rotate(180deg);
+      }
+
+      &:hover {
+        &:before,
+        &:after {
+          //opacity: 0.9;
+        }
+      }
+      &.collapsed {
+        opacity: 0.8;
+        border-width: 1px;
+        &:hover {
+          opacity: 1;
+          color: $colorMain;
+        }
+        i {
+          color: $colorMain;
+        }
+        &:after {
+          transform: rotate(0deg);
+          content: '\f107';
+        }
+
+      }
+    }
+  }
+  .card-body {
+    padding: 13px 0;
+  }
+  .media img {
+    max-width: 80px;
+  }
+}
+
+[role="tablist"] {
+  .tab-side + .tab-side {
+    margin-top: 15px;
+  }
+}

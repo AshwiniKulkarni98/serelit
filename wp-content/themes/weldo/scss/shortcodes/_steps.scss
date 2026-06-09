@@ -1,0 +1,225 @@
+/*
+** Steps
+*/
+
+.steps,
+.steps-alt {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .step {
+    .step-image {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media (min-width: 768px) {
+        height: 200px;
+      }
+      img {
+        max-width: 140px;
+        border-radius: 50%;
+      }
+    }
+    h4 {
+      margin-top: 28px;
+    }
+    &:nth-child(2) .step-image img {
+      max-width: 170px;
+    }
+    &:nth-child(3) .step-image {
+      img {
+        max-width: 200px;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .step + .step {
+      margin-top: 46px;
+    }
+  }
+  &.step-bg {
+    padding-top: 60px;
+    padding-bottom: 55px;
+    @media (min-width: 992px) {
+     padding: 59px 60px 65px 30px;
+    }
+  }
+}
+
+.steps {
+    .step {
+      @media (min-width: 768px) {
+        width: 31.7%;
+      }
+      @media (min-width: 1200px) {
+        + .step .step-image:after {
+          content: '';
+          -webkit-mask: url(../img/step_arrow_1.png);
+          background-color: $fontColor;
+          position: absolute;
+          width: 156px;
+          height: 26px;
+          display: inline-block;
+          left: -28%;
+          top: 38%;
+        }
+        &:nth-child(3) .step-image:after {
+          -webkit-mask: url(../img/step_arrow_2.png);
+          background-color: $fontColor;
+          left: -28%;
+          top: 50%;
+        }
+      }
+    }
+  &.arrow-solid {
+    @media (min-width: 1200px) {
+      .step {
+          + .step .step-image:after {
+          content: '';
+          -webkit-mask: url(../img/step_arrow_3.png);
+          width: 172px;
+          height: 30px;
+          left: -27%;
+          top: 35%;
+        }
+        &:nth-child(3) .step-image:after {
+          -webkit-mask: url(../img/step_arrow_4.png);
+          left: -27%;
+          top: 50%;
+        }
+      }
+    }
+  }
+}
+
+.steps-alt {
+  z-index: 10;
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  @media (min-width: 992px) {
+    justify-content: space-between;
+  }
+  .step {
+    padding-left: 45px;
+    padding-right: 45px;
+    @media (min-width: 992px) {
+      width: 33.3%;
+    }
+    @media (max-width: 991px) {
+      + .step {
+        margin-top: 46px;
+      }
+    }
+    .step-image {
+      justify-content: flex-start;
+    }
+    p.step-title {
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.4em;
+      margin-bottom: 12px;
+    }
+  }
+}
+
+//step count
+.item-steps {
+  counter-reset: step;
+  .step-part {
+    position: relative;
+    display: inline-block;
+    line-height: 1;
+    z-index: 1;
+    &:before {
+      content: "0" counter(step);
+      font-family: 'Anton', sans-serif;
+      counter-increment: step;
+      font-size: 50px;
+      color: $lightColor;
+      display: block;
+      margin-bottom: 15px;
+      z-index: -1;
+      letter-spacing: 3px;
+      font-weight: 100;
+      transition: .5s all;
+    }
+  }
+}
+
+.ls.steps,
+.ls.steps-alt,
+.ls.step-bg {
+  .step-part:before {
+    color: $fontColor;
+  }
+  .step-title:after {
+    background-color: $fontColor !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .step-pattern {
+    background-image: url(../img/step-pattern.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.steps.item-steps .step-part:before {
+  font-size: 65px;
+  left: -20px;
+  position: absolute;
+  top: -22px;
+  opacity: 0.1;
+}
+
+@media (min-width: 768px) {
+  .steps.item-steps .step-part:hover:before {
+    opacity: 0.2;
+    left: -37px;
+  }
+}
+
+.steps2 {
+  .step {
+    &.step-padding {
+      padding: 76px 50px 63px;
+    }
+    .step-title {
+      position: relative;
+      line-height: 1.4;
+      font-size: 16px;
+      margin-bottom: 15px;
+      z-index: 1;
+      &:before {
+        font-size: 79px;
+        position: absolute;
+        top: -5px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        opacity: 0.05;
+      }
+      &:after {
+        background-color: $colorMain2;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    &.cs .step-title {
+      &:after {
+        background-color: $lightColor;
+      }
+      &:before {
+        opacity: 0.1;
+      }
+    }
+  }
+}

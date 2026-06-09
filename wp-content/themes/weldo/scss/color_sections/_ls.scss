@@ -1,0 +1,90 @@
+/*
+** Light Background Section - .ls
+*/
+.ls {
+  background-color: $lightColor;
+  color: $fontColor;
+  .testimonials-slider.owl-carousel .owl-nav > div i {
+    color: $darkgreyColor;
+  }
+}
+
+/*
+** Grey Background Section - light section, muted section - .ls.ms
+*/
+.ls.ms {
+  background-color: $greyColor;
+
+  .links-grey a {
+    color: var(--fontColorDarker7);
+  }
+
+  .hero-bg {
+    background-color: $lightColor;
+    hr {
+      background-color: $borderColor;
+    }
+  }
+
+  hr {
+    background-color: $lightColor;
+  }
+
+  //forms
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  input[type="password"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="number"],
+  textarea,
+  select,
+  .form-control {
+    background-color: $lightColor;
+  }
+
+  // .ls:not(.ms),
+  .hero-bg {
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    input[type="password"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="number"],
+    textarea,
+    select,
+    .form-control {
+      border-color: $borderColor;
+      background-color: $greyColor;
+    }
+  }
+  td,
+  th,
+  .bordered {
+    border-color: darken($borderColor, 5%);
+  }
+
+  .btn-secondary {
+    border-color: $lightColor;
+    &:hover {
+      border-color: var(--greyColorDarker6);
+      background-color: var(--greyColorDarker6);
+    }
+  }
+  .btn-grey {
+    background-color: $lightColor;
+    &:hover {
+      background-color: transparent;
+      border-color: $lightColor;
+    }
+  }
+   .btn-outline-grey {
+      border-color: $lightColor;
+      background-color: transparent;
+    &:hover {
+      background-color: $lightColor;
+    }
+  }
+}

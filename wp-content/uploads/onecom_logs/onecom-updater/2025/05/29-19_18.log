@@ -1,0 +1,69 @@
+info: Checking if ssh is active.
+info: Trying ssh connection
+info: Deleting cache before taking screenshots
+info: Detected error reporting::false and http status::200
+info: Checking if installation is valid
+info: Valid installation, proceeding with updates
+info: Installation is unlocked for update
+info: Initiating WP core update
+info: No updates for WP Core!
+info: WP core updates finished, proceeding with plugins' update
+info: Initiating plugin update
+info: Found update for plugins
+info: Deleting cache before taking screenshots
+info: Updated testUrlsCount to 6
+info: Testing urls ["https://www.serelit.de","https://www.serelit.de/registration/","https://www.serelit.de/product/automatic-electric-disappearing-ladders/","https://www.serelit.de/project/aenean-vulputate/","https://www.serelit.de/service/fenster-balkon-profile/","https://www.serelit.de/member/phebe-e-french/"]
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 139 seconds for job fae9b7e0-318e-48de-92c6-9ff29bd93af0
+info: Current capture status for job fae9b7e0-318e-48de-92c6-9ff29bd93af0: in_progress ETA: 69
+info: ETA:: 69 seconds for job fae9b7e0-318e-48de-92c6-9ff29bd93af0
+info: Current capture status for job fae9b7e0-318e-48de-92c6-9ff29bd93af0: success ETA: undefined
+info: Initiating backup of plugin imagify
+info: Backup ["/var/www/wp-content/uploads/onecom-updater/backup/plugins/imagify.zip"] verified.
+info: Initiating DB backup
+info: DB backed up
+info: plugin imagify backup complete
+info: Secured backups with .htaccess
+info: Updating plugin imagify
+info: Deleting cache before taking screenshots
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 139 seconds for job 3a4888ec-9d01-44dd-8cc6-c1a7b1b61d1f
+info: Current capture status for job 3a4888ec-9d01-44dd-8cc6-c1a7b1b61d1f: success ETA: undefined
+info: Calling bound compare, attempt::1
+info: Calling bound waitForCompareJob, attempt::1
+info: ETA:: 35 seconds for job 67c7bcdf-31db-41ab-8ba7-6b7154013619
+info: Current compare status for job 67c7bcdf-31db-41ab-8ba7-6b7154013619: success
+info: Initiating backup of plugin user-registration
+info: Backup ["/var/www/wp-content/uploads/onecom-updater/backup/plugins/user-registration.zip"] verified.
+info: DB backup was created earlier, skipping
+info: plugin user-registration backup complete
+info: Updating plugin user-registration
+info: Deleting cache before taking screenshots
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 139 seconds for job f170e235-536f-4312-8f1c-081c95869596
+info: Current capture status for job f170e235-536f-4312-8f1c-081c95869596: in_progress ETA: 69
+info: ETA:: 69 seconds for job f170e235-536f-4312-8f1c-081c95869596
+info: Current capture status for job f170e235-536f-4312-8f1c-081c95869596: success ETA: undefined
+info: Calling bound compare, attempt::1
+info: Calling bound waitForCompareJob, attempt::1
+info: ETA:: 35 seconds for job 54124e88-373b-4970-bef8-a29e02f6434c
+info: Current compare status for job 54124e88-373b-4970-bef8-a29e02f6434c: success
+info: Updating translations for all plugin.
+info: Translations updated for all plugin.
+info: Plugins update completed
+info: Initiating theme update
+info: None of the selected themes have pending update!
+info: Themes update completed
+info: Visual diff status Rollbacks:: false Diffs:: false
+info: Notifications enabled for all success status
+info: SSH already connected, exiting!
+info: Detected locale - de_DE
+info: Reading translation file /app/i18n/one.com/de_DE.json
+info: Message sent: 250 2.0.0 Ok: queued as a79952a4-3cc1-11f0-b735-9d0b146aa698 locale: de_DE
+info: SMTP call successful
+info: Uploading log
+info: Checking if ssh is active.
+info: Trying ssh connection

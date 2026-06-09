@@ -1,0 +1,21 @@
+/*.widget_slider*/
+
+.widget_slider {
+  h4:first-child {
+    font-weight: 900;
+    text-transform: none;
+    line-height: 1;
+    margin-top: -0.5em;
+    margin-bottom: 0.3em;
+    font-size: 16px;
+  }
+  .cat-links {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin-bottom: -4px;
+  }
+  .owl-carousel {
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,36 @@
+info: Checking if ssh is active.
+info: Trying ssh connection
+info: Switching native updates to disable
+info: Executing time constrained:: timeout -k 5m 5m wp option update auto_update_core_dev disabled --skip-packages --skip-plugins --skip=themes --raw --type=constant --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp option update auto_update_core_minor disabled --skip-packages --skip-plugins --skip=themes --raw --type=constant --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp option update auto_update_core_major disabled --skip-packages --skip-plugins --skip=themes --raw --type=constant --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp config set WP_AUTO_UPDATE_CORE false --skip-packages --skip-plugins --skip=themes --raw --type=constant --path=/var/www
+info: Deleting cache before taking screenshots
+info: Executing time constrained:: timeout -k 5m 5m wp config set WP_DISABLE_FATAL_ERROR_HANDLER true --path=/var/www
+info: Detected error reporting::false and http status::200
+info: Checking if installation is valid
+info: Executing time constrained:: timeout -k 5m 5m wp core is-installed --path=/var/www && echo $?
+info: Valid installation, proceeding with updates
+info: Initiating WP core update
+info: Executing time constrained:: timeout -k 5m 5m wp core version --path=/var/www
+info: minor version, skip visual testing
+info: Updating WP core.
+info: Initiating backup of wpCore 
+info: Initiating DB backup
+info: Executing time constrained:: timeout -k 5m 5m wp db export --path=/var/www --port=3306 --add-drop-table --tables=$(wp db tables --all-tables-with-prefix --format=csv --path=/var/www) /var/www/wp-content/uploads/onecom-updater/backup/db.sql
+info: DB backed up
+info: wpCore  backup complete
+info: Secured backups with .htaccess
+info: Executing time constrained:: timeout -k 5m 5m wp core version --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp core update --path=/var/www --version=6.6.1 --force
+info: Executing time constrained:: timeout -k 5m 5m wp core version --path=/var/www
+info: WP core updates finished, proceeding with plugins' update
+info: SSH already connected, exiting!
+info: Executing time constrained:: timeout -k 5m 5m wp eval 'echo get_locale();' --path=/var/www
+info: Detected locale - de_DE
+info: Reading translation file /app/i18n/one.com/de_DE.json
+info: Message sent: 250 2.0.0 Ok: queued as 590b7d8c-4a3d-11ef-b154-a3a229ab1dcb locale: de_DE
+info: SMTP call successful
+info: Uploading log
+info: Checking if ssh is active.
+info: Trying ssh connection

@@ -1,0 +1,158 @@
+/*
+** Special Heading
+*/
+.special-heading {
+  line-height: 1;
+  position: relative;
+  z-index: 5;
+  margin: 0 0 23px;
+  &.with-line,
+  .with-line {
+    &:after {
+      content: '';
+      position: relative;
+      margin-top: 23px;
+      width: 100px;
+      height: 1px;
+      display: block;
+      background-color: $colorMain;
+      @media (min-width: 768px) {
+        left: -23px;
+        margin-top: 17px;
+      }
+    }
+  }
+  .big-letter-spacing {
+    letter-spacing: 0.4em;
+    @media (min-width: 768px) {
+      letter-spacing: 0.5em;
+    }
+  }
+  .small-letter-spacing {
+    letter-spacing: 0.4em;
+  }
+  .heading-line-color2.with-line:after {
+    background-color: $colorMain2;
+  }
+  .heading-line-color.with-line:after {
+    background-color: $colorMain;
+  }
+  .big-lh {
+    line-height: 1.49;
+  }
+  .small-lh {
+    line-height: 0.7;
+  }
+}
+
+@media (min-width: 992px) {
+  h3.big.special-heading {
+    margin-top: -2px;
+  }
+}
+
+.text-center {
+  &.with-line,
+  .with-line {
+    &:after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &.text-md-left,
+  .text-md-left {
+    &.with-line,
+    .with-line {
+      &:after {
+        left: 0;
+        transform: none;
+      }
+    }
+    @media (max-width: 767px) {
+      .with-line {
+        &:after {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+  &.text-lg-left,
+  .text-lg-left {
+    &.with-line,
+    .with-line {
+      &:after {
+        left: -23px;
+        transform: none;
+      }
+    }
+    @media (max-width: 991px) {
+      &.with-line,
+      .with-line {
+        &:after {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+  &.text-xl-left,
+  .text-xl-left {
+    &.with-line,
+    .with-line {
+      &:after {
+        left: -23px;
+        transform: none;
+      }
+    }
+    @media (max-width: 1199px) {
+      &.with-line,
+      .with-line {
+        &:after {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+}
+
+.cs .with-line:after {
+  background-color: $lightColor;
+}
+
+.subheading {
+  font-weight: 700;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  @media (min-width: 768px) {
+    letter-spacing: 0.5em;
+  }
+}
+
+
+@media (min-width: 992px) {
+  h3.big {
+    font-size: 3.75rem;
+  }
+
+  h4.big {
+    font-size: 3.125rem
+  }
+
+  h5.big {
+    font-size: 2.5rem;
+  }
+
+  h6.big {
+    font-size: 1.875rem;
+  }
+}
+
+.anton-font {
+  font-family: 'Anton', sans-serif;
+}
+
+.roboto-fon {
+  font-family: 'Roboto', sans-serif;
+}

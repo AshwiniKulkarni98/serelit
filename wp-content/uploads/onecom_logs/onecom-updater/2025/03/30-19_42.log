@@ -1,0 +1,67 @@
+info: Checking if ssh is active.
+info: Trying ssh connection
+info: Deleting cache before taking screenshots
+info: Detected error reporting::false and http status::200
+info: Checking if installation is valid
+info: Valid installation, proceeding with updates
+info: Installation is unlocked for update
+info: Initiating WP core update
+info: No updates for WP Core!
+info: WP core updates finished, proceeding with plugins' update
+info: Initiating plugin update
+info: Found update for plugins
+info: Deleting cache before taking screenshots
+info: Updated testUrlsCount to 6
+info: Testing urls ["https://www.serelit.de","https://www.serelit.de/registration/","https://www.serelit.de/product/automatic-electric-disappearing-ladders/","https://www.serelit.de/project/aenean-vulputate/","https://www.serelit.de/service/fenster-balkon-profile/","https://www.serelit.de/member/phebe-e-french/"]
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 139 seconds for job c5b39e85-d8ca-4212-83ab-cb5b93206354
+info: Current capture status for job c5b39e85-d8ca-4212-83ab-cb5b93206354: in_progress ETA: 69
+info: ETA:: 69 seconds for job c5b39e85-d8ca-4212-83ab-cb5b93206354
+info: Current capture status for job c5b39e85-d8ca-4212-83ab-cb5b93206354: in_progress ETA: 69
+info: ETA:: 69 seconds for job c5b39e85-d8ca-4212-83ab-cb5b93206354
+info: Current capture status for job c5b39e85-d8ca-4212-83ab-cb5b93206354: success ETA: undefined
+info: Initiating backup of plugin user-registration
+info: Backup ["/var/www/wp-content/uploads/onecom-updater/backup/plugins/user-registration.zip"] verified.
+info: Initiating DB backup
+info: DB backed up
+info: plugin user-registration backup complete
+info: Secured backups with .htaccess
+info: Updating plugin user-registration
+info: Deleting cache before taking screenshots
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 277 seconds for job 0355d210-8ef8-4441-b79f-c00e37d4aed1
+info: Current capture status for job 0355d210-8ef8-4441-b79f-c00e37d4aed1: in_progress ETA: 69
+info: ETA:: 69 seconds for job 0355d210-8ef8-4441-b79f-c00e37d4aed1
+info: Current capture status for job 0355d210-8ef8-4441-b79f-c00e37d4aed1: in_progress ETA: 69
+info: ETA:: 69 seconds for job 0355d210-8ef8-4441-b79f-c00e37d4aed1
+info: Current capture status for job 0355d210-8ef8-4441-b79f-c00e37d4aed1: in_progress ETA: 69
+info: ETA:: 69 seconds for job 0355d210-8ef8-4441-b79f-c00e37d4aed1
+info: Current capture status for job 0355d210-8ef8-4441-b79f-c00e37d4aed1: in_progress ETA: 69
+info: ETA:: 69 seconds for job 0355d210-8ef8-4441-b79f-c00e37d4aed1
+info: Current capture status for job 0355d210-8ef8-4441-b79f-c00e37d4aed1: in_progress ETA: 69
+info: ETA:: 69 seconds for job 0355d210-8ef8-4441-b79f-c00e37d4aed1
+info: Current capture status for job 0355d210-8ef8-4441-b79f-c00e37d4aed1: in_progress ETA: 69
+info: ETA:: 69 seconds for job 0355d210-8ef8-4441-b79f-c00e37d4aed1
+info: Current capture status for job 0355d210-8ef8-4441-b79f-c00e37d4aed1: success ETA: undefined
+info: Calling bound compare, attempt::1
+info: Calling bound waitForCompareJob, attempt::1
+info: ETA:: 75 seconds for job 72baf244-15f6-47a3-9365-109ae228b1e2
+info: Current compare status for job 72baf244-15f6-47a3-9365-109ae228b1e2: success
+info: Updating translations for all plugin.
+info: Translations updated for all plugin.
+info: Plugins update completed
+info: Initiating theme update
+info: None of the selected themes have pending update!
+info: Themes update completed
+info: Visual diff status Rollbacks:: false Diffs:: false
+info: Notifications enabled for all success status
+info: SSH already connected, exiting!
+info: Detected locale - de_DE
+info: Reading translation file /app/i18n/one.com/de_DE.json
+info: Message sent: 250 2.0.0 Ok: queued as 2f0095be-0d9f-11f0-908c-69efdaf54c39 locale: de_DE
+info: SMTP call successful
+info: Uploading log
+info: Checking if ssh is active.
+info: Trying ssh connection

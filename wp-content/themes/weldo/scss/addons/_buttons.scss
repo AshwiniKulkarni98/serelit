@@ -1,0 +1,310 @@
+/*
+** Buttons
+ */
+.btn {
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  border-width: 1px;
+  border-radius: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  padding: 17px 15px;
+  @media (min-width: 768px) {
+    letter-spacing: 0.3em;
+    padding: 17px 25px;
+  }
+  &.btn-big {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+   &.btn-small {
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+  } 
+  //for icons
+  &.round,
+  &.rounded {
+    padding: 23px;
+    line-height: 1;
+  }
+  + span {
+    margin: 0 21px 0 25px; 
+  }
+  &.btn-wide {
+    min-width: 220px;
+  }
+  + .btn {
+    margin-left: 17px;
+  }
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn.focus,
+.btn:focus {
+  box-shadow: 0 0 3px 0 rgba(100, 100, 100, .75) !important;
+}
+
+.btn-secondary {
+  border-color: $borderColor;
+  color: $darkColor;
+}
+
+/*color background buttons*/
+.btn-maincolor {
+  color: $darkColor;
+  background-color: $colorMain;
+  border-color: $colorMain;
+  &:hover {
+    color: $lightColor;
+    background-color: $darkColor;
+    border-color: $darkColor;
+  }
+}
+.btn-maincolor2 {
+  color: $lightColor;
+  background-color: $colorMain2;
+  border-color: $colorMain2;
+  &:hover {
+    background-color: transparent;
+    color: $darkColor;
+  }
+}
+
+.btn-dark {
+  color: $lightColor;
+  background-color: $darkColor;
+  border-color: $darkColor;
+  &:hover {
+    color: $darkColor;
+    background-color: $colorMain;
+    border-color: $colorMain;
+  }
+}
+
+.btn-grey {
+  color: $fontColor;
+  background-color: $greyColor;
+  border-color: $greyColor;
+  &:hover {
+    color: $fontColor;
+    background-color: transparent;
+  }
+}
+
+/*color outline buttons*/
+.btn-outline-maincolor,
+.btn-outline-dark {
+  background-color: transparent;
+  &:hover {
+    color: $darkColor;
+    background-color: transparent;
+  }
+}
+
+.btn-outline-maincolor {
+  border-color: $colorMain;
+  &:hover {
+    border-color: $darkColor;
+  }
+}
+.btn-outline-maincolor2 {
+  border-color: $colorMain2;
+  &:hover {
+    background-color: $colorMain2;
+    color: $lightColor;
+  }
+}
+
+.btn-outline-dark {
+  border-color: $darkColor;
+  &:hover {
+    background-color: transparent;
+    border-color: $colorMain;
+  }
+}
+
+.btn.btn-outline-dark:not(:disabled):not(.disabled):active {
+  box-shadow: none;
+  background-color: transparent;
+  color: $darkColor;
+  border-color: $darkColor;
+}
+
+.btn-outline-grey {
+  border-color: $greyColor;
+  &:hover {
+    color: $fontColor;
+    background-color: $greyColor;
+  }
+}
+
+//dark section buttons
+.ds {
+  .btn-maincolor,
+  .btn-dark {
+    color: $darkColor;
+  }
+
+  .btn-maincolor {
+    &:hover {
+      background-color: $lightColor;
+      border-color: $lightColor;
+    }
+  }
+
+  .btn-maincolor2:hover,
+  .btn-grey:hover {
+    color: $lightColor;
+  }
+
+  .btn-dark {
+    border-color: $lightColor;
+    background-color: $lightColor;
+    &:hover {
+      background-color: $colorMain;
+      border-color: $colorMain;
+    }
+  }
+
+  .btn-outline-maincolor,
+  .btn-outline-maincolor2,
+  .btn-outline-grey,
+  .btn-outline-dark {
+    color: $lightColor;
+  }
+  .btn-outline-maincolor {
+    &:hover {
+      border-color: $lightColor;
+    }
+  }
+  .btn-outline-dark {
+    border-color: $lightColor;
+    &:hover {
+      border-color: $colorMain;
+    }
+  }
+  .btn-outline-grey:hover {
+    color: $darkColor;
+  }
+}
+//color section buttons
+.cs:not(.cs2) {
+  .btn-maincolor {
+    background-color: $lightColor;
+    border-color: $lightColor;
+    &:hover {
+      color: $lightColor;
+      background-color: $darkColor;
+      border-color: $darkColor;
+    }
+  }
+  .btn-dark {
+    &:hover {
+      background-color: $lightColor;
+      border-color: $lightColor;
+    }
+  }
+
+  .btn-outline-maincolor {
+    color: $darkColor;
+    border-color: $lightColor;
+    &:hover {
+      border-color: $darkColor;
+    }
+  }
+  .btn-outline-dark {
+    &:hover {
+      border-color: $lightColor;
+    }
+  }
+  .btn-warning {
+    background-color: $lightColor;
+    border-color: $lightColor;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+  .btn-outline-warning {
+    color: $darkColor;
+    border-color: $lightColor;
+    &:hover {
+      background-color: $lightColor;
+    }
+  }
+}
+
+.cs.cs2 {
+  .btn-maincolor2 {
+    color: $darkColor;
+    background-color: $lightColor;
+    border-color: $lightColor;
+    &:hover {
+      background-color: transparent;
+      color: $lightColor;
+    }
+  }
+  .btn-outline-maincolor2 {
+    color: $lightColor;
+    border-color: $lightColor;
+    &:hover {
+      color: $darkColor;
+      background-color: $lightColor;
+    }
+  }
+}
+
+.shortcode-buttons {
+  .btn {
+    margin-right: 15px;
+    @media (max-width: 1199px) {
+      margin-bottom: 18px;
+    }
+  }
+}
+
+.btn-link {
+  font-size: 16px;
+  letter-spacing: 0;
+  color: $colorMain;
+  &:hover {
+    color: $darkColor;
+    text-decoration: none;
+  }
+}
+
+.btn-link2 {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: $darkgreyColor;
+  &:hover {
+    color: $colorMain;
+    letter-spacing: 0.35em;
+  }
+}
+
+.wp-block-button {
+  margin-bottom: 10px;
+  .wp-block-button__link {
+    border: 2px solid $colorMain;
+    background-color: $colorMain;
+    color: $darkgreyColor !important;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+  &.is-style-outline .wp-block-button__link {
+    &:hover {
+      background-color: $colorMain;
+    }
+  }
+  &.is-style-squared .wp-block-button__link {
+    border-radius: 0;
+  }
+}

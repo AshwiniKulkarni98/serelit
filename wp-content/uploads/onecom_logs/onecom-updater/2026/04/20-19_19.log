@@ -1,0 +1,76 @@
+info: Checking if ssh is active.
+info: Trying ssh connection
+info: Deleting cache before taking screenshots
+info: Probably invalid command - timeout -k 5m 5m /usr/local/bin/wp-cache-flush
+info: Detected error reporting::false and http status::200
+info: Checking if installation is valid
+info: Valid installation, proceeding with updates
+info: No running native updates
+info: Installation is unlocked for update
+info: Initiating WP core update
+info: No updates for WP Core!
+info: WP core updates finished, proceeding with plugins' update
+info: Initiating plugin update
+info: Premium care dependencies - version:5.1.4 status:active
+info: Found update for plugins
+info: Deleting cache before taking screenshots
+info: Probably invalid command - timeout -k 5m 5m /usr/local/bin/wp-cache-flush
+info: Updated testUrlsCount to 6
+info: Testing urls ["https://www.serelit.de","https://www.serelit.de/fliegengittersysteme/","https://www.serelit.de/product/automatic-electric-disappearing-ladders/","https://www.serelit.de/project/fliegengittersysteme/","https://www.serelit.de/service/fenster-balkon-profile/","https://www.serelit.de/member/phebe-e-french/"]
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 139 seconds for job fee5114f-29e5-4340-ab67-7c92d38aa628
+info: Current capture status for job fee5114f-29e5-4340-ab67-7c92d38aa628: success ETA: undefined
+info: Initiating backup of plugin complianz-gdpr
+info: Backup ["/var/www/wp-content/uploads/onecom-updater/backup/plugins/complianz-gdpr.zip"] verified.
+info: Initiating DB backup
+info: DB backed up
+info: plugin complianz-gdpr backup complete
+info: Secured backups with .htaccess
+info: Updating plugin complianz-gdpr
+info: Deleting cache before taking screenshots
+info: Probably invalid command - timeout -k 5m 5m /usr/local/bin/wp-cache-flush
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 139 seconds for job 645017c2-b626-4e85-b2eb-e29274a40925
+info: Current capture status for job 645017c2-b626-4e85-b2eb-e29274a40925: success ETA: undefined
+info: Calling bound compare, attempt::1
+info: Calling bound waitForCompareJob, attempt::1
+info: ETA:: 8 seconds for job 3d6a788c-0261-4bf2-bd01-f1bc71d67af0
+info: Current compare status for job 3d6a788c-0261-4bf2-bd01-f1bc71d67af0: in_progress
+info: ETA:: 4 seconds for job 3d6a788c-0261-4bf2-bd01-f1bc71d67af0
+info: Current compare status for job 3d6a788c-0261-4bf2-bd01-f1bc71d67af0: success
+info: Initiating backup of plugin mailchimp-for-wp
+info: Backup ["/var/www/wp-content/uploads/onecom-updater/backup/plugins/mailchimp-for-wp.zip"] verified.
+info: DB backup was created earlier, skipping
+info: plugin mailchimp-for-wp backup complete
+info: Updating plugin mailchimp-for-wp
+info: Deleting cache before taking screenshots
+info: Probably invalid command - timeout -k 5m 5m /usr/local/bin/wp-cache-flush
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 139 seconds for job 047f5117-f865-427e-b4c1-abdf1aaa838b
+info: Current capture status for job 047f5117-f865-427e-b4c1-abdf1aaa838b: success ETA: undefined
+info: Calling bound compare, attempt::1
+info: Calling bound waitForCompareJob, attempt::1
+info: ETA:: 8 seconds for job 024e4c05-9b81-4400-aa05-052748dce9f1
+info: Current compare status for job 024e4c05-9b81-4400-aa05-052748dce9f1: in_progress
+info: ETA:: 4 seconds for job 024e4c05-9b81-4400-aa05-052748dce9f1
+info: Current compare status for job 024e4c05-9b81-4400-aa05-052748dce9f1: success
+info: Updating translations for all plugin.
+info: Translations updated for all plugin.
+info: Plugins update completed
+info: Initiating theme update
+info: None of the selected themes have pending update!
+info: Themes update completed
+info: Notifications enabled for all success status
+info: Visual diff status Rollbacks:: false Diffs:: false
+info: SSH already connected, exiting!
+info: Detected locale - de_DE
+info: Reading translation file /app/i18n/one.com/de_DE.json
+info: Message sent: 250 2.0.0 Ok: queued as d3bbe266-3ced-11f1-be4f-a15b02d070c0 locale: de_DE
+info: Closed email transport
+info: SMTP call successful
+info: Uploading log
+info: Checking if ssh is active.
+info: Trying ssh connection

@@ -1,0 +1,344 @@
+/* forms */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select,
+.form-control {
+  height: 60px;
+  background-color: transparent;
+  background-clip: border-box;
+  border-radius: 0;
+  color: $fontColor;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 9px;
+  font-size: 16px;
+  font-weight: 300;
+  border: 1px solid var(--darkgreyColorRgba01);
+  width: 100%;
+}
+
+input[disabled] {
+  opacity: .4;
+  cursor: not-allowed;
+}
+
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+
+select.form-control:not([size]):not([multiple]) {
+  height: 60px;
+}
+
+input[type="submit"]:not(.btn),
+button:not(.btn) {
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 0.3em;
+  border: 1px solid $colorMain;
+  text-transform: uppercase;
+  padding: 22px 25px;
+  border-radius: 0;
+  font-weight: 700;
+  line-height: 1;
+  background-color: $colorMain;
+  color: $darkColor;
+  transition: all 0.2s ease-in-out;
+  .ds &:not([class]), .cs &:not([class]) {
+    background-color: $lightColor;
+    color: $darkColor;
+    border-color: $lightColor;
+    &:hover {
+      color: $lightColor;
+      background-color: transparent;
+      border-color: $lightColor;
+    }
+  }
+  &:hover {
+    color: $lightColor;
+    background-color: $darkColor;
+    border-color: $darkColor;
+  }
+}
+
+textarea,
+textarea.form-control {
+  padding-top: 18px;
+  height: auto;
+  padding-bottom: 14px;
+  &.small {
+    padding-top: 16px;
+  }
+}
+
+.form-group {
+  position: relative;
+
+  [class*='col-'] > & {
+    margin-bottom: 0;
+  }
+
+  [class*='col-'] > & + & {
+    margin-top: 10px;
+  }
+}
+
+.has-placeholder {
+  label {
+    display: none;
+  }
+}
+
+/* select styling */
+select[multiple] {
+  height: auto;
+}
+
+select option,
+.form-control option {
+  color: $darkgreyColor;
+  background-color: $lightColor;
+  font-weight: 300;
+}
+
+.form-control-unstyled {
+  border: none;
+  background-color: transparent;
+}
+
+.form-control:focus {
+  border-color: var(--darkgreyColorRgba019);
+  box-shadow: none;
+}
+
+.form-control.invalid {
+  border-color: $colorDanger;
+}
+
+.form-control:-moz-placeholder {
+  color: $fontColor;
+  opacity: 1;
+}
+
+.form-control::-moz-placeholder {
+  color: $fontColor;
+  opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+  color: $fontColor;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: $fontColor;
+}
+
+.form-control:focus:-moz-placeholder {
+  color: transparent;
+}
+
+.form-control:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.form-control:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-control:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+/*icons for forms */
+form label + [class*="fa-"],
+form label + [class^="ico-"] {
+  position: absolute;
+  font-size: 14px;
+  left: 27px;
+  top: 24px;
+  width: 1em;
+  text-align: center;
+}
+
+
+form label + [class*="fa-"] + .form-control,
+form label + [class*="ico-"] + .form-control {
+  padding-left: 46px;
+}
+
+label {
+  font-weight: 400;
+  .checkbox &,
+  .radio & {
+    font-weight: inherit;
+  }
+
+  .checkbox &[for],
+  .radio &[for] {
+    font-weight: inherit;
+  }
+}
+
+.checkbox,
+.radio {
+  label[for] + input[type=checkbox],
+  label[for] + input[type=radio] {
+    left: 20px;
+  }
+}
+
+input[type=checkbox],
+input[type=radio] {
+  margin-top: 8px;
+}
+
+//for wordpress widgets wrapper
+.form-wrapper {
+  &.hero-bg,
+  &.muted-bg,
+  &.cs,
+  &.ds,
+  &.ls {
+    padding: 35px;
+  }
+}
+
+//styled checkboxes and radio
+.has-error .form-control {
+  border-color: $colorMain;
+}
+
+.has-error label,
+.has-error .help-block {
+  color: $colorMain;
+}
+
+/*styled checkbox */
+.checkbox {
+  input[type="checkbox"] {
+    display: none;
+  }
+  label + input[type="checkbox"],
+  label > input[type="checkbox"] {
+    display: inline-block;
+  }
+}
+
+input[type="checkbox"] + label {
+  padding-left: 0;
+}
+
+input[type="checkbox"] + label > a {
+  color: $darkgreyColor;
+}
+
+input[type="checkbox"] + label:before {
+  content: "";
+  font-family: "FontAwesome";
+  display: inline-block;
+  vertical-align: middle;
+  margin: 1px 10px 4px 0;
+  text-align: center;
+  width: 16px;
+  height: 16px;
+  line-height: 14px;
+  font-size: 12px;
+  border: 1px solid $borderColor;
+}
+
+input[type="checkbox"]:checked + label:before {
+  content: "\f00c";
+  color: $darkgreyColor;
+}
+
+input[type="checkbox"]:disabled + label:before {
+  background-color: $borderColor;
+}
+
+/*styled radio*/
+.radio {
+  input[type="radio"] {
+    display: none;
+  }
+  label + input[type="radio"],
+  label > input[type="radio"] {
+    display: inline-block;
+  }
+}
+
+input[type="radio"] + label {
+  padding-left: 0;
+}
+
+input[type="radio"] + label > a {
+  color: #999999;
+}
+
+input[type="radio"] + label:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-bottom: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid $borderColor;
+}
+
+input[type="radio"]:checked + label:before {
+  padding: 3px;
+  background-color: $darkgreyColor;
+  background-clip: content-box;
+}
+
+input[type="radio"]:disabled + label:before {
+  background-color: $borderColor;
+}
+
+.select_container {
+  position: relative;
+}
+
+.select_container:before {
+  color: $colorMain;
+  content: "\f107";
+  font-family: "FontAwesome";
+  font-size: 16px;
+  position: absolute;
+  right: 21px;
+  top: 30%;
+  pointer-events: none;
+  font-weight: 600;
+}
+
+select {
+  padding-left: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.wp-block-categories.wp-block-categories-dropdown {
+  margin-bottom: 15px;
+}
+
+.form-error {
+  color: $colorDanger;
+}
+
+.form-error-message .fw-flash-messages {
+  margin-top: 20px;
+  color: $colorDanger;
+}
+
+select.form-control {
+  padding-right: 47px;
+}

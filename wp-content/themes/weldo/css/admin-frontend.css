@@ -1,0 +1,60 @@
+/* This CSS file loads only when admin top bar is displayed on frontend */
+.admin-bar .page_header.affix {
+    top: 32px;
+}
+
+.admin-bar .page_header_side_special {
+    top: 32px;
+}
+
+.admin-bar .toggle_menu_side:not(.toggle_menu_side_special) {
+    top: 50px;
+}
+
+.modal-open .page_header_wrapper,
+.modal-open .page_header.affix,
+.modal-open .modal#search_modal {
+    top: 32px;
+}
+
+@media (max-width: 1199px) {
+
+    .admin-bar .sf-menu,
+    .admin-bar .toggle_menu.mobile-active {
+        top: 35px;
+    }
+}
+
+@media (max-width: 782px) {
+    .admin-bar .page_header.affix {
+        top: 46px;
+    }
+
+    .modal-open .page_header_wrapper,
+    .modal-open .page_header.affix,
+    .modal-open .modal#search_modal {
+        top: 46px;
+    }
+}
+@media   (max-width: 600px) {
+    html, body {
+        position: static !important;
+    }
+
+    .admin-bar .page_header.affix {
+        top: 0;
+    }
+
+    .modal-open .page_header_wrapper,
+    .modal-open .page_header.affix,
+    .modal-open .modal#search_modal,
+    .page_header.mobile-active.affix .sf-menu,
+    .page_header.mobile-active.affix .toggle_menu.mobile-active {
+        top: 0;
+    }
+
+    .admin-bar .sf-menu,
+    .admin-bar .toggle_menu.mobile-active {
+        top: 46px;
+    }
+}

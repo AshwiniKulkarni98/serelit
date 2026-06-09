@@ -1,0 +1,18 @@
+info: Checking if ssh is active.
+info: Trying ssh connection
+info: Switching native updates to disable
+info: Deleting cache before taking screenshots
+info: Probably invalid command - timeout -k 5m 5m /usr/local/bin/wp-cache-flush
+info: Detected error reporting::false and http status::200
+info: WP Core version check output:: "6.8.3" :: false
+info: Updated WP version to 6.8.3
+info: Recorded data diff 1
+info: Checking if installation is valid
+info: Valid installation, proceeding with updates
+info: No running native updates
+info: Installation is unlocked for update
+info: Initiating WP core update
+info: Same version, exiting
+info: WP core updates finished, proceeding with plugins' update
+info: No updates, skipping email
+info: Uploading log

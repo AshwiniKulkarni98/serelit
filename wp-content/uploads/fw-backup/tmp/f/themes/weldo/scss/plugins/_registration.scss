@@ -1,0 +1,170 @@
+/* UserRegistration */
+
+.modal.login-form {
+  .modal-dialog {
+    margin: 1.75rem auto;
+    max-width: 820px;
+    @media (max-width: 820px) {
+      margin: 1.75rem 10px;
+    }
+    .modal-content {
+      border: 0;
+      flex-direction: row;
+      align-items: center;
+      .close {
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: -48px;
+        opacity: 1;
+        text-shadow: none;
+        font-size: 30px;
+        background-color: transparent;
+        padding: 0;
+        border: 0;
+        @media (min-width: 992px) {
+          right: -45px;
+          top: -48px;
+        }
+        &:hover {
+          background-color: transparent;
+          i {
+            color: $colorMain2;
+          }
+        }
+        &:active {
+          top: -48px !important;
+        }
+        i {
+          color: $colorMain;
+        }
+      }
+      .modal-body {
+        padding: 40px;
+        @media (min-width: 992px) {
+          padding: 50px 90px 50px 50px;
+        }
+      }
+      .modal-image {
+        max-width: 50%;
+      }
+    }
+  }
+}
+
+.logged-in {
+  .modal.login-form .modal-dialog {
+    max-width: 900px;
+    .modal-content .modal-body {
+      padding: 30px;
+      .modal-title {
+        display: none;
+      }
+    }
+  }
+}
+
+#user-registration.horizontal .user-registration-MyAccount-navigation ul {
+  justify-content: start;
+}
+
+#user-registration.user-registration {
+  margin: 0;
+  .ur-frontend-form.login {
+    padding: 0;
+    border: 0;
+    form.user-registration-form.login {
+      width: 100%;
+      .ur-form-grid {
+        padding: 0;
+      }
+      input.form-control {
+        border-width: 0 0 1px 0;
+        padding: 0;
+        height: auto;
+        margin-bottom: 33px;
+        min-height: 30px;
+      }
+      .form-row {
+        margin-left: 0;
+        margin-right: 0;
+      }
+      .user-registration-LostPassword.lost_password {
+        padding-top: 1px;
+        a {
+          text-decoration: underline;
+        }
+      }
+    }
+    .form-row.submit-row {
+      margin-top: 30px;
+      display: block;
+      text-align: center;
+      @media (min-width: 992px) {
+        margin-top: 57px;
+      }
+      input {
+        padding: 8px 20px;
+        margin-top: 0;
+        margin-bottom: 0;
+        float: none;
+      }
+    }
+  }
+  label.user-registration-form__label-for-checkbox {
+    margin-right: 30px;
+    input[type="checkbox"] {
+      display: none;
+      + span {
+        padding-left: 0;
+        &:before {
+          content: "";
+          font-family: "FontAwesome";
+          display: inline-block;
+          vertical-align: middle;
+          margin: 1px 10px 4px 0;
+          text-align: center;
+          padding-right: 0.1em;
+          width: 16px;
+          height: 16px;
+          line-height: 14px;
+          font-size: 12px;
+          border: 1px solid $borderColor;
+        }
+      }
+      &:checked + span:before {
+        content: "\f00c";
+        color: $darkgreyColor;
+      }
+      &:disabled + span:before {
+        background-color: $borderColor;
+      }
+    }
+  }
+  .form-control:-moz-placeholder {
+    color: $fontColor;
+    opacity: 1;
+  }
+
+  .form-control::-moz-placeholder {
+    color: $fontColor;
+    opacity: 1;
+  }
+
+  .form-control:-ms-input-placeholder {
+    color: $fontColor;
+  }
+
+  .form-control::-webkit-input-placeholder {
+    color: $fontColor;
+  }
+}
+
+.user-registration-error {
+  &:before {
+    display: none;
+  }
+  strong {
+    margin-right: 6px;
+  }
+}

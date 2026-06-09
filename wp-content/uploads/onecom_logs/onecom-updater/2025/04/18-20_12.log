@@ -1,0 +1,55 @@
+info: Checking if ssh is active.
+info: Trying ssh connection
+info: Deleting cache before taking screenshots
+info: Detected error reporting::false and http status::200
+info: Checking if installation is valid
+info: Valid installation, proceeding with updates
+info: Installation is unlocked for update
+info: Initiating WP core update
+info: Deleting cache before taking screenshots
+info: Updated testUrlsCount to 6
+info: Testing urls ["https://www.serelit.de","https://www.serelit.de/registration/","https://www.serelit.de/product/automatic-electric-disappearing-ladders/","https://www.serelit.de/project/aenean-vulputate/","https://www.serelit.de/service/fenster-balkon-profile/","https://www.serelit.de/member/phebe-e-french/"]
+info: Calling bound captureBatch, attempt::1
+info: Calling bound captureBatch failed, retrying, attempt::1 with delay 10000
+info: Calling bound captureBatch, attempt::2
+info: Calling bound captureBatch failed, retrying, attempt::2 with delay 10000
+info: Calling bound captureBatch, attempt::3
+error: All attempts to call bound captureBatch failed, throwing raised exception
+error: WP Core updates failed due to:: AxiosError: Request failed with status code 504
+info: WP core updates finished, proceeding with plugins' update
+info: Initiating plugin update
+info: Found update for plugins
+info: Deleting cache before taking screenshots
+info: Updated testUrlsCount to 6
+info: Testing urls ["https://www.serelit.de","https://www.serelit.de/registration/","https://www.serelit.de/product/automatic-electric-disappearing-ladders/","https://www.serelit.de/project/aenean-vulputate/","https://www.serelit.de/service/fenster-balkon-profile/","https://www.serelit.de/member/phebe-e-french/"]
+info: Calling bound captureBatch, attempt::1
+info: Calling bound captureBatch failed, retrying, attempt::1 with delay 10000
+info: Calling bound captureBatch, attempt::2
+info: Calling bound captureBatch failed, retrying, attempt::2 with delay 10000
+info: Calling bound captureBatch, attempt::3
+error: All attempts to call bound captureBatch failed, throwing raised exception
+error: Error while updating plugin :: Request failed with status code 504
+info: Plugins update completed
+info: Initiating theme update
+info: Found update for themes
+info: Initiating backup of theme twentytwentyfive
+info: Backup ["/var/www/wp-content/uploads/onecom-updater/backup/themes/twentytwentyfive.zip"] verified.
+info: Initiating DB backup
+info: DB backed up
+info: theme twentytwentyfive backup complete
+info: Secured backups with .htaccess
+info: Updating theme twentytwentyfive
+info: theme is inactive, skipping visual testing
+info: Updating translations for all theme.
+info: Translations updated for all theme.
+info: Themes update completed
+info: Visual diff status Rollbacks:: false Diffs:: false
+info: Notifications enabled for all success status
+info: SSH already connected, exiting!
+info: Detected locale - de_DE
+info: Reading translation file /app/i18n/one.com/de_DE.json
+info: Message sent: 250 2.0.0 Ok: queued as 7382c019-1c91-11f0-8b9f-9d0b146aa698 locale: de_DE
+info: SMTP call successful
+info: Uploading log
+info: Checking if ssh is active.
+info: Trying ssh connection

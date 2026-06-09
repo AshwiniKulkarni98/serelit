@@ -1,0 +1,8 @@
+info: Checking if ssh is active.
+info: Trying ssh connection
+info: Deleting cache before taking screenshots
+info: Probably invalid command - timeout -k 5m 5m /usr/local/bin/wp-cache-flush
+info: Detected error reporting::false and http status::200
+error: Exiting due to :: TypeError: Cannot read properties of null (reading 'meta')
+info: No updates, skipping email
+info: Uploading log

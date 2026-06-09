@@ -1,0 +1,93 @@
+info: Checking if ssh is active.
+info: Trying ssh connection
+info: Deleting cache before taking screenshots
+info: Probably invalid command - timeout -k 5m 5m /usr/local/bin/wp-cache-flush
+info: Detected error reporting::false and http status::200
+info: Checking if installation is valid
+info: Valid installation, proceeding with updates
+info: No running native updates
+info: Installation is unlocked for update
+info: Initiating WP core update
+info: No updates for WP Core!
+info: WP core updates finished, proceeding with plugins' update
+info: Initiating plugin update
+info: Premium care dependencies - version:4.7.1 status:active
+info: Found update for plugins
+info: Deleting cache before taking screenshots
+info: Probably invalid command - timeout -k 5m 5m /usr/local/bin/wp-cache-flush
+info: Updated testUrlsCount to 6
+info: Testing urls ["https://www.serelit.de","https://www.serelit.de/registration/","https://www.serelit.de/product/automatic-electric-disappearing-ladders/","https://www.serelit.de/project/aenean-vulputate/","https://www.serelit.de/service/fenster-balkon-profile/","https://www.serelit.de/member/phebe-e-french/"]
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 119 seconds for job a731b5da-11ff-43a0-9f57-1c84a62ef6f9
+info: Current capture status for job a731b5da-11ff-43a0-9f57-1c84a62ef6f9: in_progress ETA: 59
+info: ETA:: 59 seconds for job a731b5da-11ff-43a0-9f57-1c84a62ef6f9
+info: Current capture status for job a731b5da-11ff-43a0-9f57-1c84a62ef6f9: success ETA: undefined
+info: Initiating backup of plugin really-simple-ssl
+info: Backup ["/var/www/wp-content/uploads/onecom-updater/backup/plugins/really-simple-ssl.zip"] verified.
+info: Initiating DB backup
+info: DB backed up
+info: plugin really-simple-ssl backup complete
+info: Secured backups with .htaccess
+info: Updating plugin really-simple-ssl
+info: Deleting cache before taking screenshots
+info: Probably invalid command - timeout -k 5m 5m /usr/local/bin/wp-cache-flush
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 119 seconds for job 2322601f-5ff9-40bb-a326-892541c51d5a
+info: Current capture status for job 2322601f-5ff9-40bb-a326-892541c51d5a: in_progress ETA: 59
+info: ETA:: 59 seconds for job 2322601f-5ff9-40bb-a326-892541c51d5a
+info: Current capture status for job 2322601f-5ff9-40bb-a326-892541c51d5a: success ETA: undefined
+info: Calling bound compare, attempt::1
+info: Calling bound waitForCompareJob, attempt::1
+info: ETA:: 55 seconds for job 1ad07318-a1cb-4dc6-9430-f153dba9422a
+info: Current compare status for job 1ad07318-a1cb-4dc6-9430-f153dba9422a: success
+info: Initiating backup of plugin user-registration
+info: Backup ["/var/www/wp-content/uploads/onecom-updater/backup/plugins/user-registration.zip"] verified.
+info: DB backup was created earlier, skipping
+info: plugin user-registration backup complete
+info: Updating plugin user-registration
+info: Deleting cache before taking screenshots
+info: Probably invalid command - timeout -k 5m 5m /usr/local/bin/wp-cache-flush
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 119 seconds for job 5f7ba135-ae77-4447-a6c3-99c26cefbc97
+info: Current capture status for job 5f7ba135-ae77-4447-a6c3-99c26cefbc97: in_progress ETA: 59
+info: ETA:: 59 seconds for job 5f7ba135-ae77-4447-a6c3-99c26cefbc97
+info: Current capture status for job 5f7ba135-ae77-4447-a6c3-99c26cefbc97: success ETA: undefined
+info: Calling bound compare, attempt::1
+info: Calling bound waitForCompareJob, attempt::1
+info: ETA:: 55 seconds for job a42133ed-ccfe-4f78-92bf-598f52f2ece7
+info: Current compare status for job a42133ed-ccfe-4f78-92bf-598f52f2ece7: success
+info: Restoring plugin user-registration from backup
+info: Restore command status:: true
+info: plugin user-registration restored from backup
+info: Deleting cache before taking screenshots
+info: Probably invalid command - timeout -k 5m 5m /usr/local/bin/wp-cache-flush
+info: Detected error reporting::false and http status::200
+info: Initiating backup of plugin wp-social
+info: Backup ["/var/www/wp-content/uploads/onecom-updater/backup/plugins/wp-social.zip"] verified.
+info: DB backup was created earlier, skipping
+info: plugin wp-social backup complete
+info: Updating plugin wp-social
+info: Deleting cache before taking screenshots
+info: Probably invalid command - timeout -k 5m 5m /usr/local/bin/wp-cache-flush
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 119 seconds for job 8ff71e15-cb28-47a9-8732-face47ecc1cb
+info: Current capture status for job 8ff71e15-cb28-47a9-8732-face47ecc1cb: in_progress ETA: 59
+info: ETA:: 59 seconds for job 8ff71e15-cb28-47a9-8732-face47ecc1cb
+info: Current capture status for job 8ff71e15-cb28-47a9-8732-face47ecc1cb: success ETA: undefined
+info: Calling bound compare, attempt::1
+info: Calling bound waitForCompareJob, attempt::1
+info: ETA:: 55 seconds for job 7c693c65-48d2-4726-98ac-5b173c7abf12
+info: Current compare status for job 7c693c65-48d2-4726-98ac-5b173c7abf12: success
+info: Updating translations for all plugin.
+info: Translations updated for all plugin.
+info: Plugins update completed
+info: Initiating theme update
+info: None of the selected themes have pending update!
+info: Themes update completed
+info: Notifications enabled for all success status
+info: Repeated update with no new info, skipping email
+info: Uploading log

@@ -1,0 +1,383 @@
+/*
+** Custom Classes
+*/
+
+.cover-image .opacity-0 {
+ opacity: 0.2;
+  @media (min-width: 992px) {
+    opacity: 0 !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .column-reverse {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .row-md-reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: 1400px) {
+  .offset-big {
+    margin-left: 148px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .ml-n-40 {
+    margin-left: -40px;
+  }
+}
+
+.mt-n-1 {
+  margin-top: -3px;
+}
+
+.z-index-1003 {
+ z-index: 1003;
+}
+
+@media (min-width: 992px) {
+  .c-pr-25 .p-50 {
+    padding-right: 25px;
+  }
+
+  .c-pl-25 .p-50 {
+    padding-left: 25px;
+  }
+}
+
+.align-md-center {
+  @media (min-width: 768px) and (max-width: 991px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.z-index-3 {
+  z-index: 3;
+}
+
+#fw-buttons {
+  @media (max-width: 1199px) {
+    .btn {
+      margin-top: 5px;
+      margin-left: 5px;
+    }
+  }
+}
+
+.p-lg-none {
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .px-50 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .lh-big {
+    h6 {
+      line-height: 1.3;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.logo-items {
+  text-align: center;
+  .owl-stage {
+    display: flex;
+    align-items: center;
+  }
+  .owl-item {
+    img {
+      opacity: 0.4;
+      transition: 0.3s ease-in-out;
+    }
+    &:hover {
+      img {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.mailchimp-form.icon-v2 button {
+  font-size: 16px;
+  &:before {
+    display: none;
+  }
+}
+
+.ds .mailchimp-form.icon-v2  button {
+  font-size: 16px;
+  color: $colorMain;
+  &:hover {
+    background-color: transparent !important;
+    color: $lightColor;
+  }
+  i.color-main2 {
+    color: $colorMain2;
+    &:hover {
+      color: $lightColor;
+    }
+  }
+}
+
+.service-item.service-style2 {
+  @media (min-width: 992px) {
+    h4.big {
+      font-size: 60px;
+    }
+  }
+  .special-heading.with-line:after {
+    background-color: $colorMain2;
+  }
+}
+
+.icons_list2 .widget_icons_list ul li {
+  padding-bottom: 16px;
+  .icon-styled {
+    margin-right: 11px;
+    position: relative;
+    top: 3px;
+    i.fs-14 {
+      font-size: 20px;
+    }
+  }
+  a {
+    color: $lightColor;
+    &:hover {
+      color: $colorMain;
+    }
+  }
+}
+//has-hover
+.icon-box.icon-box-shapes {
+  padding: 46px 40px 38px;
+  transition: 0.15s ease-in-out;
+  .icon-styled + h6 {
+    margin-top: 26px;
+  }
+  &:hover {
+    color: $lightColor;
+    background-color: $colorMain;
+    h6 {
+      color: $lightColor;
+    }
+  }
+}
+
+.btn-mt-30 {
+  display: block;
+  margin-top: 30px;
+}
+
+.border-color-grey {
+  input.form-control,
+  textarea.form-control {
+    border-color: $borderColorGrey;
+  }
+}
+
+.s-overlay-darken.s-overlay.ds.ms:before {
+  opacity: 0.9;
+}
+
+.testimonials-slider.qoute-mark2 {
+  .quote-item .quote-image.bordered-mark:after {
+    color: $colorMain2;
+  }
+}
+
+.single-portfolio-item {
+  &.portfolio-style2 {
+    h4.mb-18 {
+      text-transform: capitalize;
+      @media (min-width: 1200px) {
+        margin-bottom: 33px;
+      }
+    }
+    .item-content {
+      @media (min-width: 768px) {
+        padding: 5px 50px;
+      }
+    }
+  }
+  &.hide-overlay {
+    .s-overlay:before {
+      opacity: 0;
+    }
+    .video-link {
+      &:after {
+        color: $colorMain2;
+      }
+      &:hover:after {
+        color: $colorMain;
+      }
+    }
+  }
+  &.cs {
+    h4 a {
+      color: $darkgreyColor;
+      &:hover {
+        color: $colorMain;
+      }
+    }
+  }
+}
+
+[role="tablist"].mark-color2 .card-header a:after {
+  color: $colorMain;
+}
+
+.mailchimp-with-text.small-button .mailchimp-form button.search-submit.btn.btn-dark {
+  padding: 9px 22px;
+  letter-spacing: 0;
+  &:hover {
+    i {
+      color: $darkgreyColor;
+    }
+  }
+}
+
+.enabled-color-main.pricing-plan2 .plan-features ul li.enabled:before {
+  color: $colorMain;
+}
+
+.form-wrapper.light-inputs {
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  input[type="password"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="number"],
+  textarea,
+  select,
+  .form-control {
+    background-color: $lightColor;
+    color: $darkgreyColor;
+  }
+  .form-control:-moz-placeholder {
+    color: $darkgreyColor;
+  }
+  .form-control::-moz-placeholder {
+    color: $darkgreyColor;
+  }
+  .form-control:-ms-input-placeholder {
+    color: $darkgreyColor;
+  }
+  .form-control::-webkit-input-placeholder {
+    color: $darkgreyColor;
+  }
+}
+
+.ds .form-wrapper.light-inputs input.btn-maincolor {
+  color: $lightColor;
+  &:hover {
+    color: $darkgreyColor;
+  }
+}
+
+ol.list-styled3.ol-light li:before {
+  color: $lightColor;
+}
+
+.icon-box.box-style2 {
+  padding: 46px 20px 43px 50px;
+  .icon-styled + h6 {
+    margin-top: 31px;
+    margin-bottom: 23px;
+  }
+}
+
+.btn-color-light.btn-maincolor {
+  color: $lightColor;
+}
+
+.read-more-color2 {
+  .vertical-item .item-content .read-more {
+    border-color: $colorMain2;
+    &:hover {
+      border-color: $darkgreyColor;
+    }
+  }
+}
+
+.icon-box.icon-box2 {
+  height: calc(100% - 30px);
+  padding-left: 55px;
+  padding-right: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .icon-styled + h6 {
+    margin-top: 23px;
+    margin-bottom: 27px;
+  }
+}
+
+.single-portfolio-item.has-dark-overlay {
+  .s-overlay.ds.ms:before,
+  .media-links:before {
+    background: $darkColor;
+    mix-blend-mode: screen;
+    opacity: 1;
+    transition: 0.3s all;
+  }
+  &:hover {
+    .s-overlay.ds.ms:before,
+    .media-links:before {
+      opacity: 0;
+    }
+  }
+}
+
+.icon-box.hide-icon .icon-styled {
+  display: none;
+}
+
+.open-hours {
+  i {
+    position: relative;
+    top: -3px;
+  }
+  .media-body {
+    display: flex;
+    justify-content: space-between;
+    h6 {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.testimonials-color-main2.testimonials-slider2 .quote-item2 {
+  .author-meta .author-name,
+  .quote-content.bordered-mark:before {
+    color: $colorMain2;
+  }
+}
+
+.step-p-0 .steps {
+  padding: 0;
+}
+
+.logo-w-auto .widget_author_bio img {
+  max-width: 100%;
+  width: auto;
+}
+
+@media (min-width: 992px) {
+  .page_slider .h-100vh .slide-video {
+    height: 100vh;
+  }
+}

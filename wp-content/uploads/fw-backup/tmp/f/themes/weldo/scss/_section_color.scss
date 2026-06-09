@@ -1,0 +1,28 @@
+.cs {
+  .btn-action {
+    i {
+      color: $darkgreyColor;
+    }
+    background-color: $lightColor;
+    &:hover i {
+      opacity: 0.7;
+    }
+  }
+  mark {
+    color: $lightColor;
+  }
+  a mark {
+    color: $darkColor;
+  }
+  &.pricing-plan2 {
+    &.cs2 {
+      .plan-features ul li.enabled:before {
+        color: $colorMain;
+      }
+    }
+    .plan-features ul li.enabled:before {
+      color: $colorMain2;
+    }
+  }
+
+}

@@ -1,0 +1,144 @@
+info: Checking if ssh is active.
+info: Trying ssh connection
+info: Deleting cache before taking screenshots
+info: Detected error reporting::false and http status::200
+info: Checking if installation is valid
+info: Valid installation, proceeding with updates
+info: Installation is unlocked for update
+info: Initiating WP core update
+info: No updates for WP Core!
+info: WP core updates finished, proceeding with plugins' update
+info: Initiating plugin update
+info: Found update for plugins
+info: Deleting cache before taking screenshots
+info: Updated testUrlsCount to 6
+info: ETA:: 139 seconds for job 5c87c71e-416f-48c7-873b-7f952df11879
+info: Current capture status for job 5c87c71e-416f-48c7-873b-7f952df11879: in_progress ETA: 69
+info: ETA:: 69 seconds for job 5c87c71e-416f-48c7-873b-7f952df11879
+info: Current capture status for job 5c87c71e-416f-48c7-873b-7f952df11879: success ETA: undefined
+info: Initiating backup of plugin font-awesome
+info: Initiating DB backup
+info: DB backed up
+info: plugin font-awesome backup complete
+info: Updating plugin font-awesome
+info: Deleting cache before taking screenshots
+info: ETA:: 139 seconds for job 46fb00ab-3729-4886-8cda-5294cf2893fc
+info: Current capture status for job 46fb00ab-3729-4886-8cda-5294cf2893fc: in_progress ETA: 69
+info: ETA:: 69 seconds for job 46fb00ab-3729-4886-8cda-5294cf2893fc
+info: Current capture status for job 46fb00ab-3729-4886-8cda-5294cf2893fc: in_progress ETA: 69
+info: ETA:: 69 seconds for job 46fb00ab-3729-4886-8cda-5294cf2893fc
+info: Current capture status for job 46fb00ab-3729-4886-8cda-5294cf2893fc: success ETA: undefined
+info: ETA:: 81 seconds for job fdc140df-56b0-4c70-a462-211960e8b5e4
+info: Current compare status for job fdc140df-56b0-4c70-a462-211960e8b5e4: in_progress
+info: ETA:: 40 seconds for job fdc140df-56b0-4c70-a462-211960e8b5e4
+info: Current compare status for job fdc140df-56b0-4c70-a462-211960e8b5e4: in_progress
+info: ETA:: 40 seconds for job fdc140df-56b0-4c70-a462-211960e8b5e4
+info: Current compare status for job fdc140df-56b0-4c70-a462-211960e8b5e4: success
+info: Restoring plugin font-awesome from backup
+info: plugin font-awesome restored from backup
+info: Deleting cache before taking screenshots
+info: Detected error reporting::false and http status::200
+info: Initiating backup of plugin creame-whatsapp-me
+info: DB backup was created earlier, skipping
+info: plugin creame-whatsapp-me backup complete
+info: Updating plugin creame-whatsapp-me
+info: Deleting cache before taking screenshots
+info: ETA:: 277 seconds for job a4b507f8-4847-4f7c-a7a4-8fd5894ea407
+info: Current capture status for job a4b507f8-4847-4f7c-a7a4-8fd5894ea407: in_progress ETA: 69
+info: ETA:: 69 seconds for job a4b507f8-4847-4f7c-a7a4-8fd5894ea407
+info: Current capture status for job a4b507f8-4847-4f7c-a7a4-8fd5894ea407: success ETA: undefined
+info: ETA:: 81 seconds for job 6f3a5767-dc2c-4e76-8da0-5e81c0602f86
+info: Current compare status for job 6f3a5767-dc2c-4e76-8da0-5e81c0602f86: success
+info: Initiating backup of plugin loco-translate
+info: DB backup was created earlier, skipping
+info: plugin loco-translate backup complete
+info: Updating plugin loco-translate
+info: Deleting cache before taking screenshots
+info: ETA:: 415 seconds for job 663f0b95-c5be-4afe-ac98-9cf68b78ef3e
+info: Current capture status for job 663f0b95-c5be-4afe-ac98-9cf68b78ef3e: in_progress ETA: 69
+info: ETA:: 69 seconds for job 663f0b95-c5be-4afe-ac98-9cf68b78ef3e
+info: Current capture status for job 663f0b95-c5be-4afe-ac98-9cf68b78ef3e: success ETA: undefined
+info: ETA:: 81 seconds for job 717eadf1-0739-42b6-879a-222d060cacfd
+info: Current compare status for job 717eadf1-0739-42b6-879a-222d060cacfd: in_progress
+info: ETA:: 40 seconds for job 717eadf1-0739-42b6-879a-222d060cacfd
+info: Current compare status for job 717eadf1-0739-42b6-879a-222d060cacfd: success
+info: Initiating backup of plugin mailchimp-for-wp
+info: DB backup was created earlier, skipping
+info: plugin mailchimp-for-wp backup complete
+info: Updating plugin mailchimp-for-wp
+info: Deleting cache before taking screenshots
+info: ETA:: 553 seconds for job 52728938-fe8d-4fa1-96e7-410c983c3dcf
+info: Current capture status for job 52728938-fe8d-4fa1-96e7-410c983c3dcf: success ETA: undefined
+info: ETA:: 81 seconds for job cc21147e-dde0-4914-86e0-fb2fd65dfade
+info: Current compare status for job cc21147e-dde0-4914-86e0-fb2fd65dfade: success
+info: Initiating backup of plugin onecom-themes-plugins
+info: DB backup was created earlier, skipping
+info: plugin onecom-themes-plugins backup complete
+info: Updating plugin onecom-themes-plugins
+info: Deleting cache before taking screenshots
+info: Initiating backup of plugin onecom-spam-protection
+info: DB backup was created earlier, skipping
+info: plugin onecom-spam-protection backup complete
+info: Updating plugin onecom-spam-protection
+info: Deleting cache before taking screenshots
+info: Initiating backup of plugin onecom-vcache
+info: DB backup was created earlier, skipping
+info: plugin onecom-vcache backup complete
+info: Updating plugin onecom-vcache
+info: Deleting cache before taking screenshots
+info: Initiating backup of plugin user-registration
+info: DB backup was created earlier, skipping
+info: plugin user-registration backup complete
+info: Updating plugin user-registration
+info: Deleting cache before taking screenshots
+info: ETA:: 600 seconds for job a63d9d4d-a1fe-4489-8121-d9407d887433
+info: Current capture status for job a63d9d4d-a1fe-4489-8121-d9407d887433: success ETA: undefined
+info: ETA:: 81 seconds for job daa28f5b-9b75-4337-b1e9-94e1ae392471
+info: Current compare status for job daa28f5b-9b75-4337-b1e9-94e1ae392471: success
+info: Initiating backup of plugin woocommerce
+info: DB backup was created earlier, skipping
+info: plugin woocommerce backup complete
+info: Updating plugin woocommerce
+info: Deleting cache before taking screenshots
+info: ETA:: 600 seconds for job 5a4dfc56-c1aa-4512-bce0-046f73067898
+info: Current capture status for job 5a4dfc56-c1aa-4512-bce0-046f73067898: success ETA: undefined
+info: ETA:: 81 seconds for job 612b59d5-4d32-4ea2-8eba-eb9d2a8cdfb6
+info: Current compare status for job 612b59d5-4d32-4ea2-8eba-eb9d2a8cdfb6: success
+info: Initiating backup of plugin wp-social
+info: DB backup was created earlier, skipping
+info: plugin wp-social backup complete
+info: Updating plugin wp-social
+info: Deleting cache before taking screenshots
+info: ETA:: 553 seconds for job 2b61477a-6a31-4ed5-a5dd-833ce862e004
+info: Current capture status for job 2b61477a-6a31-4ed5-a5dd-833ce862e004: in_progress ETA: 69
+info: ETA:: 69 seconds for job 2b61477a-6a31-4ed5-a5dd-833ce862e004
+info: Current capture status for job 2b61477a-6a31-4ed5-a5dd-833ce862e004: success ETA: undefined
+info: ETA:: 81 seconds for job bab41021-0255-4eb3-896c-95f70e29df57
+info: Current compare status for job bab41021-0255-4eb3-896c-95f70e29df57: in_progress
+info: ETA:: 40 seconds for job bab41021-0255-4eb3-896c-95f70e29df57
+info: Current compare status for job bab41021-0255-4eb3-896c-95f70e29df57: in_progress
+info: ETA:: 40 seconds for job bab41021-0255-4eb3-896c-95f70e29df57
+info: Current compare status for job bab41021-0255-4eb3-896c-95f70e29df57: success
+info: Updating translations for all plugin.
+info: Translations updated for all plugin.
+info: Plugins update completed
+info: Initiating theme update
+info: Found update for themes
+info: Initiating backup of theme twentytwentyfive
+info: DB backup was created earlier, skipping
+info: theme twentytwentyfive backup complete
+info: Updating theme twentytwentyfive
+info: theme is inactive, skipping visual testing
+info: Updating translations for all theme.
+info: Translations updated for all theme.
+info: Themes update completed
+info: Visual diff status Rollbacks:: true Diffs:: true
+info: Notifications enabled for all success status
+info: SSH already connected, exiting!
+info: Detected locale - de_DE
+info: Reading translation file /app/i18n/one.com/de_DE.json
+info: Message sent: 250 2.0.0 Ok: queued as 8edc9341-f62e-11ef-b681-8bb83626d7ef locale: de_DE
+info: SMTP call successful
+info: Uploading log
+info: Checking if ssh is active.
+info: Trying ssh connection

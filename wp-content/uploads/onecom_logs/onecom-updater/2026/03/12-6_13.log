@@ -1,0 +1,78 @@
+info: Checking if ssh is active.
+info: Trying ssh connection
+info: Deleting cache before taking screenshots
+info: Probably invalid command - timeout -k 5m 5m /usr/local/bin/wp-cache-flush
+info: Detected error reporting::false and http status::200
+info: Checking if installation is valid
+info: Valid installation, proceeding with updates
+info: No running native updates
+info: Installation is unlocked for update
+info: Initiating WP core update
+info: No updates for WP Core!
+info: WP core updates finished, proceeding with plugins' update
+info: Initiating plugin update
+info: Premium care dependencies - version:5.0.9 status:active
+info: Found update for plugins
+info: Deleting cache before taking screenshots
+info: Probably invalid command - timeout -k 5m 5m /usr/local/bin/wp-cache-flush
+info: Updated testUrlsCount to 6
+info: Testing urls ["https://www.serelit.de","https://www.serelit.de/registration/","https://www.serelit.de/product/automatic-electric-disappearing-ladders/","https://www.serelit.de/project/aenean-vulputate/","https://www.serelit.de/service/fenster-balkon-profile/","https://www.serelit.de/member/phebe-e-french/"]
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 119 seconds for job a73abe06-3019-4f88-a992-075db567fe91
+info: Current capture status for job a73abe06-3019-4f88-a992-075db567fe91: in_progress ETA: 59
+info: ETA:: 59 seconds for job a73abe06-3019-4f88-a992-075db567fe91
+info: Current capture status for job a73abe06-3019-4f88-a992-075db567fe91: success ETA: undefined
+info: Initiating backup of plugin mailchimp-for-wp
+info: Backup ["/var/www/wp-content/uploads/onecom-updater/backup/plugins/mailchimp-for-wp.zip"] verified.
+info: Initiating DB backup
+info: DB backed up
+info: plugin mailchimp-for-wp backup complete
+info: Secured backups with .htaccess
+info: Updating plugin mailchimp-for-wp
+info: Deleting cache before taking screenshots
+info: Probably invalid command - timeout -k 5m 5m /usr/local/bin/wp-cache-flush
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 119 seconds for job 775cee91-b069-4877-9137-f1db5f7c1dcc
+info: Current capture status for job 775cee91-b069-4877-9137-f1db5f7c1dcc: in_progress ETA: 59
+info: ETA:: 59 seconds for job 775cee91-b069-4877-9137-f1db5f7c1dcc
+info: Current capture status for job 775cee91-b069-4877-9137-f1db5f7c1dcc: success ETA: undefined
+info: Calling bound compare, attempt::1
+info: Calling bound waitForCompareJob, attempt::1
+info: ETA:: 55 seconds for job ff373988-3f89-4af5-9c86-bde752c3cff7
+info: Current compare status for job ff373988-3f89-4af5-9c86-bde752c3cff7: success
+info: Initiating backup of plugin woocommerce
+info: Backup ["/var/www/wp-content/uploads/onecom-updater/backup/plugins/woocommerce.zip"] verified.
+info: DB backup was created earlier, skipping
+info: plugin woocommerce backup complete
+info: Updating plugin woocommerce
+info: Deleting cache before taking screenshots
+info: Probably invalid command - timeout -k 5m 5m /usr/local/bin/wp-cache-flush
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 119 seconds for job 158f6db8-4ae5-4625-baa7-9aee2b820f87
+info: Current capture status for job 158f6db8-4ae5-4625-baa7-9aee2b820f87: in_progress ETA: 59
+info: ETA:: 59 seconds for job 158f6db8-4ae5-4625-baa7-9aee2b820f87
+info: Current capture status for job 158f6db8-4ae5-4625-baa7-9aee2b820f87: success ETA: undefined
+info: Calling bound compare, attempt::1
+info: Calling bound waitForCompareJob, attempt::1
+info: ETA:: 55 seconds for job 848410f1-f25f-49f5-95ea-0dd9c30f5231
+info: Current compare status for job 848410f1-f25f-49f5-95ea-0dd9c30f5231: success
+info: Updating translations for all plugin.
+info: Translations updated for all plugin.
+info: Plugins update completed
+info: Initiating theme update
+info: None of the selected themes have pending update!
+info: Themes update completed
+info: Notifications enabled for all success status
+info: Visual diff status Rollbacks:: false Diffs:: false
+info: SSH already connected, exiting!
+info: Detected locale - de_DE
+info: Reading translation file /app/i18n/one.com/de_DE.json
+info: Message sent: 250 2.0.0 Ok: queued as 9d697886-1dda-11f1-85e1-253411abe675 locale: de_DE
+info: Closed email transport
+info: SMTP call successful
+info: Uploading log
+info: Checking if ssh is active.
+info: Trying ssh connection

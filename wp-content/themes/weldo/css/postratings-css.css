@@ -1,0 +1,93 @@
+/*
++----------------------------------------------------------------+
+|                                                                |
+|   WordPress Plugin: WP-PostRatings                             |
+|   Copyright (c) 2012 Lester "GaMerZ" Chan                      |
+|                                                                |
+|   File Written By:                                             |
+|   - Lester "GaMerZ" Chan                                       |
+|   - http://lesterchan.net                                      |
+|                                                                |
+|   File Information:                                            |
+|   - Post Ratings CSS File                                      |
+|   - wp-content/plugins/wp-postratings/postratings-css.css      |
+|                                                                |
++----------------------------------------------------------------+
+*/
+
+.post-ratings {
+	display: inline-block;
+	position: relative;
+	width: auto;
+	opacity: 1;
+	font-size: 0;
+	color: transparent;
+}
+
+.post-ratings br {
+	display: none;
+}
+
+.post-ratings > img {
+	position: relative;
+	z-index: 2;
+	opacity: 0;
+}
+
+/*span is added in main.js file*/
+.post-ratings > span {
+	position: absolute;
+}
+.post-ratings > span:after{
+	color: #f5bb2c;
+	font-size: 16px;
+	font-family: 'FontAwesome';
+	content: "\f006";
+	position: relative;
+	left: -1em;
+	z-index: 1;
+}
+
+.post-ratings > img[src*="rating_on"] + span:after{
+	content: "\f005";
+}
+
+.post-ratings > img[src*="rating_half"] + span:after{
+	content: "\f123";
+}
+
+.post-ratings > img[src*="rating_over"] + span:after{
+	content: "\f005";
+	color: #e23751;
+}
+
+.post-ratings-loading {
+	display: none;
+	height: 16px;
+	text-align: left;
+}
+
+.post-ratings-loading[style*="block"] {
+	display: inline-block !important;
+}
+
+.post-ratings-image {
+	border: 0;
+}
+
+.post-ratings img,
+.post-ratings-loading img,
+.post-ratings-image img {
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+.post-ratings-text {
+	display: none !important;
+}
+
+.post-ratings-comment-author {
+	font-weight: normal;
+	font-style: italic;
+}

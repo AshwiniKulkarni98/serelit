@@ -1,0 +1,140 @@
+/* Mobile menu toggler */
+@media(min-width: 992px) {
+  .page_header,
+  .page_toplogo {
+    .toggle_menu {
+      display: none;
+    }
+  }
+}
+
+.toggle_menu {
+
+  position: absolute;
+  top: 50%;
+  right: 0;
+
+  margin-left: -30px;
+  margin-top: -30px;
+  padding: 0 !important;
+
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  z-index: 1002;
+  visibility: visible;
+
+  opacity: 0.95;
+  //for pages with multiple demo - more z-index value for first toggler
+  //1002 - for .top-nav
+  .page_header_wrapper & {
+    z-index: 1003;
+  }
+
+  .page_toplogo & {
+    position: fixed;
+    top: 0;
+    left: auto;
+    right: 0;
+    margin: 0;
+  }
+
+  &:before,
+  span,
+  span:before,
+  span:after {
+    display: block;
+    width: 20px;
+    position: absolute;
+    background-color: $lightColor;
+    content: '';
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+    height: 2px;
+  }
+  &:before {
+    top: 20px;
+    left: 20px;
+    background-color: $colorMain;
+  }
+  span {
+    left: 20px;
+    top: 50%;
+  }
+  span:before {
+    opacity: 1;
+    top: -5px;
+  }
+  span:after {
+    opacity: 1;
+    top: 5px;
+  }
+
+  //mobile active
+  &.mobile-active {
+    border: none;
+    left: auto;
+    top: 0;
+    right: 0;
+    position: fixed;
+    margin: 0;
+    z-index: 3000;
+    width: 60px;
+    background-color: $darkColor;
+    &:before {
+      background-color: $lightColor;
+      transform: rotate(45deg);
+      top: 30px;
+    }
+
+    span {
+      background-color: $lightColor;
+      transform: rotate(-45deg);
+    }
+    span:before,
+    span:after {
+      opacity: 0;
+    }
+  }
+  //side header
+  &.active {
+    &:before {
+      background-color: $lightColor;
+      transform: rotate(45deg);
+      top: 30px;
+    }
+
+    span {
+      background-color: $lightColor !important;
+      transform: rotate(-45deg);
+    }
+    span:before {
+      opacity: 1;
+      transform: rotate(45deg);
+      background-color: $colorMain !important;
+      top: 10px;
+      left: -11px;
+      width: 25px;
+    }
+    span:after {
+      opacity: 0;
+    }
+  }
+}
+
+.toggle_menu.main-toggle {
+  background-color: transparent !important;
+}
+
+.ls {
+  .toggle_menu {
+    span,
+    span:before,
+    span:after {
+      background-color: $darkgreyColor;
+    }
+  }
+}
+
+

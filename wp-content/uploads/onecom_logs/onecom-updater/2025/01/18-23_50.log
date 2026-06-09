@@ -1,0 +1,251 @@
+info: Checking if ssh is active.
+info: Trying ssh connection
+info: Deleting cache before taking screenshots
+info: Detected error reporting::false and http status::200
+info: Checking if installation is valid
+info: Valid installation, proceeding with updates
+info: Installation is unlocked for update
+info: Initiating WP core update
+info: Deleting cache before taking screenshots
+info: Updated testUrlsCount to 6
+info: Updating WP core.
+info: Initiating backup of wpCore 
+info: Initiating DB backup
+info: DB backed up
+info: wpCore  backup complete
+info: Secured backups with .htaccess
+info: Waiting for screenshot job completion for jobId:: b08428e1-203c-4799-87d5-46125e63d40b
+info: Wait count:: 9, waiting for 300 seconds for job b08428e1-203c-4799-87d5-46125e63d40b
+info: Current capture status for job b08428e1-203c-4799-87d5-46125e63d40b: success
+info: Deleting cache before taking screenshots
+info: Wait count:: 7, waiting for 280 seconds for job f7e83700-3acb-4678-9f07-0e02a67b87f9
+info: Current capture status for job f7e83700-3acb-4678-9f07-0e02a67b87f9: in_progress
+info: Current capture status for job f7e83700-3acb-4678-9f07-0e02a67b87f9: success
+info: Wait count:: 1, waiting for 26 seconds for job 111075d1-d599-4f49-a425-cd3968238cbe
+info: Current compare status for job 111075d1-d599-4f49-a425-cd3968238cbe: in_progress
+info: Current compare status for job 111075d1-d599-4f49-a425-cd3968238cbe: success
+info: Restoring  wpCore from backup
+info: WP Core restored from backup!
+info: Deleting cache before taking screenshots
+info: Detected error reporting::false and http status::200
+info: Updating translations for WP Core.
+info: Translations updated for WP Core.
+info: WP core updates finished, proceeding with plugins' update
+info: Initiating plugin update
+info: Found update for plugins
+info: Initiating backup of plugin classic-editor
+info: DB backup was created earlier, skipping
+info: plugin classic-editor backup complete
+info: Updating plugin classic-editor
+info: Deleting cache before taking screenshots
+info: Wait count:: 3, waiting for 120 seconds for job d4455334-4d69-4d38-9115-93748d68eaac
+info: Current capture status for job d4455334-4d69-4d38-9115-93748d68eaac: in_progress
+info: Current capture status for job d4455334-4d69-4d38-9115-93748d68eaac: in_progress
+info: Current capture status for job d4455334-4d69-4d38-9115-93748d68eaac: in_progress
+info: Current capture status for job d4455334-4d69-4d38-9115-93748d68eaac: in_progress
+info: Current capture status for job d4455334-4d69-4d38-9115-93748d68eaac: in_progress
+info: Current capture status for job d4455334-4d69-4d38-9115-93748d68eaac: in_progress
+info: Current capture status for job d4455334-4d69-4d38-9115-93748d68eaac: in_progress
+info: Current capture status for job d4455334-4d69-4d38-9115-93748d68eaac: in_progress
+info: Current capture status for job d4455334-4d69-4d38-9115-93748d68eaac: success
+info: Wait count:: 1, waiting for 26 seconds for job 0aec9ab0-cc8b-4db0-98a9-7c52b445c394
+info: Current compare status for job 0aec9ab0-cc8b-4db0-98a9-7c52b445c394: in_progress
+info: Current compare status for job 0aec9ab0-cc8b-4db0-98a9-7c52b445c394: success
+info: Restoring plugin classic-editor from backup
+info: plugin classic-editor restored from backup
+info: Deleting cache before taking screenshots
+info: Detected error reporting::false and http status::200
+info: Initiating backup of plugin complianz-gdpr
+info: DB backup was created earlier, skipping
+info: plugin complianz-gdpr backup complete
+info: Updating plugin complianz-gdpr
+info: Deleting cache before taking screenshots
+info: Wait count:: 1, waiting for 40 seconds for job c0bb07e5-409c-4958-b73a-5aec5abb3c1e
+info: Current capture status for job c0bb07e5-409c-4958-b73a-5aec5abb3c1e: in_progress
+info: Current capture status for job c0bb07e5-409c-4958-b73a-5aec5abb3c1e: in_progress
+info: Current capture status for job c0bb07e5-409c-4958-b73a-5aec5abb3c1e: in_progress
+info: Current capture status for job c0bb07e5-409c-4958-b73a-5aec5abb3c1e: in_progress
+info: Current capture status for job c0bb07e5-409c-4958-b73a-5aec5abb3c1e: success
+info: Wait count:: 1, waiting for 26 seconds for job 439862f1-3066-4b5f-8bb0-1eb9a62b1462
+info: Current compare status for job 439862f1-3066-4b5f-8bb0-1eb9a62b1462: in_progress
+info: Current compare status for job 439862f1-3066-4b5f-8bb0-1eb9a62b1462: success
+info: Restoring plugin complianz-gdpr from backup
+info: plugin complianz-gdpr restored from backup
+info: Deleting cache before taking screenshots
+info: Detected error reporting::false and http status::200
+info: Initiating backup of plugin contact-form-7
+info: DB backup was created earlier, skipping
+info: plugin contact-form-7 backup complete
+info: Updating plugin contact-form-7
+info: Deleting cache before taking screenshots
+info: Wait count:: 1, waiting for 40 seconds for job 12f88aab-3175-44fa-81bb-37091fad4744
+info: Current capture status for job 12f88aab-3175-44fa-81bb-37091fad4744: in_progress
+info: Current capture status for job 12f88aab-3175-44fa-81bb-37091fad4744: in_progress
+info: Current capture status for job 12f88aab-3175-44fa-81bb-37091fad4744: in_progress
+info: Current capture status for job 12f88aab-3175-44fa-81bb-37091fad4744: in_progress
+info: Current capture status for job 12f88aab-3175-44fa-81bb-37091fad4744: success
+info: Wait count:: 1, waiting for 26 seconds for job b45d4f6d-d866-4481-a725-27fc0a64c72a
+info: Current compare status for job b45d4f6d-d866-4481-a725-27fc0a64c72a: success
+info: Restoring plugin contact-form-7 from backup
+info: plugin contact-form-7 restored from backup
+info: Deleting cache before taking screenshots
+info: Detected error reporting::false and http status::200
+info: Initiating backup of plugin imagify
+info: DB backup was created earlier, skipping
+info: plugin imagify backup complete
+info: Updating plugin imagify
+info: Deleting cache before taking screenshots
+info: Wait count:: 1, waiting for 40 seconds for job c1275e0c-b141-400b-bcec-cb14ff537bc3
+info: Current capture status for job c1275e0c-b141-400b-bcec-cb14ff537bc3: in_progress
+info: Current capture status for job c1275e0c-b141-400b-bcec-cb14ff537bc3: in_progress
+info: Current capture status for job c1275e0c-b141-400b-bcec-cb14ff537bc3: success
+info: Wait count:: 1, waiting for 26 seconds for job 071c6e48-fdd7-4bc5-9c26-036a1e037694
+info: Current compare status for job 071c6e48-fdd7-4bc5-9c26-036a1e037694: in_progress
+info: Current compare status for job 071c6e48-fdd7-4bc5-9c26-036a1e037694: success
+info: Restoring plugin imagify from backup
+info: plugin imagify restored from backup
+info: Deleting cache before taking screenshots
+info: Detected error reporting::false and http status::200
+info: Initiating backup of plugin creame-whatsapp-me
+info: DB backup was created earlier, skipping
+info: plugin creame-whatsapp-me backup complete
+info: Updating plugin creame-whatsapp-me
+info: Deleting cache before taking screenshots
+info: Wait count:: 1, waiting for 40 seconds for job 5067f163-686c-41f4-a86e-63a1f5af89f3
+info: Current capture status for job 5067f163-686c-41f4-a86e-63a1f5af89f3: in_progress
+info: Current capture status for job 5067f163-686c-41f4-a86e-63a1f5af89f3: in_progress
+info: Current capture status for job 5067f163-686c-41f4-a86e-63a1f5af89f3: success
+info: Wait count:: 1, waiting for 26 seconds for job 1cd812cd-4dfb-4892-950f-b757296bad68
+info: Current compare status for job 1cd812cd-4dfb-4892-950f-b757296bad68: success
+info: Restoring plugin creame-whatsapp-me from backup
+info: plugin creame-whatsapp-me restored from backup
+info: Deleting cache before taking screenshots
+info: Detected error reporting::false and http status::200
+info: Initiating backup of plugin loco-translate
+info: DB backup was created earlier, skipping
+info: plugin loco-translate backup complete
+info: Updating plugin loco-translate
+info: Deleting cache before taking screenshots
+info: Wait count:: 1, waiting for 40 seconds for job be5c79c3-0776-4e18-9127-cfb3250b75e7
+info: Current capture status for job be5c79c3-0776-4e18-9127-cfb3250b75e7: in_progress
+info: Current capture status for job be5c79c3-0776-4e18-9127-cfb3250b75e7: in_progress
+info: Current capture status for job be5c79c3-0776-4e18-9127-cfb3250b75e7: in_progress
+info: Current capture status for job be5c79c3-0776-4e18-9127-cfb3250b75e7: success
+info: Wait count:: 1, waiting for 26 seconds for job 44659f15-9dd6-4a2e-9477-90c02845cfc2
+info: Current compare status for job 44659f15-9dd6-4a2e-9477-90c02845cfc2: in_progress
+info: Current compare status for job 44659f15-9dd6-4a2e-9477-90c02845cfc2: success
+info: Restoring plugin loco-translate from backup
+info: plugin loco-translate restored from backup
+info: Deleting cache before taking screenshots
+info: Detected error reporting::false and http status::200
+info: Initiating backup of plugin mailchimp-for-wp
+info: DB backup was created earlier, skipping
+info: plugin mailchimp-for-wp backup complete
+info: Updating plugin mailchimp-for-wp
+info: Deleting cache before taking screenshots
+info: Wait count:: 1, waiting for 40 seconds for job b655f7a2-ae7e-493e-b50c-dd97b78b8066
+info: Current capture status for job b655f7a2-ae7e-493e-b50c-dd97b78b8066: in_progress
+info: Current capture status for job b655f7a2-ae7e-493e-b50c-dd97b78b8066: in_progress
+info: Current capture status for job b655f7a2-ae7e-493e-b50c-dd97b78b8066: success
+info: Wait count:: 1, waiting for 26 seconds for job 90a7d79f-1831-4f1f-b1e9-b182cdb92deb
+info: Current compare status for job 90a7d79f-1831-4f1f-b1e9-b182cdb92deb: success
+info: Restoring plugin mailchimp-for-wp from backup
+info: plugin mailchimp-for-wp restored from backup
+info: Deleting cache before taking screenshots
+info: Detected error reporting::false and http status::200
+info: Initiating backup of plugin wp-user-avatar
+info: DB backup was created earlier, skipping
+info: plugin wp-user-avatar backup complete
+info: Updating plugin wp-user-avatar
+info: Deleting cache before taking screenshots
+info: Wait count:: 1, waiting for 40 seconds for job bb6e7d21-362c-4aa4-abb1-80b506d2d349
+info: Current capture status for job bb6e7d21-362c-4aa4-abb1-80b506d2d349: in_progress
+info: Current capture status for job bb6e7d21-362c-4aa4-abb1-80b506d2d349: in_progress
+info: Current capture status for job bb6e7d21-362c-4aa4-abb1-80b506d2d349: in_progress
+info: Current capture status for job bb6e7d21-362c-4aa4-abb1-80b506d2d349: success
+info: Wait count:: 1, waiting for 26 seconds for job 703a4a7c-a86e-422b-b3e6-da173f215407
+info: Current compare status for job 703a4a7c-a86e-422b-b3e6-da173f215407: success
+info: Restoring plugin wp-user-avatar from backup
+info: plugin wp-user-avatar restored from backup
+info: Deleting cache before taking screenshots
+info: Detected error reporting::false and http status::200
+info: Initiating backup of plugin really-simple-ssl
+info: DB backup was created earlier, skipping
+info: plugin really-simple-ssl backup complete
+info: Updating plugin really-simple-ssl
+info: Deleting cache before taking screenshots
+info: Wait count:: 1, waiting for 40 seconds for job 0c857104-894b-4147-8471-58669819e770
+info: Current capture status for job 0c857104-894b-4147-8471-58669819e770: in_progress
+info: Current capture status for job 0c857104-894b-4147-8471-58669819e770: in_progress
+info: Current capture status for job 0c857104-894b-4147-8471-58669819e770: in_progress
+info: Current capture status for job 0c857104-894b-4147-8471-58669819e770: success
+info: Wait count:: 1, waiting for 26 seconds for job e538b82e-fbcb-45df-bfad-ef7755a69754
+info: Current compare status for job e538b82e-fbcb-45df-bfad-ef7755a69754: in_progress
+info: Current compare status for job e538b82e-fbcb-45df-bfad-ef7755a69754: success
+info: Restoring plugin really-simple-ssl from backup
+info: plugin really-simple-ssl restored from backup
+info: Deleting cache before taking screenshots
+info: Detected error reporting::false and http status::200
+info: Initiating backup of plugin user-registration
+info: DB backup was created earlier, skipping
+info: plugin user-registration backup complete
+info: Updating plugin user-registration
+info: Deleting cache before taking screenshots
+info: Wait count:: 1, waiting for 40 seconds for job 4e120882-9594-4898-9453-fd7be7e8ce55
+info: Current capture status for job 4e120882-9594-4898-9453-fd7be7e8ce55: in_progress
+info: Current capture status for job 4e120882-9594-4898-9453-fd7be7e8ce55: in_progress
+info: Current capture status for job 4e120882-9594-4898-9453-fd7be7e8ce55: in_progress
+info: Current capture status for job 4e120882-9594-4898-9453-fd7be7e8ce55: success
+info: Wait count:: 1, waiting for 26 seconds for job cfa35cab-e03c-4bca-af46-9796dc892dbe
+info: Current compare status for job cfa35cab-e03c-4bca-af46-9796dc892dbe: in_progress
+info: Current compare status for job cfa35cab-e03c-4bca-af46-9796dc892dbe: success
+info: Restoring plugin user-registration from backup
+info: plugin user-registration restored from backup
+info: Deleting cache before taking screenshots
+info: Detected error reporting::false and http status::200
+info: Initiating backup of plugin woocommerce
+info: DB backup was created earlier, skipping
+info: plugin woocommerce backup complete
+info: Updating plugin woocommerce
+info: Deleting cache before taking screenshots
+info: Wait count:: 1, waiting for 40 seconds for job cc364bfe-acf7-4a1a-8913-1843567b2fae
+info: Current capture status for job cc364bfe-acf7-4a1a-8913-1843567b2fae: in_progress
+info: Current capture status for job cc364bfe-acf7-4a1a-8913-1843567b2fae: in_progress
+info: Current capture status for job cc364bfe-acf7-4a1a-8913-1843567b2fae: in_progress
+info: Current capture status for job cc364bfe-acf7-4a1a-8913-1843567b2fae: success
+info: Wait count:: 1, waiting for 26 seconds for job 08b6b170-5781-430a-8672-e7c9be99fec0
+info: Current compare status for job 08b6b170-5781-430a-8672-e7c9be99fec0: in_progress
+info: Current compare status for job 08b6b170-5781-430a-8672-e7c9be99fec0: success
+info: Restoring plugin woocommerce from backup
+info: plugin woocommerce restored from backup
+info: Deleting cache before taking screenshots
+info: Detected error reporting::false and http status::200
+info: Initiating backup of plugin wp-social
+info: DB backup was created earlier, skipping
+info: plugin wp-social backup complete
+info: Updating plugin wp-social
+info: Deleting cache before taking screenshots
+info: Wait count:: 1, waiting for 40 seconds for job e8fc76b0-fcfc-4de8-aa3f-2ef4d1002364
+info: Current capture status for job e8fc76b0-fcfc-4de8-aa3f-2ef4d1002364: in_progress
+info: Current capture status for job e8fc76b0-fcfc-4de8-aa3f-2ef4d1002364: in_progress
+info: Current capture status for job e8fc76b0-fcfc-4de8-aa3f-2ef4d1002364: success
+info: Wait count:: 1, waiting for 26 seconds for job d7949650-304f-4871-9c62-22ec8f2842ab
+info: Current compare status for job d7949650-304f-4871-9c62-22ec8f2842ab: success
+info: Restoring plugin wp-social from backup
+info: plugin wp-social restored from backup
+info: Deleting cache before taking screenshots
+info: Detected error reporting::false and http status::200
+info: Updating translations for all plugin.
+info: Translations updated for all plugin.
+info: Plugins update completed
+info: Initiating theme update
+info: None of the selected themes have pending update!
+info: Themes update completed
+info: SSH already connected, exiting!
+info: Detected locale - de_DE
+info: Reading translation file /app/i18n/one.com/de_DE.json
+info: Message sent: 250 2.0.0 Ok: queued as 06c1b848-d5f7-11ef-a78e-b947ddabf533 locale: de_DE
+info: SMTP call successful
+info: Uploading log
+info: Checking if ssh is active.
+info: Trying ssh connection

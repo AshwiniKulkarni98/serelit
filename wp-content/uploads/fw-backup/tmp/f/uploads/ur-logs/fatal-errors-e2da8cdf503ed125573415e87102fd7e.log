@@ -1,0 +1,42 @@
+2024-05-14T00:15:09+02:00 CRITICAL Uncaught TypeError: json_decode(): Argument #1 ($json) must be of type string, bool given in /customers/a/1/2/serelit.de/httpd.www/wp-content/plugins/onecom-themes-plugins/modules/health-monitor/classes/class-onecom-check-spam.php:72
+Stack trace:
+#0 /customers/a/1/2/serelit.de/httpd.www/wp-content/plugins/onecom-themes-plugins/modules/health-monitor/classes/class-onecom-check-spam.php(72): json_decode(false, true)
+#1 /customers/a/1/2/serelit.de/httpd.www/wp-content/plugins/onecom-themes-plugins/modules/health-monitor/classes/class-onecom-health-monitor-ajax.php(456): OnecomCheckSpam->check_login_attempts()
+#2 /customers/a/1/2/serelit.de/httpd.www/wp-content/plugins/onecom-themes-plugins/modules/api/class-onecom-plugins-api.php(264): OnecomHealthMonitorAjax->login_attempts(true)
+#3 /customers/a/1/2/serelit.de/httpd.www/wp-content/plugins/onecom-themes-plugins/modules/health-monitor/classes/class-onecom-health-monitor-cron.php(112): OnecomPluginsApi->health_monitor_scan()
+#4 /customers/a/1/2/serelit.de/httpd.www/wp-content/plugins/onecom-themes-plugins/modules/health-monitor/classes/class-onecom-health-monitor-cron.php(62): OnecomHealthMonitorCron->run_scan()
+#5 /customers/a/1/2/serelit.de/httpd.www/wp-includes/class-wp-hook.php(324): OnecomHealthMonitorCron->onecom_hm_hook_daily_exec()
+#6 /customers/a/1/2/serelit.de/httpd.www/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#7 /customers/a/1/2/serelit.de/httpd.www/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#8 /customers/a/1/2/serelit.de/httpd.www/wp-cron.php(191): do_action_ref_array('onecom_hm_hook_...', Array)
+#9 {main}
+  thrown in /customers/a/1/2/serelit.de/httpd.www/wp-content/plugins/onecom-themes-plugins/modules/health-monitor/classes/class-onecom-check-spam.php on line 72
+
+2024-05-15T01:13:43+02:00 CRITICAL Uncaught TypeError: json_decode(): Argument #1 ($json) must be of type string, bool given in /customers/a/1/2/serelit.de/httpd.www/wp-content/plugins/onecom-themes-plugins/modules/health-monitor/classes/class-onecom-check-spam.php:72
+Stack trace:
+#0 /customers/a/1/2/serelit.de/httpd.www/wp-content/plugins/onecom-themes-plugins/modules/health-monitor/classes/class-onecom-check-spam.php(72): json_decode(false, true)
+#1 /customers/a/1/2/serelit.de/httpd.www/wp-content/plugins/onecom-themes-plugins/modules/health-monitor/classes/class-onecom-health-monitor-ajax.php(456): OnecomCheckSpam->check_login_attempts()
+#2 /customers/a/1/2/serelit.de/httpd.www/wp-content/plugins/onecom-themes-plugins/modules/api/class-onecom-plugins-api.php(264): OnecomHealthMonitorAjax->login_attempts(true)
+#3 /customers/a/1/2/serelit.de/httpd.www/wp-content/plugins/onecom-themes-plugins/modules/health-monitor/classes/class-onecom-health-monitor-cron.php(112): OnecomPluginsApi->health_monitor_scan()
+#4 /customers/a/1/2/serelit.de/httpd.www/wp-content/plugins/onecom-themes-plugins/modules/health-monitor/classes/class-onecom-health-monitor-cron.php(62): OnecomHealthMonitorCron->run_scan()
+#5 /customers/a/1/2/serelit.de/httpd.www/wp-includes/class-wp-hook.php(324): OnecomHealthMonitorCron->onecom_hm_hook_daily_exec()
+#6 /customers/a/1/2/serelit.de/httpd.www/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#7 /customers/a/1/2/serelit.de/httpd.www/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#8 /customers/a/1/2/serelit.de/httpd.www/wp-cron.php(191): do_action_ref_array('onecom_hm_hook_...', Array)
+#9 {main}
+  thrown in /customers/a/1/2/serelit.de/httpd.www/wp-content/plugins/onecom-themes-plugins/modules/health-monitor/classes/class-onecom-check-spam.php on line 72
+
+2024-05-16T06:54:59+02:00 CRITICAL Uncaught TypeError: json_decode(): Argument #1 ($json) must be of type string, bool given in /customers/a/1/2/serelit.de/httpd.www/wp-content/plugins/onecom-themes-plugins/modules/health-monitor/classes/class-onecom-check-spam.php:72
+Stack trace:
+#0 /customers/a/1/2/serelit.de/httpd.www/wp-content/plugins/onecom-themes-plugins/modules/health-monitor/classes/class-onecom-check-spam.php(72): json_decode(false, true)
+#1 /customers/a/1/2/serelit.de/httpd.www/wp-content/plugins/onecom-themes-plugins/modules/health-monitor/classes/class-onecom-health-monitor-ajax.php(456): OnecomCheckSpam->check_login_attempts()
+#2 /customers/a/1/2/serelit.de/httpd.www/wp-content/plugins/onecom-themes-plugins/modules/api/class-onecom-plugins-api.php(264): OnecomHealthMonitorAjax->login_attempts(true)
+#3 /customers/a/1/2/serelit.de/httpd.www/wp-content/plugins/onecom-themes-plugins/modules/health-monitor/classes/class-onecom-health-monitor-cron.php(112): OnecomPluginsApi->health_monitor_scan()
+#4 /customers/a/1/2/serelit.de/httpd.www/wp-content/plugins/onecom-themes-plugins/modules/health-monitor/classes/class-onecom-health-monitor-cron.php(62): OnecomHealthMonitorCron->run_scan()
+#5 /customers/a/1/2/serelit.de/httpd.www/wp-includes/class-wp-hook.php(324): OnecomHealthMonitorCron->onecom_hm_hook_daily_exec()
+#6 /customers/a/1/2/serelit.de/httpd.www/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#7 /customers/a/1/2/serelit.de/httpd.www/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#8 /customers/a/1/2/serelit.de/httpd.www/wp-cron.php(191): do_action_ref_array('onecom_hm_hook_...', Array)
+#9 {main}
+  thrown in /customers/a/1/2/serelit.de/httpd.www/wp-content/plugins/onecom-themes-plugins/modules/health-monitor/classes/class-onecom-check-spam.php on line 72
+

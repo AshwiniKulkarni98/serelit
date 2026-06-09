@@ -1,0 +1,364 @@
+/*
+** Header
+*/
+
+.page_header {
+  //same as .page_header_side
+  transition: height 0.5s ease-in-out;
+
+  position: relative;
+  top: 0;
+
+  left: 0;
+  right: 0;
+  width: 100%;
+
+  z-index: 1000;
+  margin: 0;
+  padding: 0;
+
+  //display_table fix on affix
+  height: auto;
+
+  .boxed &,
+  &.affix {
+    position: fixed !important;
+    z-index: 1001;
+    box-shadow: 0 2px 15px 0 rgba(100, 100, 100, 0.05);
+    opacity: 0.98;
+    //remove bottom border for affixed header with s-borderbottom class
+    &:after {
+      background-color: transparent;
+    }
+  }
+
+  //hidding top border on affixed header
+  &.affix.s-bordertop::before {
+    display: none;
+  }
+
+  @media (max-width: 991px) {
+    &.mobile-active {
+      z-index: 1003;
+      opacity: 1;
+    }
+  }
+
+  //fix bug when refresh page at the bottom and header goes down
+  &.affix-bottom {
+    //!important is necessary
+    top: 0 !important;
+    position: fixed;
+  }
+
+  //min height for mobile toggler be always on header
+  //for prevent header mobile menu toggler overlap bordered header
+  // 62 - broken design on 60px color toggler - back to 60
+  .row {
+    min-height: 60px;
+  }
+
+
+  //fix header buttons dropdown
+  .dropdown {
+    //white-space: nowrap;
+  }
+
+  a {
+    display: inline-block;
+  }
+}
+
+//when refreshing page - header height is smaller because it is affixed
+//fixing
+//absolute header when using header on slider or on title (for parallax or image background)
+
+.header_absolute {
+  position: relative;
+  .page_header,
+  .page_header_wrapper {
+    z-index: 1002;
+    position: absolute;
+    right: 0;
+    left: 0;
+  }
+
+  //&.cover-background {
+    .page_topline:not(.with-background-color),
+    .page_toplogo,
+    .page_header_wrapper,
+    .page_title {
+      background-color: transparent;
+    }
+
+    //fix for boxed layout
+    #canvas:not(.boxed) & .page_header.affix-top:not(.header6) {
+      background-color: transparent;
+    }
+  //}
+}
+
+//other header sections
+.page_topline {
+  line-height: 1.4;
+  z-index: 3;
+  &.small-text i {
+    font-size: 14px;
+  }
+
+  .icon-inline {
+    justify-content: center;
+  }
+  .social-icons {
+    display: inline-block;
+  }
+  //topline menu
+  .widget_nav_menu {
+    display: inline-block;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .dropdown-language {
+    //flags
+    a > img {
+      max-width: 16px;
+      position: relative;
+      bottom: 1px;
+      margin-right: 6px;
+    }
+  }
+
+  //news owl-carousel
+  .owl-news-slider-dates {
+    font-weight: 700;
+  }
+  .topline-news-item {
+    height: 2em;
+    line-height: 2em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 0 90px;
+    .cat-links {
+      display: inline;
+    }
+
+  }
+  .topline-news-nav-arrow {
+    color: $lightColor;
+    line-height: 38px;
+    width: 40px;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  .owl-nav > div {
+    opacity: 1;
+  }
+
+}
+
+.owl-carousel.owl-topline-news-slider.owl-news-slider-items {
+   .owl-nav {
+    top: -4px;
+    > div {
+      right: 0;
+      &:first-child {
+        left: 0;
+        right: auto;
+      }
+    }
+  }
+}
+
+
+.page_topline,
+.page_toplogo,
+.page_header {
+  .container-fluid {
+    @media(min-width: 1500px) {
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+  }
+}
+
+.page_toplogo,
+.header-side {
+  .media {
+    .media-body h6 {
+      margin-bottom: 6px;
+    }
+    .relative-icon {
+      i {
+        position: relative;
+        bottom: 10px;
+      }
+    }
+    + .media {
+     &:before {
+        content: '';
+        border-left: 1px solid $borderColorRGBA;
+        margin-left: 30px;
+        padding-left: 24px;
+        height: 47px;
+        top: -3px;
+        position: relative;
+        @media (max-width: 991px) {
+          display: none;
+        }
+      }
+    }
+    &:first-child {
+      .media-body {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+.centered-title {
+  h1 {
+    line-height: 0.9;
+  }
+}
+
+.header_absolute .page_header_wrapper.affix-wrapper {
+  z-index: 1004;
+}
+
+.page-template-home-page .header_absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  .page_topline {
+    background-image: none !important;
+    &:before {
+      opacity: 0;
+    }
+  }
+}
+
+.page_header.header5,
+.page_header.header6 {
+  .sf-menu > li > a {
+    @media (min-width: 1500px) {
+      padding-top: 38px;
+      padding-bottom: 38px;
+    }
+    @media (min-width: 992px) and (max-width: 1300px) {
+      margin: 0 8px;
+    }
+  }
+  .header-includes {
+    display: flex;
+    align-items: center;
+    @media (min-width: 768px) {
+      justify-content: flex-end;
+    }
+    > * {
+      margin-left: 0;
+      padding-left: 0;
+      line-height: 20px;
+      @media (min-width: 576px) {
+        margin-left: 10px;
+      }
+      @media (min-width: 768px) {
+        margin-left: 30px;
+      }
+    }
+    i {
+      font-size: 20px;
+      &:hover {
+        color: $colorMain;
+      }
+    }
+    .dropdown.dropdown-card .dropdown-shopping-cart {
+      margin-right: 0;
+    }
+    .toggle_menu.toggle_menu_side.header_widget.header-slide {
+      height: auto;
+      width: auto;
+      margin-left: 50px;
+      &:before {
+        display: none;
+      }
+      i {
+        color: $colorMain;
+        transition: 0.3s all;
+        &:hover {
+          color: $colorMain2;
+        }
+      }
+    }
+  }
+  @media (min-width: 1300px) {
+  .sf-menu > li > a {
+      margin: 0 23px;
+    }
+  }
+}
+
+.page_header.header7 {
+  .sf-menu > li > a {
+    @media (min-width: 992px) {
+
+      padding-top: 53px;
+      padding-bottom: 53px;
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      margin: 0 9px;
+    }
+  }
+  &.header-style2 {
+    .sf-menu > li > a {
+      @media (min-width: 992px) {
+        padding-top: 43px;
+        padding-bottom: 43px;
+      }
+    }
+    .meta-phone-centered {
+      i.color-main {
+        color: $colorMain2;
+      }
+    }
+    &.s-overlay.ds.ms:before {
+      opacity: 0.8;
+    }
+  }
+}
+
+.meta-phone-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (min-width: 992px) {
+    justify-content: flex-end;
+    margin-right: -10px;
+  }
+  i {
+    margin-right: 10px;
+    @media (min-width: 1300px) {
+      margin-right: 20px;
+    }
+  }
+  a {
+    font-family: 'Anton';
+    font-size: 16px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    @media (min-width: 1300px) {
+      letter-spacing: 0.7em;
+    }
+  }
+
+}
+
+@import 'header/header_includes';
+@import 'header/logo';
+@import 'header/search_modal';

@@ -1,0 +1,30 @@
+/*
+Admin dashboard styles
+*/
+
+/*Show bootstrap width option only in footer widget area*/
+.widget_bootstrap_width {
+	display: none;
+}
+#sidebar-footer .widget_bootstrap_width,
+#accordion-section-sidebar-widgets-sidebar-footer .widget_bootstrap_width {
+	display: block;
+}
+/*Hidding bullets in list of predefined page, section and column templates*/
+div .fw-builder-templates-types > .fw-builder-templates-type ul.std li {
+	list-style: none;
+}
+/*Hiding Booked plugin default color chooser*/
+#booked-admin-panel-container  #booked-general > .section-row:nth-last-child(2) {
+	display: none !important;
+}
+/*fixing format dropdown in TinyMCE editor in Unyson popup*/
+.mce-panel.mce-menu {
+	z-index: 100004 !important;
+}
+/* Hiding Unyson Brizy notice */
+.notice.fw-brz-dismiss {
+	display: none !important;
+}
+/*Hiding Booked plugin outdated notice*/
+.booked-outdated-notice { display:none !important; }

@@ -1,0 +1,52 @@
+info: Checking if ssh is active.
+info: Trying ssh connection
+info: Switching native updates to disable
+info: Deleting cache before taking screenshots
+info: Detected error reporting::false and http status::200
+info: Checking if installation is valid
+info: Valid installation, proceeding with updates
+info: Installation is unlocked for update
+info: Initiating WP core update
+info: major version, need visual testing
+info: Deleting cache before taking screenshots
+info: Updated testUrlsCount to 6
+info: Testing urls ["https://www.serelit.de","https://www.serelit.de/registration/","https://www.serelit.de/product/automatic-electric-disappearing-ladders/","https://www.serelit.de/project/aenean-vulputate/","https://www.serelit.de/service/fenster-balkon-profile/","https://www.serelit.de/member/phebe-e-french/"]
+info: Calling bound captureBatch, attempt::1
+info: Updating WP core.
+info: Initiating backup of wpCore 
+info: Backup ["/var/www/wp-content/uploads/onecom-updater/backup/core/wp-includes.zip","/var/www/wp-content/uploads/onecom-updater/backup/core/wp-admin.zip","/var/www/wp-content/uploads/onecom-updater/backup/core/root-files.zip"] verified.
+info: Initiating DB backup
+info: DB backed up
+info: wpCore  backup complete
+info: Secured backups with .htaccess
+info: Deleting cache before taking screenshots
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 139 seconds for job 1993b230-9636-4436-89d2-1d5e28955d56
+info: Current capture status for job 1993b230-9636-4436-89d2-1d5e28955d56: in_progress ETA: 69
+info: ETA:: 69 seconds for job 1993b230-9636-4436-89d2-1d5e28955d56
+info: Current capture status for job 1993b230-9636-4436-89d2-1d5e28955d56: in_progress ETA: 69
+info: ETA:: 69 seconds for job 1993b230-9636-4436-89d2-1d5e28955d56
+info: Current capture status for job 1993b230-9636-4436-89d2-1d5e28955d56: in_progress ETA: 69
+info: ETA:: 69 seconds for job 1993b230-9636-4436-89d2-1d5e28955d56
+info: Current capture status for job 1993b230-9636-4436-89d2-1d5e28955d56: success ETA: undefined
+error: Visual inspection failed:: TypeError: capture1 is not iterable
+info: Visual testing error after_core_update, reverting
+info: Restoring  wpCore from backup
+info: WP Core restored from backup!
+info: Deleting cache before taking screenshots
+info: Detected error reporting::false and http status::200
+info: Switching native updates to enable
+info: Updating translations for WP Core.
+info: Translations updated for WP Core.
+info: WP core updates finished, proceeding with plugins' update
+info: Visual diff status Rollbacks:: false Diffs:: false
+info: Notifications enabled for all success status
+info: SSH already connected, exiting!
+info: Detected locale - de_DE
+info: Reading translation file /app/i18n/one.com/de_DE.json
+info: Message sent: 250 2.0.0 Ok: queued as 246bcfa2-251e-11f0-9775-bb9973742618 locale: de_DE
+info: SMTP call successful
+info: Uploading log
+info: Checking if ssh is active.
+info: Trying ssh connection

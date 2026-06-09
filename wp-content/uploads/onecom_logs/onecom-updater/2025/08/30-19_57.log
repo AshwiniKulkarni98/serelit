@@ -1,0 +1,82 @@
+info: Checking if ssh is active.
+info: Trying ssh connection
+info: Deleting cache before taking screenshots
+info: Probably invalid command - timeout -k 5m 5m /usr/local/bin/wp-cache-flush
+info: Detected error reporting::false and http status::200
+info: Checking if installation is valid
+info: Valid installation, proceeding with updates
+info: No running native updates
+info: Installation is unlocked for update
+info: Initiating WP core update
+info: No updates for WP Core!
+info: WP core updates finished, proceeding with plugins' update
+info: Initiating plugin update
+info: Found update for plugins
+info: Deleting cache before taking screenshots
+info: Probably invalid command - timeout -k 5m 5m /usr/local/bin/wp-cache-flush
+info: Updated testUrlsCount to 6
+info: Testing urls ["https://www.serelit.de","https://www.serelit.de/registration/","https://www.serelit.de/product/automatic-electric-disappearing-ladders/","https://www.serelit.de/project/aenean-vulputate/","https://www.serelit.de/service/fenster-balkon-profile/","https://www.serelit.de/member/phebe-e-french/"]
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 119 seconds for job db37c679-e3ca-49d4-924c-251687ea9619
+info: Current capture status for job db37c679-e3ca-49d4-924c-251687ea9619: in_progress ETA: 59
+info: ETA:: 59 seconds for job db37c679-e3ca-49d4-924c-251687ea9619
+info: Current capture status for job db37c679-e3ca-49d4-924c-251687ea9619: success ETA: undefined
+info: Initiating backup of plugin really-simple-ssl
+info: Backup ["/var/www/wp-content/uploads/onecom-updater/backup/plugins/really-simple-ssl.zip"] verified.
+info: Initiating DB backup
+info: DB backed up
+info: plugin really-simple-ssl backup complete
+info: Secured backups with .htaccess
+info: Updating plugin really-simple-ssl
+info: Deleting cache before taking screenshots
+info: Probably invalid command - timeout -k 5m 5m /usr/local/bin/wp-cache-flush
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 119 seconds for job b5238f78-1e2b-4a1c-9398-0e248de57723
+info: Current capture status for job b5238f78-1e2b-4a1c-9398-0e248de57723: in_progress ETA: 59
+info: ETA:: 59 seconds for job b5238f78-1e2b-4a1c-9398-0e248de57723
+info: Current capture status for job b5238f78-1e2b-4a1c-9398-0e248de57723: success ETA: undefined
+info: Calling bound compare, attempt::1
+info: Calling bound waitForCompareJob, attempt::1
+info: ETA:: 55 seconds for job 9363081d-d07b-4abd-91f4-46dcb46a36b2
+info: Current compare status for job 9363081d-d07b-4abd-91f4-46dcb46a36b2: success
+info: Initiating backup of plugin user-registration
+info: Backup ["/var/www/wp-content/uploads/onecom-updater/backup/plugins/user-registration.zip"] verified.
+info: DB backup was created earlier, skipping
+info: plugin user-registration backup complete
+info: Updating plugin user-registration
+info: Deleting cache before taking screenshots
+info: Probably invalid command - timeout -k 5m 5m /usr/local/bin/wp-cache-flush
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 119 seconds for job 88bc72a1-8324-4c1e-b8bc-53498a63f393
+info: Current capture status for job 88bc72a1-8324-4c1e-b8bc-53498a63f393: in_progress ETA: 59
+info: ETA:: 59 seconds for job 88bc72a1-8324-4c1e-b8bc-53498a63f393
+info: Current capture status for job 88bc72a1-8324-4c1e-b8bc-53498a63f393: success ETA: undefined
+info: Calling bound compare, attempt::1
+info: Calling bound waitForCompareJob, attempt::1
+info: ETA:: 55 seconds for job efe09966-bb77-4666-98ac-bcd7ffc5297c
+info: Current compare status for job efe09966-bb77-4666-98ac-bcd7ffc5297c: success
+info: Restoring plugin user-registration from backup
+info: Restore command status:: true
+info: plugin user-registration restored from backup
+info: Deleting cache before taking screenshots
+info: Probably invalid command - timeout -k 5m 5m /usr/local/bin/wp-cache-flush
+info: Detected error reporting::false and http status::200
+info: Updating translations for all plugin.
+info: Translations updated for all plugin.
+info: Plugins update completed
+info: Initiating theme update
+info: None of the selected themes have pending update!
+info: Themes update completed
+info: Notifications enabled for all success status
+info: Visual diff status Rollbacks:: true Diffs:: true
+info: SSH already connected, exiting!
+info: Detected locale - de_DE
+info: Reading translation file /app/i18n/one.com/de_DE.json
+info: Message sent: 250 2.0.0 Ok: queued as 91179064-85db-11f0-a80b-a15b02d070c0 locale: de_DE
+info: SMTP call successful
+info: Uploading log
+info: Checking if ssh is active.
+info: Trying ssh connection

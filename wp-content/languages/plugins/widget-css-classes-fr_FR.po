@@ -1,0 +1,186 @@
+# Translation of Plugins - Widget CSS Classes - Stable (latest release) in French (France)
+# This file is distributed under the same license as the Plugins - Widget CSS Classes - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-09-07 06:32:11+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: fr\n"
+"Project-Id-Version: Plugins - Widget CSS Classes - Stable (latest release)\n"
+
+#. Translators: %s stands for a link to translate.wordpress.org.
+#: includes/widget-css-classes-settings.class.php:153
+msgid "Translations are taken from %s"
+msgstr "Les traductions proviennent de %s"
+
+#: includes/widget-css-classes-settings.class.php:151
+msgid "Translate classes like `widget-first` and `widget-even`."
+msgstr "Traduire les classes comme `widget-first` et `widget-even`."
+
+#: includes/widget-css-classes-settings.class.php:145
+msgid "Translate classes"
+msgstr "Traduire les classes"
+
+#: widget-css-classes.php:97
+msgid "Please update"
+msgstr "Veuillez mettre à jour"
+
+#. Translators: %1$s stands for the WP version and %2$s stands for "Please
+#. update" (a link).
+#: widget-css-classes.php:95
+msgid "Widget CSS Classes requires WordPress %1$s or newer. %2$s"
+msgstr "Widget CSS Classes requiert WordPress %1$s ou ultérieur. %2$s"
+
+#: includes/widget-css-classes-settings.class.php:176
+msgid "None"
+msgstr "Aucun"
+
+#: includes/widget-css-classes-settings.class.php:140
+msgid "Plugins that run after this plugin could still add duplicates."
+msgstr "Les extensions qui s’exécutent après cette extension peuvent toujours ajouter des doublons."
+
+#: includes/widget-css-classes-settings.class.php:134
+msgid "Remove duplicate classes"
+msgstr "Supprimer les classes en doublon"
+
+#: includes/widget-css-classes-settings.class.php:129
+msgid "Wrap widget in a <div> element if the parameters are invalid."
+msgstr "Encapsuler le widget dans un élément <div> si les paramètres sont invalides."
+
+#: includes/widget-css-classes-settings.class.php:123
+msgid "Fix widget parameters"
+msgstr "Réparer les paramètres du widget"
+
+#: includes/widget-css-classes.class.php:246
+#: includes/widget-css-classes.class.php:273
+msgid "CSS Classes"
+msgstr "Classes CSS"
+
+#: includes/widget-css-classes-settings.class.php:175
+msgid "Both"
+msgstr "Tous les deux"
+
+#: includes/widget-css-classes-settings.class.php:174
+msgid "Predefined"
+msgstr "Prédéfini"
+
+#: includes/widget-css-classes-settings.class.php:116
+msgid "Predefined Classes"
+msgstr "Classes Prédéfinies"
+
+#. Description of the plugin
+msgid "Add custom, first, last, even, odd, and numbered classes to your widgets."
+msgstr "Ajouter des classes personnalisées, premières, dernières, paires, impaires, et numérotées à vos widgets."
+
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/widget-css-classes/"
+msgstr "http://cleverness.org/plugins/widget-css-classes"
+
+#: includes/widget-css-classes.class.php:110
+msgid "widget-odd"
+msgstr "widget-impair"
+
+#: includes/widget-css-classes.class.php:109
+msgid "widget-even"
+msgstr "widget-pair"
+
+#: includes/widget-css-classes.class.php:108
+msgid "widget-last"
+msgstr "widget-dernier"
+
+#: includes/widget-css-classes.class.php:107
+msgid "widget-first"
+msgstr "widget-premier"
+
+#: includes/widget-css-classes.class.php:106
+msgid "widget-"
+msgstr "widget-"
+
+#: includes/widget-css-classes.class.php:218
+msgid "CSS ID"
+msgstr "ID CSS"
+
+#: includes/widget-css-classes-settings.class.php:364
+msgid "Import Settings"
+msgstr "Importer les réglages"
+
+#: includes/widget-css-classes-settings.class.php:360
+msgid "Export Settings"
+msgstr "Exporter les réglages"
+
+#: includes/widget-css-classes-settings.class.php:358
+msgid "Import/Export Settings"
+msgstr "Importer/Exporter les réglages"
+
+#. Plugin Name of the plugin
+#: includes/widget-css-classes-settings.class.php:315
+msgid "Widget CSS Classes"
+msgstr "Classes CSS Widget"
+
+#: includes/widget-css-classes-settings.class.php:250
+msgid "No Settings File Selected"
+msgstr "Pas de fichier de réglages sélectionné"
+
+#: includes/widget-css-classes-settings.class.php:246
+msgid "Invalid Settings File"
+msgstr "Fichier de réglages invalide"
+
+#: includes/widget-css-classes-settings.class.php:242
+msgid "Settings Imported"
+msgstr "Réglages importés"
+
+#: includes/widget-css-classes-settings.class.php:234
+msgid "Import/Export"
+msgstr "Importer/Exporter"
+
+#: includes/widget-css-classes-settings.class.php:173
+msgid "Text"
+msgstr "Texte"
+
+#: includes/widget-css-classes-settings.class.php:164
+msgid "No"
+msgstr "Non"
+
+#: includes/widget-css-classes-settings.class.php:163
+msgid "Yes"
+msgstr "Oui"
+
+#: includes/widget-css-classes-settings.class.php:109
+msgid "Class Field Type"
+msgstr "Type de champ Classe"
+
+#: includes/widget-css-classes-settings.class.php:99
+msgid "Show Additional Field for ID"
+msgstr "Montrer un champ supplémentaire pour ID"
+
+#: includes/widget-css-classes-settings.class.php:89
+msgid "Add Even/Odd Classes"
+msgstr "Ajouter les Classes Paires/Impaires"
+
+#: includes/widget-css-classes-settings.class.php:79
+msgid "Add First/Last Classes"
+msgstr "Ajouter les Classes Premières/Dernières"
+
+#: includes/widget-css-classes-settings.class.php:69
+msgid "Add Widget Number Classes"
+msgstr "Ajouter les Classes de Numéro de Widget"
+
+#: includes/widget-css-classes-settings.class.php:61
+#: includes/widget-css-classes-settings.class.php:66
+msgid "Widget CSS Classes Settings"
+msgstr "Paramètres Widget CSS Classes"
+
+#: includes/widget-css-classes-library.class.php:79
+msgid "Donate"
+msgstr "Faire un don"
+
+#: includes/widget-css-classes-library.class.php:76
+msgid "Version"
+msgstr "Version"
+
+#: includes/widget-css-classes-library.class.php:60
+msgid "Settings"
+msgstr "Réglages"

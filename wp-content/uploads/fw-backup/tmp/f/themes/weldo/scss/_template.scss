@@ -1,0 +1,440 @@
+/*
+** Template Specific Styles
+*/
+
+#box_wrapper > section,
+#box_wrapper > div > section {
+  overflow: hidden;
+}
+
+  #box_wrapper > section.page_topline,
+  #box_wrapper > section.page_toplogo,
+  #box_wrapper > section.overflow-visible,
+  #box_wrapper > div > section.overflow-visible {
+  @media (min-width: 768px) {
+    overflow: visible;
+  }
+  &.overflow-m-visible {
+    overflow: visible;
+  }
+}
+
+#box_wrapper > div > section.topline-overflow-visible {
+  overflow: visible;
+}
+
+//featured person on three different background sections
+img.absolute_image {
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+}
+
+.image-rounded-cross-borders {
+  position: relative;
+  margin: 50px 0 60px;
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 30px;
+    background-color: $borderColor;
+    top: -30px;
+    left: 50%;
+  }
+  &:after {
+    top: auto;
+    bottom: -30px;
+  }
+  .box-shadow {
+    padding: 9px;
+    border-radius: 50%;
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 30px;
+      background-color: $borderColor;
+      top: 50%;
+      left: -30px;
+      @media(max-width: 1199px) {
+        display: none;
+      }
+    }
+    &:after {
+      left: auto;
+      right: -30px;
+    }
+  }
+  img {
+    border-radius: 50%;
+  }
+}
+
+.btn-action {
+  i {
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    &.fa-chevron-right {
+      position: relative;
+      left: 2px;
+    }
+  }
+}
+
+.partners-carousel {
+  a {
+    opacity: 0.2;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  .center a {
+    opacity: 1;
+  }
+}
+
+.page_title {
+  h1,
+  h2 {
+    margin-bottom: 15px;
+    @media(min-width: 992px) {
+      margin-top: -2px;
+      font-size: 50px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .small-title {
+    margin-bottom: 0;
+    & + .breadcrumb {
+      font-size: 16px;
+      letter-spacing: 0;
+      text-transform: none;
+      font-weight: 300;
+    }
+  }
+  @media (min-width: 992px) {
+    .title-inline {
+      margin: 0;
+      & + .breadcrumb {
+        padding-left: 30px;
+        margin-left: 30px;
+        border-left: 1px solid $universalBorderColor;
+      }
+    }
+  }
+  .breadcrumb {
+    line-height: 1.6;
+    margin-bottom: 2px;
+  }
+  [class*="container"] > .breadcrumb {
+    position: absolute;
+    right: 15px;
+    margin-bottom: 0;
+    bottom: 0;
+    padding: 0 15px;
+    background-color: $borderColorRGBA;
+    @media (max-width: 767px) {
+      letter-spacing: 0.15em;
+    }
+  }
+}
+
+.page_map {
+  height: 560px;
+  text-align: center;
+  .marker {
+    display: none;
+  }
+}
+
+.map_marker_description {
+  h3 {
+    font-size: 30px;
+    line-height: 1;
+    margin-bottom: 13px;
+  }
+  max-width: 270px;
+  padding: 17px 0 12px;
+  img {
+    max-width: 90% !important;
+  }
+
+}
+
+button.gm-ui-hover-effect {
+  top: 0 !important;
+  right: 0 !important;
+}
+
+//styling google info window
+.gm-style {
+  button {
+    letter-spacing: 0;
+  }
+}
+
+.page_footer {
+  //for hidden social icons
+  overflow: hidden;
+  .widget_text + .widget_mailchimp {
+    margin-top: -6px;
+    @media (min-width: 768px) {
+      margin-top: -15px;
+    }
+  }
+  .widget_mailchimp button {
+    height: 60px;
+  }
+  .widget_bloginfo {
+    a.logo {
+      margin-top: 0;
+      margin-bottom: 15px;
+      @media (min-width: 768px) and (max-width: 992px)  {
+        justify-content: center;
+      }
+      @media (min-width: 992px) {
+        margin-top: -12px;
+        margin-bottom: 32px;
+        justify-content: inherit;
+      }
+    }
+    span {
+      display: inline-block;
+      margin-top: -4px;
+    }
+  }
+  .list-bordered {
+    li {
+      i {
+        margin-right: 16px;
+      }
+      padding-top: 17px;
+      padding-bottom: 18px;
+    }
+  }
+  @media (max-width: 767px) {
+    .widget_icons_list {
+      padding-bottom: 9px;
+    }
+  }
+}
+
+//team hover info for .media-item
+.item-hover-content {
+  position: relative;
+  overflow: hidden;
+  .item-media {
+    z-index: 2;
+  }
+
+  .item-content {
+    position: absolute;
+    right: 0;
+    left: 0;
+    box-shadow: $boxShadow;
+
+    h4 {
+      line-height: 1;
+      letter-spacing: 0.15em;
+      margin-bottom: 1.4em;
+      span {
+        font-weight: 900;
+      }
+    }
+  }
+  //overriding default media item content padding on big screens
+  &.content-padding .item-content {
+    @media (min-width: 1200px) {
+      padding: 54px 40px;
+    }
+  }
+  &:hover {
+    overflow: visible;
+    z-index: 3;
+    box-shadow: $boxShadow;
+  }
+}
+
+.content-show-hover {
+  overflow: hidden;
+  .item-content {
+    top: 0;
+    opacity: 0;
+    transform: scale(1.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: all 0.15s ease-in-out;
+    h4 {
+      line-height: 1;
+      letter-spacing: 0.15em;
+      margin-bottom: 1.4em;
+      span {
+        display: block;
+        font-weight: 900;
+      }
+    }
+  }
+  &:hover {
+    box-shadow: $boxShadow;
+    .item-content {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+}
+
+.share_buttons {
+  display: flex;
+  a {
+    display: block;
+    width: 100%;
+    &:before {
+      height: 50px;
+      line-height: 50px;
+    }
+    &.fa {
+      margin: 0 1px 0 0;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.card-carousel {
+  .card {
+    .card-body {
+      margin: -70px 30px 35px;
+      padding: 38px 20px 35px;
+      z-index: 10;
+      .card-title {
+        margin-bottom: 10px;
+      }
+    }
+    &.has-image-overlay {
+      .item-media .abs-link {
+        opacity: 0.3;
+        background-color: $colorMain;
+      }
+      &:hover {
+        .item-media .abs-link {
+          opacity: 0;
+        }
+      }
+    }
+    &.links-color2 {
+      a h4 {
+        transition: all 0.2s ease-in-out 0s;
+        &:hover {
+          color: $colorMain2;
+          transition: all 0.15s linear 0s;
+        }
+      }
+    }
+  }
+  [class*="-item"]:not(.align-items-center):hover .has-image-overlay .media-links:before {
+    opacity: 0;
+  }
+}
+
+//topline and toplogo
+.dropdown.dropdown-card {
+  .dropdown-menu {
+    @media (max-width: 767px) {
+      padding: 20px;
+    }
+    &.show {
+      margin-top: 8px;
+    }
+  }
+  .dropdown-shopping-cart {
+    position: relative;
+    margin-right: 24px;
+    &:after {
+      display: none;
+    }
+    .badge {
+      border-radius: 1em;
+      color: $fontColor;
+      font-size: 10px;
+      left: 9px;
+      padding: .27em .47em;
+      position: absolute;
+      top: -5px;
+    }
+    &:hover {
+      color: inherit;
+    }
+
+    & + .dropdown-menu {
+      min-width: 340px;
+      @media (min-width: 576px) {
+        min-width: 460px;
+        max-width: 500px;
+      }
+    }
+
+  }
+
+  .woocommerce.widget_shopping_cart .widget_shopping_cart_content {
+    @media (max-width: 767px) {
+      .woocommerce-mini-cart__buttons.buttons a {
+        padding: 7px 15px;
+      }
+    }
+    .mini_cart_item {
+      padding-left: 0;
+      display: flex;
+      align-items: center;
+      padding-bottom: 31px;
+      a > img {
+        position: relative;
+      }
+      .minicart-product-meta {
+        margin-left: 20px;
+        > a {
+          line-height: 1.3;
+          font-weight: 400;
+          display: block;
+          white-space: normal;
+        }
+        .quantity {
+          margin-top: 10px;
+        }
+      }
+      a.remove_from_cart_button {
+        order: 1;
+        font-size: 0;
+        margin: 0;
+        position: absolute;
+        right: 0;
+        &:before {
+          transition: 0.3s;
+          content: "\e917";
+          font-family: 'icomoon' !important;
+          font-size: 16px;
+          color: $colorMain2;
+        }
+        &:hover:before {
+          color: $darkColor;
+        }
+      }
+    }
+  }
+}
+
+.wp-block-group.has-background,
+.wp-block-media-text.alignfull.has-media-on-the-right {
+  margin-bottom: 30px;
+}
+
+.alignleft, .alignright, .aligncenter {
+  clear: both;
+}

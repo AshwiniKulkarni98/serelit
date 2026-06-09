@@ -1,0 +1,107 @@
+info: Checking if ssh is active.
+info: Trying ssh connection
+info: Deleting cache before taking screenshots
+info: Probably invalid command - timeout -k 5m 5m /usr/local/bin/wp-cache-flush
+info: Detected error reporting::false and http status::200
+info: Checking if installation is valid
+info: Valid installation, proceeding with updates
+info: No running native updates
+info: Installation is unlocked for update
+info: Initiating WP core update
+info: No updates for WP Core!
+info: WP core updates finished, proceeding with plugins' update
+info: Initiating plugin update
+info: Premium care dependencies - version:4.7.2 status:active
+info: Found update for plugins
+info: Deleting cache before taking screenshots
+info: Probably invalid command - timeout -k 5m 5m /usr/local/bin/wp-cache-flush
+info: Updated testUrlsCount to 6
+info: Testing urls ["https://www.serelit.de","https://www.serelit.de/registration/","https://www.serelit.de/product/automatic-electric-disappearing-ladders/","https://www.serelit.de/project/aenean-vulputate/","https://www.serelit.de/service/fenster-balkon-profile/","https://www.serelit.de/member/phebe-e-french/"]
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 119 seconds for job a1ae62e7-972a-427d-b86e-fc115eadc0a8
+info: Current capture status for job a1ae62e7-972a-427d-b86e-fc115eadc0a8: in_progress ETA: 59
+info: ETA:: 59 seconds for job a1ae62e7-972a-427d-b86e-fc115eadc0a8
+info: Current capture status for job a1ae62e7-972a-427d-b86e-fc115eadc0a8: success ETA: undefined
+info: Initiating backup of plugin mailchimp-for-wp
+info: Backup ["/var/www/wp-content/uploads/onecom-updater/backup/plugins/mailchimp-for-wp.zip"] verified.
+info: Initiating DB backup
+info: DB backed up
+info: plugin mailchimp-for-wp backup complete
+info: Secured backups with .htaccess
+info: Updating plugin mailchimp-for-wp
+info: Deleting cache before taking screenshots
+info: Probably invalid command - timeout -k 5m 5m /usr/local/bin/wp-cache-flush
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 119 seconds for job 621b16b0-4ce6-48a1-b5b8-32c2774b337d
+info: Current capture status for job 621b16b0-4ce6-48a1-b5b8-32c2774b337d: in_progress ETA: 59
+info: ETA:: 59 seconds for job 621b16b0-4ce6-48a1-b5b8-32c2774b337d
+info: Current capture status for job 621b16b0-4ce6-48a1-b5b8-32c2774b337d: success ETA: undefined
+info: Calling bound compare, attempt::1
+info: Calling bound waitForCompareJob, attempt::1
+info: ETA:: 55 seconds for job d823e736-02dc-4247-9f78-813917723d05
+info: Current compare status for job d823e736-02dc-4247-9f78-813917723d05: success
+info: Restoring plugin mailchimp-for-wp from backup
+info: Restore command status:: true
+info: plugin mailchimp-for-wp restored from backup
+info: Deleting cache before taking screenshots
+info: Probably invalid command - timeout -k 5m 5m /usr/local/bin/wp-cache-flush
+info: Detected error reporting::false and http status::200
+info: Initiating backup of plugin user-registration
+info: Backup ["/var/www/wp-content/uploads/onecom-updater/backup/plugins/user-registration.zip"] verified.
+info: DB backup was created earlier, skipping
+info: plugin user-registration backup complete
+info: Updating plugin user-registration
+info: Deleting cache before taking screenshots
+info: Probably invalid command - timeout -k 5m 5m /usr/local/bin/wp-cache-flush
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 119 seconds for job 1485a932-92bb-4a84-9bda-3b35cf5ee79e
+info: Current capture status for job 1485a932-92bb-4a84-9bda-3b35cf5ee79e: in_progress ETA: 59
+info: ETA:: 59 seconds for job 1485a932-92bb-4a84-9bda-3b35cf5ee79e
+info: Current capture status for job 1485a932-92bb-4a84-9bda-3b35cf5ee79e: success ETA: undefined
+info: Calling bound compare, attempt::1
+info: Calling bound waitForCompareJob, attempt::1
+info: ETA:: 55 seconds for job 2865443b-b1d0-410a-8987-02b8527b5ec5
+info: Current compare status for job 2865443b-b1d0-410a-8987-02b8527b5ec5: success
+info: Restoring plugin user-registration from backup
+info: Restore command status:: true
+info: plugin user-registration restored from backup
+info: Deleting cache before taking screenshots
+info: Probably invalid command - timeout -k 5m 5m /usr/local/bin/wp-cache-flush
+info: Detected error reporting::false and http status::200
+info: Initiating backup of plugin woocommerce
+info: Backup ["/var/www/wp-content/uploads/onecom-updater/backup/plugins/woocommerce.zip"] verified.
+info: DB backup was created earlier, skipping
+info: plugin woocommerce backup complete
+info: Updating plugin woocommerce
+info: Deleting cache before taking screenshots
+info: Probably invalid command - timeout -k 5m 5m /usr/local/bin/wp-cache-flush
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 119 seconds for job 6610c3a9-721d-41e8-bb2c-f6e8eae50b0f
+info: Current capture status for job 6610c3a9-721d-41e8-bb2c-f6e8eae50b0f: in_progress ETA: 59
+info: ETA:: 59 seconds for job 6610c3a9-721d-41e8-bb2c-f6e8eae50b0f
+info: Current capture status for job 6610c3a9-721d-41e8-bb2c-f6e8eae50b0f: success ETA: undefined
+info: Calling bound compare, attempt::1
+info: Calling bound waitForCompareJob, attempt::1
+info: ETA:: 55 seconds for job 1bf3cefe-4255-4ed2-a08e-9ca6bfa12ac5
+info: Current compare status for job 1bf3cefe-4255-4ed2-a08e-9ca6bfa12ac5: success
+info: Restoring plugin woocommerce from backup
+info: Restore command status:: true
+info: plugin woocommerce restored from backup
+info: Deleting cache before taking screenshots
+info: Probably invalid command - timeout -k 5m 5m /usr/local/bin/wp-cache-flush
+info: Detected error reporting::false and http status::200
+info: Updating translations for all plugin.
+info: Translations updated for all plugin.
+info: Plugins update completed
+info: Initiating theme update
+info: None of the selected themes have pending update!
+info: Themes update completed
+info: Will retry current update {}
+info: Messages published to queue
+info: Notifications enabled for all success status
+info: Repeated update with no new info, skipping email
+info: Uploading log

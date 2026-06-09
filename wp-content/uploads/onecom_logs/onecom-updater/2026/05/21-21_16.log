@@ -1,0 +1,48 @@
+info: Checking if ssh is active.
+info: Trying ssh connection
+info: Deleting cache before taking screenshots
+info: Probably invalid command - timeout -k 5m 5m /usr/local/bin/wp-cache-flush
+error: [INFO] Assuming error reporting on due to exception
+info: [INFO] HTTP broken due to exception AxiosError: Request failed with status code 503
+info: Site detected as broken, disabling visual testing!
+info: Checking if installation is valid
+info: Valid installation, proceeding with updates
+info: No running native updates
+info: Installation is unlocked for update
+info: Initiating WP core update
+info: No updates for WP Core!
+info: WP core updates finished, proceeding with plugins' update
+info: Initiating plugin update
+info: Premium care dependencies - version:5.1.5 status:active
+info: None of the selected plugins have pending update!
+info: Plugins update completed
+info: Initiating theme update
+info: Found update for themes
+info: Initiating backup of theme twentytwentyfive
+info: Backup ["/var/www/wp-content/uploads/onecom-updater/backup/themes/twentytwentyfive.zip"] verified.
+info: Initiating DB backup
+info: DB backed up
+info: theme twentytwentyfive backup complete
+info: Secured backups with .htaccess
+info: Updating theme twentytwentyfive
+info: theme is inactive, skipping visual testing
+info: Initiating backup of theme twentytwentyfour
+info: Backup ["/var/www/wp-content/uploads/onecom-updater/backup/themes/twentytwentyfour.zip"] verified.
+info: DB backup was created earlier, skipping
+info: theme twentytwentyfour backup complete
+info: Updating theme twentytwentyfour
+info: theme is inactive, skipping visual testing
+info: Updating translations for all theme.
+info: Translations updated for all theme.
+info: Themes update completed
+info: Notifications enabled for all success status
+info: Visual diff status Rollbacks:: false Diffs:: false
+info: SSH already connected, exiting!
+info: Detected locale - de_DE
+info: Reading translation file /app/i18n/one.com/de_DE.json
+info: Message sent: 250 2.0.0 Ok: queued as 45d218f0-555a-11f1-a31a-a15b02d070c0 locale: de_DE
+info: Closed email transport
+info: SMTP call successful
+info: Uploading log
+info: Checking if ssh is active.
+info: Trying ssh connection

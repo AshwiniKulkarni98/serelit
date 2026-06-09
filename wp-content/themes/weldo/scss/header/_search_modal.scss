@@ -1,0 +1,116 @@
+/*search modal*/
+#search_modal {
+  padding: 0 !important;
+  .widget {
+    padding: 20px 0;
+    background-color: $lightColor;
+  }
+  .search-form {
+    max-width: 960px;
+    @media (min-width: 768px) {
+      margin: 0 100px;
+    }
+  }
+  a {
+    @include small-text();
+    color: $lightColor;
+    &:hover {
+      color: $colorMain;
+      opacity: 1;
+    }
+  }
+  .searchform-respond {
+    width: 300px;
+    margin: 20px auto;
+    color: $lightColor;
+  }
+  .form-group {
+    margin-bottom: 0;
+    @media (max-width: 1199px) {
+      padding: 0 20px;
+    }
+  }
+
+  .form-control:-moz-placeholder {
+    color: $fontColor;
+    opacity: 1;
+  }
+  .form-control::-moz-placeholder {
+    color: $fontColor;
+    opacity: 1;
+  }
+
+  .form-control:-ms-input-placeholder {
+    color: $fontColor;
+  }
+
+  .form-control::-webkit-input-placeholder {
+    color: $fontColor;
+  }
+  .search-submit {
+    width: 60px;
+    height: 60px;
+    font-size: 0;
+    min-width: auto;
+    padding: 0;
+    @media (max-width: 1199px) {
+      right: 20px;
+    }
+    &:hover {
+      opacity: 1;
+      &:before {
+        color: $darkgreyColor;
+      }
+    }
+    &:before {
+      transition: 0.3s;
+      font-size: 18px;
+      color: $colorMain;
+
+    }
+  }
+  .close {
+    line-height: 60px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    min-width: 60px;
+    font-size: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    z-index: 2;
+    text-shadow: none;
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+    &:active {
+      top: 20px !important;
+    }
+    &:hover {
+      background-color: transparent;
+      i {
+        color: $colorMain2;
+      }
+    }
+    i {
+      transition: 0.3s;
+      font-size: 30px;
+      color: $colorMain;
+    }
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+  .active-side-header & {
+    right: $sideHeaderWidth;
+  }
+}
+
+.search_modal_button {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1;
+  padding: 0 0 0 10px;
+}

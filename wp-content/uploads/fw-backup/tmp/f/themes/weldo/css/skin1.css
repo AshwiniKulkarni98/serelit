@@ -1,0 +1,136 @@
+.special-heading{
+	margin: 0 0 25px;
+}
+
+@media (min-width: 768px) {
+	.special-heading .big-letter-spacing{
+		letter-spacing: .7em;
+	}
+}
+
+.progress{
+	margin-bottom: 28px;
+}
+
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=number],
+textarea,
+select,
+.form-control{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.select_container:before{
+	color: var(--darkgreyColor);
+}
+
+.s-overlay.ds:not(.ms):not(.bs):before{
+	opacity: .8;
+}
+
+.single-portfolio-item h4{
+	font-size: 20px;
+}
+
+.single-portfolio-item.horizontal-item .video-link:after{
+	font-size: 50px;
+}
+
+[role=tablist] .card-header a:after{
+	color: var(--colorMain2);
+}
+
+.ds .logo .color-main{
+	color: #fff;
+}
+
+.ds .logo .color-main:hover{
+	color: var(--colorMain);
+}
+
+.testimonials-slider .quote-item{
+	font-style: unset;
+	max-width: 100%;
+}
+
+.testimonials-slider .quote-item .quote-content p{
+	line-height: 30px;
+}
+
+@media (min-width: 1200px) {
+	.testimonials-slider .quote-item .quote-image + .quote-content{
+		margin-top: 130px;
+	}
+
+	.testimonials-slider .quote-item .quote-image img{
+		max-width: 500px;
+	}
+}
+
+.testimonials-slider.owl-carousel .owl-nav{
+	top: 64%;
+	left: 50%;
+	-webkit-transform: translateX(8px);
+	        transform: translateX(8px);
+}
+
+.testimonials-slider.owl-carousel .owl-nav > div{
+	display: inline-block;
+	position: static;
+	margin: 0 1px;
+	left: auto;
+	right: auto;
+}
+
+.testimonials-slider.owl-carousel .owl-nav > div:first-child{
+	left: auto;
+}
+
+.testimonials-slider.owl-carousel .owl-nav > div i{
+	font-size: 23px;
+	font-weight: 900;
+}
+
+.widget_search .form-group{
+	margin-bottom: 0;
+}
+
+.btn.btn-wide{
+	min-width: 200px;
+}
+
+.steps.item-steps .step-part:before{
+	font-size: 80px;
+	left: -20px;
+	top: -38px;
+}
+
+.single-product .page_content{
+	margin-bottom: 0;
+}
+
+.filters{
+	justify-content: center;
+	padding-top: 0;
+	padding-bottom: 30px;
+	margin-top: -8px;
+}
+
+.filters > a{
+	padding: 3px 0;
+	margin: 0 15px;
+}
+
+.filters > a:after{
+	bottom: 3px;
+}
+
+.modal-backdrop.show{
+	background-color: var(--darkgreyColor);
+}

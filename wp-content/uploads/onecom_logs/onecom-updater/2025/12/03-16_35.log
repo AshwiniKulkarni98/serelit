@@ -1,0 +1,12 @@
+info: Checking if ssh is active.
+info: Trying ssh connection
+info: Deleting cache before taking screenshots
+info: Probably invalid command - timeout -k 5m 5m /usr/local/bin/wp-cache-flush
+error: [INFO] Assuming error reporting on due to exception
+info: [INFO] HTTP broken due to exception AggregateError: Error
+info: Site detected as broken, disabling visual testing!
+info: Checking if installation is valid
+info: Valid installation, proceeding with updates
+info: Ecommerce plugin found, not updating in day time.
+info: No updates, skipping email
+info: Uploading log

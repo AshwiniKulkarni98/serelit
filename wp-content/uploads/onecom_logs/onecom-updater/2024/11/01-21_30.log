@@ -1,0 +1,121 @@
+info: Checking if ssh is active.
+info: Trying ssh connection
+info: Deleting cache before taking screenshots
+info: Executing time constrained:: timeout -k 5m 5m wp config set WP_DISABLE_FATAL_ERROR_HANDLER true --path=/var/www
+error: [INFO] Assuming error reporting on due to exception
+info: [INFO] HTTP broken due to exception AxiosError: Request failed with status code 503
+info: Site detected as broken, disabling visual testing!
+info: Checking if installation is valid
+info: Executing time constrained:: timeout -k 5m 5m wp core is-installed --path=/var/www && echo $?
+info: Valid installation, proceeding with updates
+info: Initiating WP core update
+info: Executing time constrained:: timeout -k 5m 5m wp core check-update --format=json --path=/var/www
+info: No updates for WP Core!
+info: WP core updates finished, proceeding with plugins' update
+info: Initiating plugin update
+info: Executing time constrained:: timeout -k 5m 5m wp plugin list --format=json --fields=name,status,update,version,title,update_version --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp plugin get classic-editor --fields=author --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp plugin get complianz-gdpr --fields=author --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp plugin get contact-form-7 --fields=author --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp plugin get font-awesome --fields=author --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp plugin get creame-whatsapp-me --fields=author --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp plugin get loco-translate --fields=author --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp plugin get mailchimp-for-wp --fields=author --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp plugin get wp-user-avatar --fields=author --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp plugin get really-simple-ssl --fields=author --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp plugin get user-registration --fields=author --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp plugin get woocommerce --fields=author --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp plugin get wp-social --fields=author --format=json --path=/var/www
+info: Found update for plugins
+info: Initiating backup of plugin classic-editor
+info: Initiating DB backup
+info: Executing time constrained:: timeout -k 5m 5m wp db export --path=/var/www --port=3306 --add-drop-table --tables=$(wp db tables --all-tables-with-prefix --format=csv --path=/var/www) /var/www/wp-content/uploads/onecom-updater/backup/db.sql
+info: DB backed up
+info: plugin classic-editor backup complete
+info: Secured backups with .htaccess
+info: Updating plugin classic-editor
+info: Executing time constrained:: timeout -k 5m 5m wp plugin update classic-editor --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp plugin get classic-editor --field=version --path=/var/www
+info: Initiating backup of plugin complianz-gdpr
+info: DB backup was created earlier, skipping
+info: plugin complianz-gdpr backup complete
+info: Updating plugin complianz-gdpr
+info: Executing time constrained:: timeout -k 5m 5m wp plugin update complianz-gdpr --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp plugin get complianz-gdpr --field=version --path=/var/www
+info: Initiating backup of plugin contact-form-7
+info: DB backup was created earlier, skipping
+info: plugin contact-form-7 backup complete
+info: Updating plugin contact-form-7
+info: Executing time constrained:: timeout -k 5m 5m wp plugin update contact-form-7 --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp plugin get contact-form-7 --field=version --path=/var/www
+info: Initiating backup of plugin font-awesome
+info: DB backup was created earlier, skipping
+info: plugin font-awesome backup complete
+info: Updating plugin font-awesome
+info: Executing time constrained:: timeout -k 5m 5m wp plugin update font-awesome --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp plugin get font-awesome --field=version --path=/var/www
+info: Initiating backup of plugin creame-whatsapp-me
+info: DB backup was created earlier, skipping
+info: plugin creame-whatsapp-me backup complete
+info: Updating plugin creame-whatsapp-me
+info: Executing time constrained:: timeout -k 5m 5m wp plugin update creame-whatsapp-me --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp plugin get creame-whatsapp-me --field=version --path=/var/www
+info: Initiating backup of plugin loco-translate
+info: DB backup was created earlier, skipping
+info: plugin loco-translate backup complete
+info: Updating plugin loco-translate
+info: Executing time constrained:: timeout -k 5m 5m wp plugin update loco-translate --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp plugin get loco-translate --field=version --path=/var/www
+info: Initiating backup of plugin mailchimp-for-wp
+info: DB backup was created earlier, skipping
+info: plugin mailchimp-for-wp backup complete
+info: Updating plugin mailchimp-for-wp
+info: Executing time constrained:: timeout -k 5m 5m wp plugin update mailchimp-for-wp --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp plugin get mailchimp-for-wp --field=version --path=/var/www
+info: Initiating backup of plugin wp-user-avatar
+info: DB backup was created earlier, skipping
+info: plugin wp-user-avatar backup complete
+info: Updating plugin wp-user-avatar
+info: Executing time constrained:: timeout -k 5m 5m wp plugin update wp-user-avatar --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp plugin get wp-user-avatar --field=version --path=/var/www
+info: Initiating backup of plugin really-simple-ssl
+info: DB backup was created earlier, skipping
+info: plugin really-simple-ssl backup complete
+info: Updating plugin really-simple-ssl
+info: Executing time constrained:: timeout -k 5m 5m wp plugin update really-simple-ssl --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp plugin get really-simple-ssl --field=version --path=/var/www
+info: Initiating backup of plugin user-registration
+info: DB backup was created earlier, skipping
+info: plugin user-registration backup complete
+info: Updating plugin user-registration
+info: Executing time constrained:: timeout -k 5m 5m wp plugin update user-registration --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp plugin get user-registration --field=version --path=/var/www
+info: Initiating backup of plugin woocommerce
+info: DB backup was created earlier, skipping
+info: plugin woocommerce backup complete
+info: Updating plugin woocommerce
+info: Executing time constrained:: timeout -k 5m 5m wp plugin update woocommerce --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp plugin get woocommerce --field=version --path=/var/www
+info: Initiating backup of plugin wp-social
+info: DB backup was created earlier, skipping
+info: plugin wp-social backup complete
+info: Updating plugin wp-social
+info: Executing time constrained:: timeout -k 5m 5m wp plugin update wp-social --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp plugin get wp-social --field=version --path=/var/www
+info: Updating translations for all plugin.
+info: Executing time constrained:: timeout -k 5m 5m wp language plugin update --all --path=/var/www
+info: Translations updated for all plugin.
+info: Plugins update completed
+info: Initiating theme update
+info: Executing time constrained:: timeout -k 5m 5m wp theme list --format=json --fields=name,status,update,version,title,update_version --path=/var/www
+info: None of the selected themes have pending update!
+info: Themes update completed
+info: SSH already connected, exiting!
+info: Executing time constrained:: timeout -k 5m 5m wp eval 'echo get_locale();' --path=/var/www
+info: Detected locale - de_DE
+info: Reading translation file /app/i18n/one.com/de_DE.json
+info: Message sent: 250 2.0.0 Ok: queued as 93a012a6-9898-11ef-b9ab-dfed54cf576f locale: de_DE
+info: SMTP call successful
+info: Uploading log
+info: Checking if ssh is active.
+info: Trying ssh connection

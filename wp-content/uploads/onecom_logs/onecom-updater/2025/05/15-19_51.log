@@ -1,0 +1,129 @@
+info: Checking if ssh is active.
+info: Trying ssh connection
+info: Deleting cache before taking screenshots
+info: Detected error reporting::false and http status::200
+info: Checking if installation is valid
+info: Valid installation, proceeding with updates
+info: Installation is unlocked for update
+info: Initiating WP core update
+info: No updates for WP Core!
+info: WP core updates finished, proceeding with plugins' update
+info: Initiating plugin update
+info: Found update for plugins
+info: Deleting cache before taking screenshots
+info: Updated testUrlsCount to 6
+info: Testing urls ["https://www.serelit.de","https://www.serelit.de/registration/","https://www.serelit.de/product/automatic-electric-disappearing-ladders/","https://www.serelit.de/project/aenean-vulputate/","https://www.serelit.de/service/fenster-balkon-profile/","https://www.serelit.de/member/phebe-e-french/"]
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 139 seconds for job 2038f82d-dca9-4d08-858c-31298fefb0bb
+info: Current capture status for job 2038f82d-dca9-4d08-858c-31298fefb0bb: in_progress ETA: 69
+info: ETA:: 69 seconds for job 2038f82d-dca9-4d08-858c-31298fefb0bb
+info: Current capture status for job 2038f82d-dca9-4d08-858c-31298fefb0bb: in_progress ETA: 69
+info: ETA:: 69 seconds for job 2038f82d-dca9-4d08-858c-31298fefb0bb
+info: Current capture status for job 2038f82d-dca9-4d08-858c-31298fefb0bb: success ETA: undefined
+info: Initiating backup of plugin wp-user-avatar
+info: Backup ["/var/www/wp-content/uploads/onecom-updater/backup/plugins/wp-user-avatar.zip"] verified.
+info: Initiating DB backup
+info: DB backed up
+info: plugin wp-user-avatar backup complete
+info: Secured backups with .htaccess
+info: Updating plugin wp-user-avatar
+info: Deleting cache before taking screenshots
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 139 seconds for job 043d1e8b-9863-47bd-901d-57848f230249
+info: Current capture status for job 043d1e8b-9863-47bd-901d-57848f230249: in_progress ETA: 69
+info: ETA:: 69 seconds for job 043d1e8b-9863-47bd-901d-57848f230249
+info: Current capture status for job 043d1e8b-9863-47bd-901d-57848f230249: in_progress ETA: 69
+info: ETA:: 69 seconds for job 043d1e8b-9863-47bd-901d-57848f230249
+info: Current capture status for job 043d1e8b-9863-47bd-901d-57848f230249: success ETA: undefined
+info: Calling bound compare, attempt::1
+info: Calling bound waitForCompareJob, attempt::1
+info: ETA:: 64 seconds for job 9f5d172a-3e8d-4daf-9806-c05fddac1c51
+info: Current compare status for job 9f5d172a-3e8d-4daf-9806-c05fddac1c51: in_progress
+info: ETA:: 32 seconds for job 9f5d172a-3e8d-4daf-9806-c05fddac1c51
+info: Current compare status for job 9f5d172a-3e8d-4daf-9806-c05fddac1c51: in_progress
+info: ETA:: 32 seconds for job 9f5d172a-3e8d-4daf-9806-c05fddac1c51
+info: Current compare status for job 9f5d172a-3e8d-4daf-9806-c05fddac1c51: in_progress
+info: ETA:: 32 seconds for job 9f5d172a-3e8d-4daf-9806-c05fddac1c51
+info: Current compare status for job 9f5d172a-3e8d-4daf-9806-c05fddac1c51: in_progress
+info: ETA:: 32 seconds for job 9f5d172a-3e8d-4daf-9806-c05fddac1c51
+info: Current compare status for job 9f5d172a-3e8d-4daf-9806-c05fddac1c51: in_progress
+info: ETA:: 32 seconds for job 9f5d172a-3e8d-4daf-9806-c05fddac1c51
+info: Current compare status for job 9f5d172a-3e8d-4daf-9806-c05fddac1c51: in_progress
+info: ETA:: 32 seconds for job 9f5d172a-3e8d-4daf-9806-c05fddac1c51
+info: Current compare status for job 9f5d172a-3e8d-4daf-9806-c05fddac1c51: success
+info: Restoring plugin wp-user-avatar from backup
+info: plugin wp-user-avatar restored from backup
+info: Deleting cache before taking screenshots
+info: Detected error reporting::false and http status::200
+info: Initiating backup of plugin snazzy-maps
+info: Backup ["/var/www/wp-content/uploads/onecom-updater/backup/plugins/snazzy-maps.zip"] verified.
+info: DB backup was created earlier, skipping
+info: plugin snazzy-maps backup complete
+info: Updating plugin snazzy-maps
+info: Deleting cache before taking screenshots
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 139 seconds for job f35d2c7c-dc41-4383-a828-16c23ae3c811
+info: Current capture status for job f35d2c7c-dc41-4383-a828-16c23ae3c811: in_progress ETA: 69
+info: ETA:: 69 seconds for job f35d2c7c-dc41-4383-a828-16c23ae3c811
+info: Current capture status for job f35d2c7c-dc41-4383-a828-16c23ae3c811: success ETA: undefined
+info: Calling bound compare, attempt::1
+info: Calling bound waitForCompareJob, attempt::1
+info: ETA:: 64 seconds for job fae2aea1-56a4-4b4a-a669-b34ce54c629c
+info: Current compare status for job fae2aea1-56a4-4b4a-a669-b34ce54c629c: in_progress
+info: ETA:: 32 seconds for job fae2aea1-56a4-4b4a-a669-b34ce54c629c
+info: Current compare status for job fae2aea1-56a4-4b4a-a669-b34ce54c629c: in_progress
+info: ETA:: 32 seconds for job fae2aea1-56a4-4b4a-a669-b34ce54c629c
+info: Current compare status for job fae2aea1-56a4-4b4a-a669-b34ce54c629c: in_progress
+info: ETA:: 32 seconds for job fae2aea1-56a4-4b4a-a669-b34ce54c629c
+info: Current compare status for job fae2aea1-56a4-4b4a-a669-b34ce54c629c: in_progress
+info: ETA:: 32 seconds for job fae2aea1-56a4-4b4a-a669-b34ce54c629c
+info: Current compare status for job fae2aea1-56a4-4b4a-a669-b34ce54c629c: in_progress
+info: ETA:: 32 seconds for job fae2aea1-56a4-4b4a-a669-b34ce54c629c
+info: Current compare status for job fae2aea1-56a4-4b4a-a669-b34ce54c629c: success
+info: Restoring plugin snazzy-maps from backup
+info: plugin snazzy-maps restored from backup
+info: Deleting cache before taking screenshots
+info: Detected error reporting::false and http status::200
+info: Initiating backup of plugin woocommerce
+info: Backup ["/var/www/wp-content/uploads/onecom-updater/backup/plugins/woocommerce.zip"] verified.
+info: DB backup was created earlier, skipping
+info: plugin woocommerce backup complete
+info: Updating plugin woocommerce
+info: Deleting cache before taking screenshots
+info: Calling bound captureBatch, attempt::1
+info: Calling bound waitForJobCompletion, attempt::1
+info: ETA:: 139 seconds for job f8d1f428-36ac-47ff-a5d3-5b24a8358e41
+info: Current capture status for job f8d1f428-36ac-47ff-a5d3-5b24a8358e41: in_progress ETA: 69
+info: ETA:: 69 seconds for job f8d1f428-36ac-47ff-a5d3-5b24a8358e41
+info: Current capture status for job f8d1f428-36ac-47ff-a5d3-5b24a8358e41: success ETA: undefined
+info: Calling bound compare, attempt::1
+info: Calling bound waitForCompareJob, attempt::1
+info: ETA:: 64 seconds for job 5b63e0dc-62b4-475c-877e-78fdbc6237b3
+info: Current compare status for job 5b63e0dc-62b4-475c-877e-78fdbc6237b3: in_progress
+info: ETA:: 32 seconds for job 5b63e0dc-62b4-475c-877e-78fdbc6237b3
+info: Current compare status for job 5b63e0dc-62b4-475c-877e-78fdbc6237b3: in_progress
+info: ETA:: 32 seconds for job 5b63e0dc-62b4-475c-877e-78fdbc6237b3
+info: Current compare status for job 5b63e0dc-62b4-475c-877e-78fdbc6237b3: success
+info: Restoring plugin woocommerce from backup
+info: plugin woocommerce restored from backup
+info: Deleting cache before taking screenshots
+info: Detected error reporting::false and http status::200
+info: Updating translations for all plugin.
+info: Translations updated for all plugin.
+info: Plugins update completed
+info: Initiating theme update
+info: None of the selected themes have pending update!
+info: Themes update completed
+info: Visual diff status Rollbacks:: true Diffs:: true
+info: Notifications enabled for all success status
+info: SSH already connected, exiting!
+info: Detected locale - de_DE
+info: Reading translation file /app/i18n/one.com/de_DE.json
+info: Message sent: 250 2.0.0 Ok: queued as 0892ff58-31c6-11f0-a5ff-bb9973742618 locale: de_DE
+info: SMTP call successful
+info: Uploading log
+info: Checking if ssh is active.
+info: Trying ssh connection

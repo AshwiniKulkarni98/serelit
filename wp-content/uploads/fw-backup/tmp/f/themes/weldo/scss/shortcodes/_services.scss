@@ -1,0 +1,132 @@
+/*
+** Service Extension
+*/
+
+.service-item.horizontal-item {
+  .media-links {
+    z-index: 5;
+  }
+  .item-content {
+    ul.list-styled  li {
+      position: relative;
+      padding: 5px 0;
+      line-height: 1.4;
+      @media (min-width: 768px) {
+        padding: 9px 0;
+        line-height: 1;
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    &.media-right {
+      flex-direction: row-reverse;
+      .col-lg-7 {
+        text-align: right;
+      }
+    }
+  }
+  &.service-single2.service-item {
+    &.media-right {
+      .item-content {
+        padding-left: 0;
+        @media (min-width: 992px) {
+          padding-right: 70px;
+        }
+      }
+    }
+    .item-content {
+      padding-top: 30px;
+      @media (min-width: 992px) {
+        padding-top: 0;
+        padding-left: 70px;
+      }
+    }
+    .media-links:before {
+      background-color: $darkgreyColor;
+    }
+    &:hover {
+      .media-links:before {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+.vertical-item.service-item .item-content h4 {
+  margin-bottom: 12px;
+}
+
+.vertical-item.service-padding {
+  position: relative;
+  margin-left: -3px;
+  margin-right: -3px;
+  .item-content {
+    padding: 18px 10px 13px;
+    @media (min-width: 1200px) {
+      padding: 28px 30px 23px;
+    }
+  }
+}
+
+.service-layout-3 {
+  .service-item.vertical-item {
+    margin-left: 0;
+    margin-right: 0;
+    .item-content {
+      padding: 34px 30px 34px;
+    }
+    .media-links:before {
+      background-color: $darkgreyColor;
+      opacity: 0.5;
+    }
+    &:hover {
+      .media-links:before {
+        opacity: 0.3;
+      }
+    }
+    &.content-absolute {
+      .step-part:before {
+        color: $lightColor;
+      }
+    }
+  }
+}
+
+.service-layout-4 .service-item.vertical-item {
+  margin-left: 0;
+  margin-right: 0;
+  transition: 0.15s ease-in-out;
+  .item-content h6 {
+    margin-top: 27px;
+  }
+  &.service-padding .item-content {
+    padding: 48px 30px;
+  }
+  &:hover {
+    background-color: $colorMain;
+    i {
+      color: $lightColor;
+    }
+    h6.step-part a {
+      color: $lightColor;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+.service-layout-5 .service-item.vertical-item {
+  margin-left: 0;
+  margin-right: 0;
+  .item-content {
+    padding: 38px 30px 33px;
+    .step-part {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.ls .item-steps .service-item .step-part:before {
+  color: $fontColor;
+}

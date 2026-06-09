@@ -1,0 +1,187 @@
+info: Checking if ssh is active.
+info: Trying ssh connection
+info: Deleting cache before taking screenshots
+info: Executing time constrained:: timeout -k 5m 5m wp config set WP_DISABLE_FATAL_ERROR_HANDLER true --path=/var/www
+info: Detected error reporting::false and http status::200
+info: Checking if installation is valid
+info: Executing time constrained:: timeout -k 5m 5m wp core is-installed --path=/var/www && echo $?
+info: Valid installation, proceeding with updates
+info: Initiating WP core update
+info: Executing time constrained:: timeout -k 5m 5m wp core check-update --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp option get siteurl --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp option get woocommerce_shop_page_id --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp post-type list --fields=name,public --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp post list --post_type=post --post_status=publish --posts_per_page=1 --fields=url,post_name --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp post list --post_type=page --post_status=publish --posts_per_page=1 --fields=url,post_name --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp post list --post_type=fw-event --post_status=publish --posts_per_page=1 --fields=url,post_name --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp post list --post_type=product --post_status=publish --posts_per_page=1 --fields=url,post_name --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp post list --post_type=fw-portfolio --post_status=publish --posts_per_page=1 --fields=url,post_name --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp post list --post_type=fw-services --post_status=publish --posts_per_page=1 --fields=url,post_name --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp post list --post_type=fw-team --post_status=publish --posts_per_page=1 --fields=url,post_name --format=json --path=/var/www
+info: Deleting cache before taking screenshots
+info: Delay attempt 0
+info: Available memory - 92 %
+info: Capturing url:: https://www.serelit.de
+info: Capturing url:: https://www.serelit.de/registration/
+info: Capturing url:: https://www.serelit.de/product/automatic-electric-disappearing-ladders/
+info: Capturing url:: https://www.serelit.de/project/aenean-vulputate/
+info: Capturing url:: https://www.serelit.de/service/fenster-balkon-profile/
+info: Capturing url:: https://www.serelit.de/member/phebe-e-french/
+info: Updating WP core.
+info: Initiating backup of wpCore 
+info: Initiating DB backup
+info: Executing time constrained:: timeout -k 5m 5m wp db export --path=/var/www --port=3306 --add-drop-table --tables=$(wp db tables --all-tables-with-prefix --format=csv --path=/var/www) /var/www/wp-content/uploads/onecom-updater/backup/db.sql
+info: DB backed up
+info: wpCore  backup complete
+info: Secured backups with .htaccess
+info: Executing time constrained:: timeout -k 5m 5m wp core version --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp core update --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp core version --path=/var/www
+info: Deleting cache before taking screenshots
+info: Delay attempt 0
+info: Available memory - 92 %
+info: Capturing url:: https://www.serelit.de
+info: Capturing url:: https://www.serelit.de/registration/
+info: Capturing url:: https://www.serelit.de/product/automatic-electric-disappearing-ladders/
+info: Capturing url:: https://www.serelit.de/project/aenean-vulputate/
+info: Capturing url:: https://www.serelit.de/service/fenster-balkon-profile/
+info: Capturing url:: https://www.serelit.de/member/phebe-e-french/
+info: Analysing visual state after updates
+info: Delay attempt 0
+info: Available memory - 92 %
+info: Delay attempt 0
+info: Available memory - 91 %
+info: Delay attempt 0
+info: Available memory - 92 %
+info: Delay attempt 0
+info: Available memory - 91 %
+info: Delay attempt 0
+info: Available memory - 91 %
+info: Delay attempt 0
+info: Available memory - 91 %
+info: Restoring  wpCore from backup
+info: WP Core restored from backup!
+info: Deleting cache before taking screenshots
+info: Executing time constrained:: timeout -k 5m 5m wp config set WP_DISABLE_FATAL_ERROR_HANDLER true --path=/var/www
+info: Detected error reporting::false and http status::200
+info: Updating translations for WP Core.
+info: Executing time constrained:: timeout -k 5m 5m wp language core update --path=/var/www
+info: Translations updated for WP Core.
+info: WP core updates finished, proceeding with plugins' update
+info: Initiating plugin update
+info: Executing time constrained:: timeout -k 5m 5m wp plugin list --format=json --fields=name,status,update,version,title,update_version --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp plugin get complianz-gdpr --fields=author --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp plugin get contact-form-7 --fields=author --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp plugin get imagify --fields=author --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp plugin get loco-translate --fields=author --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp plugin get mailchimp-for-wp --fields=author --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp plugin get onecom-themes-plugins --fields=author --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp plugin get onecom-spam-protection --fields=author --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp plugin get onecom-vcache --fields=author --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp plugin get wp-user-avatar --fields=author --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp plugin get really-simple-ssl --fields=author --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp plugin get user-registration --fields=author --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp plugin get woocommerce --fields=author --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp plugin get wp-social --fields=author --format=json --path=/var/www
+info: Found update for plugins
+info: Initiating backup of plugin complianz-gdpr
+info: DB backup was created earlier, skipping
+info: plugin complianz-gdpr backup complete
+info: Updating plugin complianz-gdpr
+info: Executing time constrained:: timeout -k 5m 5m wp plugin update complianz-gdpr --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp plugin get complianz-gdpr --field=version --path=/var/www
+info: Deleting cache before taking screenshots
+info: Delay attempt 0
+info: Available memory - 91 %
+info: Capturing url:: https://www.serelit.de
+info: Capturing url:: https://www.serelit.de/registration/
+info: Capturing url:: https://www.serelit.de/product/automatic-electric-disappearing-ladders/
+info: Capturing url:: https://www.serelit.de/project/aenean-vulputate/
+info: Capturing url:: https://www.serelit.de/service/fenster-balkon-profile/
+info: Capturing url:: https://www.serelit.de/member/phebe-e-french/
+info: Analysing visual state after updates
+info: Delay attempt 0
+info: Available memory - 91 %
+info: Delay attempt 0
+info: Available memory - 91 %
+info: Delay attempt 0
+info: Available memory - 91 %
+info: Delay attempt 0
+info: Available memory - 91 %
+info: Delay attempt 0
+info: Available memory - 91 %
+info: Delay attempt 0
+info: Available memory - 91 %
+info: Restoring plugin complianz-gdpr from backup
+info: plugin complianz-gdpr restored from backup
+info: Deleting cache before taking screenshots
+info: Executing time constrained:: timeout -k 5m 5m wp config set WP_DISABLE_FATAL_ERROR_HANDLER true --path=/var/www
+info: Detected error reporting::false and http status::200
+info: Initiating backup of plugin contact-form-7
+info: DB backup was created earlier, skipping
+info: plugin contact-form-7 backup complete
+info: Updating plugin contact-form-7
+info: Executing time constrained:: timeout -k 5m 5m wp plugin update contact-form-7 --format=json --path=/var/www
+info: Initiating backup of plugin imagify
+info: DB backup was created earlier, skipping
+info: plugin imagify backup complete
+info: Updating plugin imagify
+info: Executing time constrained:: timeout -k 5m 5m wp plugin update imagify --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp plugin get imagify --field=version --path=/var/www
+info: Deleting cache before taking screenshots
+info: Delay attempt 0
+info: Available memory - 91 %
+info: Capturing url:: https://www.serelit.de
+info: Capturing url:: https://www.serelit.de/registration/
+info: Capturing url:: https://www.serelit.de/product/automatic-electric-disappearing-ladders/
+info: Capturing url:: https://www.serelit.de/project/aenean-vulputate/
+info: Capturing url:: https://www.serelit.de/service/fenster-balkon-profile/
+info: Capturing url:: https://www.serelit.de/member/phebe-e-french/
+info: Analysing visual state after updates
+info: Delay attempt 0
+info: Available memory - 92 %
+info: Delay attempt 0
+info: Available memory - 92 %
+info: Delay attempt 0
+info: Available memory - 92 %
+info: Delay attempt 0
+info: Available memory - 92 %
+info: Delay attempt 0
+info: Available memory - 92 %
+info: Delay attempt 0
+info: Available memory - 92 %
+info: Restoring plugin imagify from backup
+info: plugin imagify restored from backup
+info: Deleting cache before taking screenshots
+info: Executing time constrained:: timeout -k 5m 5m wp config set WP_DISABLE_FATAL_ERROR_HANDLER true --path=/var/www
+info: Detected error reporting::false and http status::200
+info: Initiating backup of plugin loco-translate
+info: DB backup was created earlier, skipping
+info: plugin loco-translate backup complete
+info: Updating plugin loco-translate
+info: Executing time constrained:: timeout -k 5m 5m wp plugin update loco-translate --format=json --path=/var/www
+error: Error while updating plugin :: Request failed with status code 503
+info: Plugins update completed
+info: Initiating theme update
+info: Executing time constrained:: timeout -k 5m 5m wp theme list --format=json --fields=name,status,update,version,title,update_version --path=/var/www
+info: Found update for themes
+info: Initiating backup of theme twentytwentyfour
+info: DB backup was created earlier, skipping
+info: theme twentytwentyfour backup complete
+info: Updating theme twentytwentyfour
+info: Executing time constrained:: timeout -k 5m 5m wp theme update twentytwentyfour --format=json --path=/var/www
+info: Executing time constrained:: timeout -k 5m 5m wp theme get twentytwentyfour --field=version --path=/var/www
+info: theme is inactive, skipping visual testing
+info: Updating translations for all theme.
+info: Executing time constrained:: timeout -k 5m 5m wp language theme update --all --path=/var/www
+info: Translations updated for all theme.
+info: Themes update completed
+info: SSH already connected, exiting!
+info: Executing time constrained:: timeout -k 5m 5m wp eval 'echo get_locale();' --path=/var/www
+info: Detected locale - de_DE
+info: Reading translation file /app/i18n/one.com/de_DE.json
+info: Message sent: 250 2.0.0 Ok: queued as 2ab7473d-b1ba-11ef-91a6-a935febe7b99 locale: de_DE
+info: SMTP call successful
+info: Uploading log
+info: Checking if ssh is active.
+info: Trying ssh connection
