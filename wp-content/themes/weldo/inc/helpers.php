@@ -725,3 +725,233 @@ if (!function_exists('weldo_get_root_colors_inline_styles_string')) {
         return $weldo_colors_string;
     }
 }
+
+if ( ! function_exists( 'weldo_get_references_page' ) ) {
+    /**
+     * Find the references / portfolio page.
+     *
+     * @return WP_Post|null
+     */
+    function weldo_get_references_page() {
+        $titles = array( 'References', 'Referenzen', 'Referenze', 'Kataloge' );
+
+        foreach ( $titles as $title ) {
+            $page = get_page_by_title( $title );
+            if ( $page instanceof WP_Post ) {
+                return $page;
+            }
+        }
+
+        $pages = get_posts(
+            array(
+                'post_type'      => 'page',
+                'post_status'    => 'publish',
+                'posts_per_page' => 1,
+                'name'           => 'references',
+            )
+        );
+
+        if ( ! empty( $pages ) ) {
+            return $pages[0];
+        }
+
+        return null;
+    }
+}
+
+if ( ! function_exists( 'weldo_normalize_upload_image_url' ) ) {
+    /**
+     * Convert a remote or relative uploads URL to the current site URL.
+     *
+     * @param string $url Image URL.
+     * @return string
+     */
+    function weldo_normalize_upload_image_url( $url ) {
+        if ( empty( $url ) ) {
+            return '';
+        }
+
+        if ( preg_match( '#wp-content/uploads/(.+)$#i', $url, $matches ) ) {
+            return content_url( '/uploads/' . $matches[1] );
+        }
+
+        return $url;
+    }
+}
+
+if ( ! function_exists( 'weldo_parse_references_from_page' ) ) {
+    /**
+     * Extract reference cards from a page's rendered portfolio HTML.
+     *
+     * @param WP_Post $page References page.
+     * @param int     $limit Maximum number of items.
+     * @return array
+     */
+    function weldo_parse_references_from_page( $page, $limit = 4 ) {
+        $content = $page->post_content;
+        $items   = array();
+
+        if ( empty( $content ) ) {
+            return $items;
+        }
+
+        preg_match_all(
+            '/<div class="item-media"[^>]*>\s*<img[^>]+src=["\']([^"\']+)["\'][^>]*>/i',
+            $content,
+            $images
+        );
+
+        $title_matches = array();
+        preg_match_all(
+            '/<h[345][^>]*class="[^"]*item-(?:title|meta)[^"]*"[^>]*>(?:\s*<a[^>]*>)?(.*?)(?:<\/a>)?\s*<\/h[345]>/is',
+            $content,
+            $title_matches
+        );
+
+        preg_match_all(
+            '/<p class="portfolio-excerpt"[^>]*>(.*?)<\/p>/is',
+            $content,
+            $descriptions
+        );
+
+        $image_count = ! empty( $images[1] ) ? count( $images[1] ) : 0;
+
+        for ( $i = 0; $i < min( $limit, $image_count ); $i++ ) {
+            $items[] = array(
+                'title'       => isset( $title_matches[1][ $i ] ) ? wp_strip_all_tags( $title_matches[1][ $i ] ) : '',
+                'image'       => weldo_normalize_upload_image_url( $images[1][ $i ] ),
+                'description' => isset( $descriptions[1][ $i ] ) ? wp_strip_all_tags( $descriptions[1][ $i ] ) : '',
+            );
+        }
+
+        return $items;
+    }
+}
+
+if ( ! function_exists( 'weldo_get_portfolio_references' ) ) {
+    /**
+     * Load references from portfolio posts.
+     *
+     * @param int $limit Maximum number of items.
+     * @return array
+     */
+    function weldo_get_portfolio_references( $limit = 4 ) {
+        $items = array();
+
+        $query = new WP_Query(
+            array(
+                'post_type'      => 'fw-portfolio',
+                'post_status'    => 'publish',
+                'posts_per_page' => $limit,
+                'orderby'        => array(
+                    'menu_order' => 'ASC',
+                    'date'       => 'DESC',
+                ),
+            )
+        );
+
+        if ( ! $query->have_posts() ) {
+            return $items;
+        }
+
+        while ( $query->have_posts() ) {
+            $query->the_post();
+
+            $image = get_the_post_thumbnail_url( get_the_ID(), 'large' );
+
+            if ( ! $image && function_exists( 'fw_get_db_post_option' ) ) {
+                $portfolio_options = fw_get_db_post_option( get_the_ID() );
+                if ( ! empty( $portfolio_options['project-gallery'][0]['attachment_id'] ) ) {
+                    $image = wp_get_attachment_image_url(
+                        (int) $portfolio_options['project-gallery'][0]['attachment_id'],
+                        'large'
+                    );
+                }
+            }
+
+            $description = '';
+            if ( function_exists( 'fw_get_db_post_option' ) ) {
+                $portfolio_options = fw_get_db_post_option( get_the_ID() );
+                if ( ! empty( $portfolio_options['excerpt'] ) ) {
+                    $description = wp_strip_all_tags( $portfolio_options['excerpt'] );
+                }
+            }
+
+            if ( empty( $description ) ) {
+                $description = wp_strip_all_tags( get_the_excerpt() );
+            }
+
+            if ( empty( $image ) ) {
+                continue;
+            }
+
+            $items[] = array(
+                'title'       => get_the_title(),
+                'image'       => $image,
+                'description' => $description,
+            );
+        }
+
+        wp_reset_postdata();
+
+        return $items;
+    }
+}
+
+if ( ! function_exists( 'weldo_get_featured_references' ) ) {
+    /**
+     * Featured references for the home page section.
+     *
+     * @param int $limit Maximum number of items.
+     * @return array
+     */
+    function weldo_get_featured_references( $limit = 4 ) {
+        $references_page = weldo_get_references_page();
+
+        if ( $references_page ) {
+            $items = weldo_parse_references_from_page( $references_page, $limit );
+            if ( ! empty( $items ) ) {
+                return $items;
+            }
+        }
+
+        $items = weldo_get_portfolio_references( $limit );
+        if ( ! empty( $items ) ) {
+            return $items;
+        }
+
+        $products_file = get_template_directory() . '/data/products.json';
+        if ( file_exists( $products_file ) ) {
+            $products = json_decode( file_get_contents( $products_file ), true );
+            if ( is_array( $products ) ) {
+                return array_slice( $products, 0, $limit );
+            }
+        }
+
+        return array();
+    }
+}
+
+if ( ! function_exists( 'weldo_get_reference_image_url' ) ) {
+    /**
+     * Resolve a reference image URL.
+     *
+     * @param string $image Image URL or theme filename.
+     * @return string
+     */
+    function weldo_get_reference_image_url( $image ) {
+        if ( empty( $image ) ) {
+            return '';
+        }
+
+        if ( preg_match( '#^https?://#i', $image ) || strpos( $image, '/wp-content/uploads/' ) !== false ) {
+            return esc_url( weldo_normalize_upload_image_url( $image ) );
+        }
+
+        if ( strpos( $image, '/' ) !== false ) {
+            return esc_url( content_url( '/uploads/' . ltrim( $image, '/' ) ) );
+        }
+
+        return esc_url( get_template_directory_uri() . '/img/' . $image );
+    }
+}
