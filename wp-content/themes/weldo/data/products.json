@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "KOALA CAFÉ IN WIESBADEN MAY 2024",
+    "image": "koala-cafe.jpg",
+    "description": "Illuminated seating area protection made of aluminum"
+  },
+  {
+    "id": 2,
+    "title": "GLASS OFFICE PARTITION",
+    "image": "glass-office-partition.jpg",
+    "description": "Modern office space division with premium glass"
+  },
+  {
+    "id": 3,
+    "title": "STAIR/CASE PARTITION",
+    "image": "stair-case-partition.jpg",
+    "description": "Contemporary staircase enclosure design"
+  },
+  {
+    "id": 4,
+    "title": "GLASS BALCONY",
+    "image": "glass-balcony.jpg",
+    "description": "Elegant balcony safety solution with glass"
+  }
+]

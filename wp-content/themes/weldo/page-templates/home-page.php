@@ -9,6 +9,18 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header();
 
+// Include hero section at the top
+get_template_part( 'template-parts/hero/hero' );
+
+// Include features section
+get_template_part( 'template-parts/features/features' );
+
+// Include dynamic products section
+get_template_part( 'template-parts/products/products' );
+
+// Include references section
+get_template_part( 'template-parts/references/references' );
+
 //If Unyson not installed - adding regular section with full width column
 if ( ! defined( 'FW' ) ) :
 	$options = weldo_get_options();
@@ -52,5 +64,8 @@ if ( ! defined( 'FW' ) ) : ?>
 	</section><!-- eof section -->
 	<?php
 endif; //FW check
+
+// Include contact section at the end
+get_template_part( 'template-parts/contact/contact' );
 
 get_footer();
