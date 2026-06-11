@@ -396,8 +396,8 @@ if (!function_exists('weldo_get_predefined_template_part')) :
                 $template_part = $template_part_name . '-999';
             }
 
-            //custom header for certain page
-            if ('header' == $template_part_name && fw_get_db_post_option($post->ID, 'header')) {
+             //custom header for certain page
+             if ('header' == $template_part_name && fw_get_db_post_option($post->ID, 'header')) {
                 $template_part = $template_part_name . '-' . fw_get_db_post_option($post->ID, 'header');
             }
 

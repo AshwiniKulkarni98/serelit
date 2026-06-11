@@ -178,3 +178,17 @@ audio:focus {
     outline: none;
     border: none;
 }
+.page_footer .row > [class*="col-"] {
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.page_footer .widget {
+    margin-bottom: 20px;
+}
+
+@media (min-width: 1200px) {
+    .page_footer .row {
+        justify-content: space-between;
+    }
+}

@@ -25,12 +25,12 @@
                 </div>
             </div>
             
-            <div class="col-md-6 col-sm-12">
+            <!-- <div class="col-md-6 col-sm-12">
                 <div class="qr_code_section">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/qr-code.png" alt="Scan QR Code" class="qr_code_image">
                     <p class="qr_code_label">Scan QR Code</p>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>

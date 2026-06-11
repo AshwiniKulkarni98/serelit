@@ -31,6 +31,13 @@ class Weldo_Options {
 
 		//customizer options overwriting default options
 		$this->customizer_options = wp_parse_args( $customizer_options, $default_options );
+		// Force SERELIT header/footer layout site-wide (code override — wins over DB).
+$this->customizer_options['page_header'] = '1';
+$this->customizer_options['page_footer'] = '1';
+$this->customizer_options['meta_phone']   = '+49 01622361442';
+$this->customizer_options['meta_email']   = 'info@serelit.de';
+$this->customizer_options['meta_address'] = 'Wielandstrasse 3, 65187 Wiesbaden';
+$this->customizer_options['footer_columns_padding'] = 'c-gutter-100';
 	}
 
 	//get option value from whole options array
@@ -78,7 +85,7 @@ class Weldo_Options {
 			'logo_image_breadcrumbs' =>
 				array (
 				),
-			'page_header' => '2',
+			'page_header' => '1',
 			'header_absolute' => false,
 			'header_is_fluid' => false,
 			'header_background_color' => 'ds ms',

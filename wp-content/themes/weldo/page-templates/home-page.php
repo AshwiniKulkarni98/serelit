@@ -66,6 +66,6 @@ if ( ! defined( 'FW' ) ) : ?>
 endif; //FW check
 
 // Include contact section at the end
-get_template_part( 'template-parts/contact/contact' );
+// get_template_part( 'template-parts/contact/contact' );
 
 get_footer();
