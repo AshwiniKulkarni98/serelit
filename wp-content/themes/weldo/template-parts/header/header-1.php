@@ -10,6 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 $options = weldo_get_options();
 $section = weldo_get_section_options( $options, 'header_' );
 $hide_search = $options['hide_search'];
+$hide_login = $options['hide_login_form'];
 // get_template_part( 'template-parts/topline/topline-1' )
 ?>
 
@@ -35,14 +36,19 @@ $hide_search = $options['hide_search'];
 						) );
 					endif;
 					?>
-						                <?php if ( ! $hide_search ) : ?>
-    <span class="d-none d-xl-block">
-        <a href="#" class="search_modal_button">
-            <i class="fa fa-search"></i>
-        </a>
-    </span>
-<?php endif; ?>
+					<?php if ( ! $hide_search ) : ?>
+						<span class="d-none d-xl-inline-block">
+							<a href="#" class="search_modal_button">
+								<i class="fa fa-search"></i>
+							</a>
+						</span>
+					<?php endif; ?>
 					</nav>
+					<?php if ( class_exists( 'UserRegistration' ) && ! $hide_login ) : ?>
+						<a data-toggle="modal" href="#login-form" class="header-user-link d-none d-xl-inline-block">
+							<i class="fa fa-user"></i>
+						</a>
+					<?php endif; ?>
 					<?php if ( is_active_sidebar( 'sidebar-top-header' ) ) : ?>
 						<span class="toggle_menu toggle_menu_side header_widget header-slide d-none d-lg-block"><span></span></span>
 					<?php endif; ?>
