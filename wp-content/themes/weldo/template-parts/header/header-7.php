@@ -11,7 +11,7 @@ $options = weldo_get_options();
 $section = weldo_get_section_options( $options, 'header_' );
 $col_class = ! empty( $options['meta_phone'] ) ? 'col-lg-6' : 'col-lg-9';
 
-get_template_part( 'template-parts/topline/topline-4' )
+// get_template_part( 'template-parts/topline/topline-4' )
 
 ?>
 

@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 $options = weldo_get_options();
 $section = weldo_get_section_options( $options, 'header_' );
 
-get_template_part( 'template-parts/topline/topline-1' )
+// get_template_part( 'template-parts/topline/topline-1' )
 ?>
 
 <header class="page_header justify-nav-end s-py-5 <?php echo esc_attr( $section['section_class'] ); ?>"
@@ -35,6 +35,13 @@ get_template_part( 'template-parts/topline/topline-1' )
 						) );
 					endif;
 					?>
+						                <!-- <?php if ( ! $hide_search ) : ?>
+						<span class="d-none d-xl-block">
+							<a href="#" class="search_modal_button">
+								<i class="fa fa-search"></i>
+							</a>
+						</span>
+	                <?php endif; ?> -->
 					</nav>
 					<?php if ( is_active_sidebar( 'sidebar-top-header' ) ) : ?>
 						<span class="toggle_menu toggle_menu_side header_widget header-slide d-none d-lg-block"><span></span></span>

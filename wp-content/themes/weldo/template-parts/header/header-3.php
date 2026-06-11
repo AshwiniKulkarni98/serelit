@@ -12,7 +12,7 @@ $section = weldo_get_section_options( $options, 'header_' );
 $hide_search = $options['hide_search'];
 
 //get topline
-get_template_part( 'template-parts/toplogo/toplogo-2' );
+// get_template_part( 'template-parts/toplogo/toplogo-2' );
 
 ?>
 <header class="page_header nav-narrow sf-arrows s-pb-10 s-pb-lg-0 <?php echo esc_attr( $section['section_class'] ); ?>"

@@ -12,7 +12,7 @@ $section = weldo_get_section_options( $options, 'header_' );
 $hide_cart   = $options['hide_shopping_cart'];
 $hide_search = $options['hide_search'];
 $hide_login  = $options['hide_login_form'];
-get_template_part( 'template-parts/topline/topline-3' )
+// get_template_part( 'template-parts/topline/topline-3' )
 ?>
 
 <header class="page_header header6 sf-arrows justify-nav-center s-py-5 <?php echo esc_attr( $section['section_class']  ); ?>"

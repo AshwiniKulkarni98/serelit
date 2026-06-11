@@ -11,7 +11,7 @@ $options = weldo_get_options();
 $section = weldo_get_section_options( $options, 'header_' );
 
 //get topline
-get_template_part( 'template-parts/toplogo/toplogo-2' );
+// get_template_part( 'template-parts/toplogo/toplogo-2' );
 
 ?>
 
