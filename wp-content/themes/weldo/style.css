@@ -192,3 +192,156 @@ audio:focus {
         justify-content: space-between;
     }
 }
+
+/* Home hero slider — same height as old static hero */
+.home_hero_slider,
+.home_hero_slider .flexslider,
+.home_hero_slider .flexslider .slides,
+.home_hero_slider .flexslider .slides > li {
+	min-height: 500px;
+}
+
+.home_hero_slider .flexslider .slides > li {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+/* Arrows only — hide dots (theme treats data-dots="false" as truthy string) */
+.home_hero_slider .flex-control-nav {
+	display: none !important;
+}
+
+/* Split slides: keep side images contained */
+.home_hero_side_image {
+	width: 100%;
+	max-width: 420px;
+	height: auto;
+	max-height: 360px;
+	object-fit: contain;
+}
+
+.home_hero_logo {
+	max-width: 220px;
+}
+
+.home_hero_heading {
+	color: #d5ab5b;
+	font-weight: 900;
+	font-size: 42px;
+	margin-bottom: 16px;
+	line-height: 1.2;
+}
+
+.home_hero_paragraph,
+.home_hero_paragraph p {
+	color: #fff;
+	font-size: 18px;
+	line-height: 1.6;
+	margin: 0 0 12px;
+}
+
+.hero_overlay--light {
+	background: rgba(0, 0, 0, 0.55);
+}
+
+/* Arrow styling on dark hero */
+.home_hero_slider .flex-direction-nav a {
+	color: #d5ab5b;
+	opacity: 0.85;
+}
+
+.home_hero_slider .flex-direction-nav a:hover {
+	opacity: 1;
+}
+
+@media (max-width: 767px) {
+	.home_hero_heading {
+		font-size: 32px;
+	}
+	.home_hero_paragraph,
+	.home_hero_paragraph p {
+		font-size: 16px;
+	}
+}
+/* Homepage: header above slider, not overlaid */
+.page-template-home-page .header_absolute {
+	position: relative !important;
+	top: auto !important;
+	right: auto !important;
+	bottom: auto !important;
+	left: auto !important;
+	height: auto !important;
+}
+
+.page-template-home-page .header_absolute .page_header,
+.page-template-home-page .header_absolute .page_header_wrapper {
+	position: relative !important;
+	background-color: #22221f !important;
+}
+
+.page-template-home-page .header_absolute .page_header.affix-top {
+	background-color: #22221f !important;
+}
+
+/* Slider starts below header, not under it */
+.page-template-home-page .home_hero_slider {
+	position: relative;
+	z-index: 1;
+	margin-top: 0;
+}
+
+/* Slide 1: lighter overlay so glass photo shows */
+.page-template-home-page .hero_slide--welcome .hero_overlay,
+.page-template-home-page .hero_slide--welcome::before {
+	display: none;
+}
+
+.page-template-home-page .hero_slide--welcome::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 55%;
+	height: 100%;
+	background: linear-gradient(to left, rgba(20, 20, 20, 0.95) 70%, transparent);
+	z-index: 1;
+	pointer-events: none;
+}
+
+.hero_slide--welcome .hero_slide__inner {
+	position: relative;
+	z-index: 2;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	min-height: 500px;
+}
+
+.hero_slide--welcome .hero_content {
+	text-align: left;
+}
+
+.hero_watermark {
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+	max-width: 280px;
+	opacity: 0.15;
+	z-index: 1;
+	pointer-events: none;
+}
+
+@media (max-width: 991px) {
+	.hero_slide--welcome::after {
+		width: 100%;
+		background: rgba(0, 0, 0, 0.55);
+	}
+	.hero_watermark {
+		display: none;
+	}
+	.hero_slide--welcome .hero_content {
+		text-align: center;
+	}
+}
