@@ -14,7 +14,7 @@ $hide_login = $options['hide_login_form'];
 // get_template_part( 'template-parts/topline/topline-1' )
 ?>
 
-<header class="page_header justify-nav-end s-py-5 <?php echo esc_attr( $section['section_class'] ); ?>"
+<header class="page_header justify-nav-center s-py-5 <?php echo esc_attr( $section['section_class'] ); ?>"
 	<?php echo ( !empty( $section['section_id'] ) ) ? 'id="'. esc_attr( $section['section_id'] ) . '"' : ''; ?>
 	<?php echo ( !empty( $section['section_background_image'] ) ) ? 'style="'. esc_attr( $section['section_background_image'] ) . '"' : ''; ?>
 >
@@ -24,34 +24,31 @@ $hide_login = $options['hide_login_form'];
 				<?php get_template_part( 'template-parts/logo/header-logo' ); ?>
 			</div>
 			<div class="col-xl-9 col-lg-8 col-1">
-				<div class="nav-wrap">
+			<div class="nav-wrap">
 					<!-- main nav start -->
 					<nav class="top-nav">
 					<?php
-					if( has_nav_menu( 'primary' ) ) :
+					if ( has_nav_menu( 'primary' ) ) :
 						wp_nav_menu( array(
 							'theme_location' => 'primary',
 							'menu_class'     => 'sf-menu nav',
-							'container'      => 'ul'
+							'container'      => 'ul',
 						) );
 					endif;
 					?>
-					<?php if ( ! $hide_search ) : ?>
-						<span class="d-none d-xl-inline-block">
+					</nav>
+					<div class="header-actions d-none d-xl-flex">
+						<?php if ( ! $hide_search ) : ?>
 							<a href="#" class="search_modal_button">
 								<i class="fa fa-search"></i>
 							</a>
-						</span>
-					<?php endif; ?>
-					</nav>
-					<?php if ( class_exists( 'UserRegistration' ) && ! $hide_login ) : ?>
-						<a data-toggle="modal" href="#login-form" class="header-user-link d-none d-xl-inline-block">
-							<i class="fa fa-user"></i>
-						</a>
-					<?php endif; ?>
-					<?php if ( is_active_sidebar( 'sidebar-top-header' ) ) : ?>
-						<span class="toggle_menu toggle_menu_side header_widget header-slide d-none d-lg-block"><span></span></span>
-					<?php endif; ?>
+						<?php endif; ?>
+						<?php if ( class_exists( 'UserRegistration' ) && ! $hide_login ) : ?>
+							<a data-toggle="modal" href="#login-form" class="header-user-link">
+								<i class="fa fa-user"></i>
+							</a>
+						<?php endif; ?>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -382,3 +382,40 @@ audio:focus {
 .page_header .toggle_menu {
 	display: none !important;
 }
+
+@media (min-width: 1200px) {
+	.page_header .nav-wrap {
+		display: flex !important;
+		align-items: center;
+		width: 100%;
+		position: relative;
+	}
+
+	/* Center menu in the header nav area */
+	.page_header .top-nav {
+		position: absolute;
+		left: 35%;
+		transform: translateX(-50%);
+		flex: 0 0 auto !important;
+		display: flex !important;
+		align-items: center;
+		justify-content: center !important;
+	}
+
+	/* Keep icons on the far right */
+	.page_header .nav-wrap > .header-actions {
+		flex: 0 0 auto !important;
+		margin-left: auto !important;
+		padding: 0 !important;
+		display: flex !important;
+		align-items: center;
+		gap: 20px;
+		position: relative;
+		z-index: 2;
+	}
+
+	.page_header .header-actions .search_modal_button,
+	.page_header .header-actions .header-user-link {
+		padding: 0;
+	}
+}
