@@ -6,7 +6,6 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
-
 $options = weldo_get_options();
 $section = weldo_get_section_options( $options, 'footer_' );
 

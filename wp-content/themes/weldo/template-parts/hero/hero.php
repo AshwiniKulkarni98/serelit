@@ -10,7 +10,8 @@ $theme_uri = get_template_directory_uri();
 
 			<!-- Slide 1: Welcome -->
 <li class="cover-image hero_slide hero_slide--welcome">
-	<img src="<?php echo esc_url( $theme_uri . '/img/catalog-glass-bg.jpg' ); ?>" alt="">
+<img src="<?php echo esc_url( $slide1_bg ); ?>" alt="">
+
 	<img class="hero_watermark" src="<?php echo esc_url( $theme_uri . '/img/logo.png' ); ?>" alt="">
 	<div class="container hero_slide__inner">
 		<div class="row justify-content-center justify-content-lg-end">

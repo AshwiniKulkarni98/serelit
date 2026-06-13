@@ -194,11 +194,14 @@ audio:focus {
 }
 
 /* Home hero slider — same height as old static hero */
+/* Home hero slider height */
 .home_hero_slider,
 .home_hero_slider .flexslider,
 .home_hero_slider .flexslider .slides,
 .home_hero_slider .flexslider .slides > li {
-	min-height: 500px;
+	min-height: 380px;
+	height: 380px;
+	max-height: 380px;
 }
 
 .home_hero_slider .flexslider .slides > li {
@@ -297,16 +300,16 @@ audio:focus {
 	display: none;
 }
 
+/* Full photo visible, subtle dark overlay for text only */
 .page-template-home-page .hero_slide--welcome::after {
-	content: "";
+	display: none;
+}
+
+.hero_slide--welcome .hero_overlay--welcome {
 	position: absolute;
-	top: 0;
-	right: 0;
-	width: 55%;
-	height: 100%;
-	background: linear-gradient(to left, rgba(20, 20, 20, 0.95) 70%, transparent);
+	inset: 0;
+	background: rgba(0, 0, 0, 0.35);
 	z-index: 1;
-	pointer-events: none;
 }
 
 .hero_slide--welcome .hero_slide__inner {
@@ -315,7 +318,7 @@ audio:focus {
 	height: 100%;
 	display: flex;
 	align-items: center;
-	min-height: 500px;
+	min-height: 380px;
 }
 
 .hero_slide--welcome .hero_content {
@@ -344,4 +347,33 @@ audio:focus {
 	.hero_slide--welcome .hero_content {
 		text-align: center;
 	}
+}
+.hero_slide--welcome .hero_content {
+	text-align: center;
+}
+.home_hero_slider .flexslider,
+.home_hero_slider .flexslider .slides {
+	height: 380px !important;
+	max-height: 380px !important;
+	overflow: hidden;
+}
+
+.home_hero_slider .flexslider .slides > li {
+	height: 380px !important;
+	min-height: 380px !important;
+	max-height: 380px !important;
+}
+
+/* Hide Kontakt link in footer Links widget */
+.page_header_side .widget_nav_menu .menu-item a[href*="kontakt"] {
+	display: none !important;
+}
+.page_header_side .widget_nav_menu .menu-item a[href*="impressum"] {
+	display: none !important;
+}
+.page_header_side .widget_nav_menu .menu-item a[href*="uber-uns"] {
+	display: none !important;
+}
+.page_header_side .widget_nav_menu .menu-item-home {
+	display: none !important;
 }
