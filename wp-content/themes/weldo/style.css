@@ -377,3 +377,8 @@ audio:focus {
 .page_header_side .widget_nav_menu .menu-item-home {
 	display: none !important;
 }
+
+/* Hide all header hamburgers */
+.page_header .toggle_menu {
+	display: none !important;
+}
