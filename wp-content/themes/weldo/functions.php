@@ -48,3 +48,126 @@ if (!defined('FW') && file_exists(WELDO_THEME_PATH . '/inc/framework/bootstrap.p
  * https://github.com/ThemeFuse/Theme-Includes
  */
 require_once WELDO_THEME_PATH . '/inc/init.php';
+/**
+ * Move "Online Termin" into Kontakt dropdown (below FAQ)
+ * and remove it from the Header "Links" sidebar widget.
+ */
+add_filter( 'wp_nav_menu_objects', 'weldo_move_online_termin_to_kontakt', 10, 2 );
+
+function weldo_move_online_termin_to_kontakt( $items, $args ) {
+	$is_primary_menu = ! empty( $args->theme_location ) && 'primary' === $args->theme_location;
+	$is_links_widget = ! empty( $GLOBALS['weldo_links_widget_menu'] );
+
+	if ( ! $is_primary_menu && ! $is_links_widget ) {
+		return $items;
+	}
+
+	// Find Online Termin URL from an existing menu item (if present).
+	$online_termin_url = '';
+	foreach ( $items as $item ) {
+		if ( 'Online Termin' === $item->title ) {
+			$online_termin_url = $item->url;
+			break;
+		}
+	}
+
+	// Fallback: find page by slug/title.
+	if ( ! $online_termin_url ) {
+		$page = get_page_by_path( 'online-termin' );
+		if ( ! $page ) {
+			$page = get_page_by_path( 'online-terminbuchung' );
+		}
+		if ( ! $page ) {
+			$pages = get_posts( array(
+				'post_type'      => 'page',
+				'title'          => 'Online Termin',
+				'posts_per_page' => 1,
+			) );
+			$page = ! empty( $pages[0] ) ? $pages[0] : null;
+		}
+		if ( $page ) {
+			$online_termin_url = get_permalink( $page );
+		}
+	}
+
+	if ( ! $online_termin_url ) {
+		$online_termin_url = home_url( '/online-termin/' );
+	}
+
+	// --- Sidebar Links widget: remove Online Termin ---
+	if ( $is_links_widget ) {
+		foreach ( $items as $key => $item ) {
+			if ( 'Online Termin' === $item->title ) {
+				unset( $items[ $key ] );
+			}
+		}
+		return array_values( $items );
+	}
+
+	// --- Primary menu: add under Kontakt below FAQ ---
+	$kontakt_id = 0;
+	$faq_order  = 0;
+	$max_id     = 0;
+	$already_in_kontakt = false;
+
+	foreach ( $items as $item ) {
+		if ( (int) $item->ID > $max_id ) {
+			$max_id = (int) $item->ID;
+		}
+
+		if ( 'Kontakt' === $item->title && 0 === (int) $item->menu_item_parent ) {
+			$kontakt_id = (int) $item->ID;
+		}
+
+		if ( 'FAQ' === $item->title && $kontakt_id && (int) $item->menu_item_parent === $kontakt_id ) {
+			$faq_order = (int) $item->menu_order;
+		}
+
+		if ( 'Online Termin' === $item->title && (int) $item->menu_item_parent === $kontakt_id ) {
+			$already_in_kontakt = true;
+		}
+	}
+
+	if ( ! $kontakt_id || $already_in_kontakt ) {
+		return $items;
+	}
+
+	$new_item = (object) array(
+		'ID'               => $max_id + 9999,
+		'db_id'            => $max_id + 9999,
+		'menu_item_parent' => $kontakt_id,
+		'object_id'        => $max_id + 9999,
+		'post_parent'      => $kontakt_id,
+		'object'           => 'custom',
+		'type'             => 'custom',
+		'type_label'       => 'Custom Link',
+		'title'            => 'Online Termin',
+		'url'              => $online_termin_url,
+		'target'           => '',
+		'attr_title'       => '',
+		'description'      => '',
+		'classes'          => array( 'menu-item', 'menu-item-type-custom', 'menu-item-object-custom' ),
+		'xfn'              => '',
+		'status'           => '',
+		'menu_order'       => $faq_order + 1,
+	);
+
+	$items[] = $new_item;
+
+	usort( $items, function( $a, $b ) {
+		return (int) $a->menu_order - (int) $b->menu_order;
+	} );
+
+	return $items;
+}
+
+// Flag when the Header "Links" widget menu is rendering.
+add_filter( 'widget_nav_menu_args', function( $nav_menu_args, $nav_menu, $args, $instance ) {
+	if ( ! empty( $instance['title'] ) && false !== stripos( $instance['title'], 'links' ) ) {
+		$GLOBALS['weldo_links_widget_menu'] = true;
+		add_action( 'widget_nav_menu_after', function() {
+			unset( $GLOBALS['weldo_links_widget_menu'] );
+		}, 999 );
+	}
+	return $nav_menu_args;
+}, 10, 4 );
