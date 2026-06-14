@@ -4,7 +4,8 @@
  */
 // $theme_uri = get_template_directory_uri();
 $theme_uri = get_template_directory_uri();
-$slide1_bg = $theme_uri . '/img/catalog-glass-bg.jpeg';
+$slide1_bg_left  = $theme_uri . '/img/catalog-glass-bg.jpeg';
+$slide1_bg_right = $theme_uri . '/img/reference_image.jpeg';  // same image, darkened with CSS
 
 // Mission slide images — use FULL URL only (no $uploads_base prefix)
 $mission_img_front = content_url( '/uploads/2026/06/logo_2.png' );
@@ -18,21 +19,22 @@ $vision_img_back  = content_url( '/uploads/2026/06/logo_3.png' );  // second ima
 		<ul class="slides">
 
 			<!-- Slide 1: Welcome -->
-<!-- Slide 1: Welcome (split layout) -->
-<li class="hero_slide hero_slide--welcome ds">
-	<div class="row no-gutters align-items-stretch hero_slide__split">
-		<!-- Left: big glass image -->
-		<div class="col-lg-5 hero_slide__image-col">
-			<img src="<?php echo esc_url( $slide1_bg ); ?>" alt="<?php esc_attr_e( 'Welcome', 'weldo' ); ?>">
+<!-- Slide 1: Welcome — dual images, text centered -->
+<li class="hero_slide hero_slide--welcome hero_slide--dual ds">
+	<div class="hero_slide__dual-bg">
+		<div class="hero_slide__dual-left">
+			<img src="<?php echo esc_url( $slide1_bg_left ); ?>" alt="">
 		</div>
-		<!-- Right: dark textured panel + text -->
-		<div class="col-lg-7 hero_slide__content-col texture-background">
-			<div class="hero_content">
-				<h1 class="hero_title">Welcome to Serelite</h1>
-				<p class="hero_subtitle">Seit seiner Gründung im Jahr 2020 hat sich SERELIT zu einem der angesehensten Hersteller von Bau-, sonstigem und dekorativem Stahl für den Mehrfamilien-, Gewerbe- und Wohnungsbau in Istanbul entwickelt.</p>
-			</div>
+		<div class="hero_slide__dual-right">
+			<img src="<?php echo esc_url( $slide1_bg_right ); ?>" alt="">
 		</div>
 	</div>
+	<span class="hero_slide__dual-overlay"></span>
+<div class="hero_content hero_content--center">
+	<h1 class="hero_title">Welcome to Serelite</h1>
+	<span class="hero_golden-line" aria-hidden="true"></span>
+	<p class="hero_subtitle">Seit seiner Gründung im Jahr 2020 hat sich SERELIT zu einem der angesehensten Hersteller von Bau-, sonstigem und dekorativem Stahl für den Mehrfamilien-, Gewerbe- und Wohnungsbau in Istanbul entwickelt.</p>
+</div>
 </li>
 
 			<!-- Slide 2: Our Mission -->
