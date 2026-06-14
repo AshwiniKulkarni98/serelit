@@ -192,7 +192,7 @@ audio:focus {
         justify-content: space-between;
     }
 }
-
+ 
 /* Home hero slider — same height as old static hero */
 /* Home hero slider height */
 .home_hero_slider,
@@ -418,4 +418,56 @@ audio:focus {
 	.page_header .header-actions .header-user-link {
 		padding: 0;
 	}
+}
+
+/* Mission slide — match Über Uns layout inside slider */
+/* Mission slide — dark bg, image left, content right */
+.hero_slide--mission {
+	background-color: #1a1a1a !important;
+	width: 100%;
+}
+
+.hero_slide--mission .container {
+	height: 100%;
+}
+
+.hero_slide--mission .images-wrap-item {
+	margin-top: 0;
+	margin-left: 30px;
+	display: inline-block;
+}
+
+.hero_slide--mission .images-wrap-item img:first-child {
+	max-width: 220px;
+	position: relative;
+	z-index: 1;
+}
+
+.hero_slide--mission .images-wrap-item img.image-back {
+	max-width: 220px;
+	top: -20px;
+	left: -20px;
+}
+
+.hero_slide--mission .special-heading {
+	color: #fff;
+	font-size: 42px;
+	font-weight: 900;
+	margin-bottom: 10px;
+}
+
+.hero_slide--mission .subheading {
+	color: #fff;
+	font-size: 14px;
+}
+
+.hero_slide--mission .subheading.with-line:after {
+	background-color: #d5ab5b;
+	width: 80px;
+}
+
+.hero_slide--mission .home_hero_paragraph p {
+	color: #fff;
+	font-size: 14px;
+	line-height: 1.6;
 }

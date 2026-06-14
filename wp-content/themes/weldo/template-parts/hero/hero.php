@@ -2,7 +2,13 @@
 /**
  * Home hero: 3-slide carousel (fade, arrows only, auto-rotate)
  */
+// $theme_uri = get_template_directory_uri();
 $theme_uri = get_template_directory_uri();
+$slide1_bg = $theme_uri . '/img/catalog-glass-bg.jpeg';
+
+// Mission slide images — use FULL URL only (no $uploads_base prefix)
+$mission_img_front = content_url( '/uploads/2026/06/logo_2.png' );
+$mission_img_back  = content_url( '/uploads/2026/06/logo_2.png' );  // same image, or a second one if you add it
 ?>
 <section class="hero_section intro_section page_slider home_hero_slider ds nav-arrow">
 	<div class="flexslider" data-nav="true" data-dots="false" data-speed="7000">
@@ -26,28 +32,32 @@ $theme_uri = get_template_directory_uri();
 </li>
 
 			<!-- Slide 2: Our Mission -->
-			<li class="cover-image hero_slide hero_slide--split">
-				<img src="<?php echo esc_url( $theme_uri . '/img/mission-steel-bg.jpg' ); ?>" alt="<?php esc_attr_e( 'Our Mission', 'weldo' ); ?>">
-				<span class="hero_overlay hero_overlay--light"></span>
-				<div class="container">
-					<div class="row align-items-center">
-						<div class="col-lg-6 mb-4 mb-lg-0 text-center text-lg-left">
-							<img class="home_hero_side_image home_hero_logo"
-								src="<?php echo esc_url( $theme_uri . '/img/logo160.png' ); ?>"
-								alt="<?php esc_attr_e( 'Serelite logo', 'weldo' ); ?>">
-						</div>
-						<div class="col-lg-6">
-							<div class="home_hero_text">
-								<h2 class="home_hero_heading">Our Mission</h2>
-								<div class="home_hero_paragraph">
-									<!-- Paste exact Mission copy from /ueber-uns/ -->
-									<p>Replace with your Über Uns “Our Mission” paragraph(s).</p>
-								</div>
-							</div>
-						</div>
+		<!-- Slide 2: Unsere Mission (from Über Uns) -->
+<li class="hero_slide hero_slide--split hero_slide--mission ds">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-6 mb-4 mb-lg-0 text-center text-lg-left">
+				<div class="images-wrap-item img-left">
+					<img src="<?php echo esc_url( $mission_img_front ); ?>" alt="<?php esc_attr_e( 'Unsere Mission', 'weldo' ); ?>">
+					<img class="image-back" src="<?php echo esc_url( $mission_img_back ); ?>" alt="">
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="home_hero_text">
+					<h3 class="big special-heading">
+						<span class="color-main">Unsere</span> Mission
+					</h3>
+					<p class="special-heading subheading with-line">
+						<span class="big-letter-spacing">WILLKOMMEN!</span>
+					</p>
+					<div class="home_hero_paragraph">
+						<p>Ein Aluminiumunternehmen zu sein, das die Bedürfnisse und Erwartungen der Kunden versteht, indem es globalen technologischen und industriellen Trends folgt. Die Kundenzufriedenheit steht bei allen von uns angebotenen Dienstleistungen an erster Stelle. Um alle Bedürfnisse und Erwartungen unserer Kunden zu erfüllen, versuchen wir, ihre Wünsche vollständig und vollständig zu verstehen, und als SERELiT Aluminium sind wir bestrebt, jederzeit und für jeden Kunden Qualität und Service zu bieten, die die Erwartungen übertreffen.</p>
 					</div>
 				</div>
-			</li>
+			</div>
+		</div>
+	</div>
+</li>
 
 			<!-- Slide 3: Our Vision -->
 			<li class="cover-image hero_slide hero_slide--split">
