@@ -18,17 +18,18 @@ $vision_img_back  = content_url( '/uploads/2026/06/logo_3.png' );  // second ima
 		<ul class="slides">
 
 			<!-- Slide 1: Welcome -->
-<li class="cover-image hero_slide hero_slide--welcome">
-<img src="<?php echo esc_url( $slide1_bg ); ?>" alt="">
-
-	<img class="hero_watermark" src="<?php echo esc_url( $theme_uri . '/img/logo.png' ); ?>" alt="">
-	<div class="container hero_slide__inner">
-		<div class="row justify-content-center justify-content-lg-end">
-			<div class="col-lg-6 col-xl-5 text-center text-lg-left">
-				<div class="hero_content">
-					<h1 class="hero_title">Welcome to Serelite</h1>
-					<p class="hero_subtitle">Premium Glass, Steel &amp; Architectural Solutions</p>
-				</div>
+<!-- Slide 1: Welcome (split layout) -->
+<li class="hero_slide hero_slide--welcome ds">
+	<div class="row no-gutters align-items-stretch hero_slide__split">
+		<!-- Left: big glass image -->
+		<div class="col-lg-5 hero_slide__image-col">
+			<img src="<?php echo esc_url( $slide1_bg ); ?>" alt="<?php esc_attr_e( 'Welcome', 'weldo' ); ?>">
+		</div>
+		<!-- Right: dark textured panel + text -->
+		<div class="col-lg-7 hero_slide__content-col texture-background">
+			<div class="hero_content">
+				<h1 class="hero_title">Welcome to Serelite</h1>
+				<p class="hero_subtitle">Seit seiner Gründung im Jahr 2020 hat sich SERELIT zu einem der angesehensten Hersteller von Bau-, sonstigem und dekorativem Stahl für den Mehrfamilien-, Gewerbe- und Wohnungsbau in Istanbul entwickelt.</p>
 			</div>
 		</div>
 	</div>
