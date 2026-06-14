@@ -8,7 +8,10 @@ $slide1_bg = $theme_uri . '/img/catalog-glass-bg.jpeg';
 
 // Mission slide images — use FULL URL only (no $uploads_base prefix)
 $mission_img_front = content_url( '/uploads/2026/06/logo_2.png' );
-$mission_img_back  = content_url( '/uploads/2026/06/logo_2.png' );  // same image, or a second one if you add it
+$mission_img_back  = content_url( '/uploads/2026/06/logo_2.png' ); 
+// Vision slide images
+$vision_img_front = content_url( '/uploads/2026/06/logo_3.png' );  // change to your vision image
+$vision_img_back  = content_url( '/uploads/2026/06/logo_3.png' );  // second image for overlap, optional // same image, or a second one if you add it
 ?>
 <section class="hero_section intro_section page_slider home_hero_slider ds nav-arrow">
 	<div class="flexslider" data-nav="true" data-dots="false" data-speed="7000">
@@ -60,28 +63,33 @@ $mission_img_back  = content_url( '/uploads/2026/06/logo_2.png' );  // same imag
 </li>
 
 			<!-- Slide 3: Our Vision -->
-			<li class="cover-image hero_slide hero_slide--split">
-				<img src="<?php echo esc_url( $theme_uri . '/img/vision-bg.jpg' ); ?>" alt="<?php esc_attr_e( 'Our Vision', 'weldo' ); ?>">
-				<span class="hero_overlay hero_overlay--light"></span>
-				<div class="container">
-					<div class="row align-items-center">
-						<div class="col-lg-6 mb-4 mb-lg-0 text-center text-lg-left">
-							<img class="home_hero_side_image"
-								src="<?php echo esc_url( $theme_uri . '/img/vision-side.jpg' ); ?>"
-								alt="<?php esc_attr_e( 'Our Vision', 'weldo' ); ?>">
-						</div>
-						<div class="col-lg-6">
-							<div class="home_hero_text">
-								<h2 class="home_hero_heading">Our Vision</h2>
-								<div class="home_hero_paragraph">
-									<!-- Paste exact Vision copy from /ueber-uns/ -->
-									<p>Replace with your Über Uns “Our Vision” paragraph(s).</p>
-								</div>
-							</div>
-						</div>
+			<!-- Slide 3: Unsere Vision -->
+<li class="hero_slide hero_slide--split hero_slide--vision ds">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-6 mb-4 mb-lg-0 text-center text-lg-left">
+				<div class="images-wrap-item img-left">
+					<img src="<?php echo esc_url( $vision_img_front ); ?>" alt="<?php esc_attr_e( 'Unsere Vision', 'weldo' ); ?>">
+					<img class="image-back" src="<?php echo esc_url( $vision_img_back ); ?>" alt="">
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="home_hero_text">
+					<h3 class="big special-heading">
+						<span class="color-main">Unsere</span> Vision
+					</h3>
+					<p class="special-heading subheading with-line">
+						<span class="big-letter-spacing">ZUKUNFT!</span>
+					</p>
+					<div class="home_hero_paragraph">
+						<p>Ein Aluminiumunternehmen zu sein, das ein Symbol für Vertrauen und Qualität ist.
+						Die Erwartungen unserer Stakeholder auf höchstem Niveau zu erfüllen, indem wir den Sektor mit seinen innovativen Lösungen, menschenorientierten und umweltfreundlichen Ansätzen anführen.</p>
 					</div>
 				</div>
-			</li>
+			</div>
+		</div>
+	</div>
+</li>
 
 		</ul>
 	</div>

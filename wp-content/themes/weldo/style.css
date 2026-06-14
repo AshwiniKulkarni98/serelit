@@ -422,7 +422,8 @@ audio:focus {
 
 /* Mission slide — match Über Uns layout inside slider */
 /* Mission slide — dark bg, image left, content right */
-.hero_slide--mission {
+.hero_slide--mission,
+.hero_slide--vision {
 	background-color: #1a1a1a !important;
 	width: 100%;
 }
