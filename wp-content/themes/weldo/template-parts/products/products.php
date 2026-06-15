@@ -9,37 +9,37 @@ $uploads = content_url( '/uploads' );
 
 $products = array(
 	array(
-		'title'       => 'FLIEGENGITTERSYSTEME',
+		'title'       => 'MAI 2024 - KOALA CAFÉ IN WIESBADEN',
 		'image'       => $uploads . '/2026/06/reference_1.jpg',
 		'description' => '',
 	),
 	array(
-		'title'       => 'ALUMINIUMPERGOLA',
-		'image'       => $uploads . '/2024/05/IMG-20240526-WA0004-1024x768.jpg',
+		'title'       => 'INNENPOOL - 2026',
+		'image'       => $uploads . '/2026/06/reference_2.jpeg',
 		'description' => '',
 	),
 	array(
-		'title'       => 'WINTERGÄRTEN',
+		'title'       => 'MAI 2024 - KOALA CAFÉ IN WIESBADEN',
 		'image'       => $uploads . '/2026/06/reference_3.jpg',
 		'description' => '',
 	),
 	array(
-		'title'       => 'Your 4th Title',
+		'title'       => 'MAI 2024 - KOALA CAFÉ IN WIESBADEN',
 		'image'       => $uploads . '/2026/06/reference_4.jpg',
-		'description' => 'Optional short description here',
+		'description' => '',
 	),
 );
 
-$references_page     = weldo_get_references_page();
-$references_page_url = $references_page ? get_permalink( $references_page ) : home_url( '/' );
+$katalog_page = get_page_by_path( 'katalog' );
+$references_page_url = $katalog_page
+	? get_permalink( $katalog_page )
+	: home_url( '/katalog/' );
 ?>
 <section class="products_section s-pt-60 s-pb-60" id="products">
     <div class="container">
         <h2 class="section_title">Our Featured References</h2>
         
         <div class="products_carousel">
-            <button class="carousel_nav carousel_nav_prev"><i class="fa fa-chevron-down"></i></button>
-            
             <div class="products_list">
             <?php if ( ! empty( $products ) ) : ?>
                     <?php foreach ( $products as $product ) : ?>
@@ -61,8 +61,6 @@ $references_page_url = $references_page ? get_permalink( $references_page ) : ho
                     <?php endforeach; ?>
                 <?php endif; ?>
             </div>
-            
-            <button class="carousel_nav carousel_nav_next"><i class="fa fa-chevron-down"></i></button>
         </div>
         
         <div class="products_action">
