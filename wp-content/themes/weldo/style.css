@@ -568,20 +568,81 @@ audio:focus {
 }
 
 /* Vision slide — logo image (no duplicate stack) */
-.hero_slide--vision .images-wrap-item {
-	margin-top: 0;
-	margin-left: 30px;
-	display: inline-block;
+/* Vision — text left, image right, fades left */
+.hero_slide--vision {
+	position: relative;
 }
 
-.hero_slide--vision .images-wrap-item img:first-child {
-	max-width: 280px;
-	position: relative;
+.hero_slide--vision .hero_vision-media {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	min-height: 380px;
+	max-height: var(--home-hero-height, 580px);
+	overflow: hidden;
 	z-index: 1;
 }
 
-.hero_slide--vision .images-wrap-item img.image-back {
-	display: none;
+.hero_slide--vision .hero_vision-media img {
+	width: 100%;
+	height: 100%;
+	min-height: 380px;
+	max-height: var(--home-hero-height, 580px);
+	object-fit: cover;
+	object-position: center;
+	display: block;
+}
+
+.hero_slide--vision .hero_vision-media::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(
+		to left,
+		transparent 0%,
+		transparent 45%,
+		rgba(26, 26, 26, 0.7) 80%,
+		#1a1a1a 100%
+	);
+	pointer-events: none;
+	z-index: 2;
+}
+
+.hero_slide--vision .container {
+	position: relative;
+	z-index: 2;
+}
+
+@media (min-width: 992px) {
+	.hero_slide--vision .container {
+		max-width: 100%;
+		padding-left: 48px;
+	}
+
+	.hero_slide--vision .row {
+		justify-content: flex-start;
+	}
+
+	.hero_slide--vision .home_hero_text {
+		max-width: 420px;
+		padding-left: 60px;   /* was 24px — increase to move right */
+	}
+}
+
+@media (max-width: 991px) {
+	.hero_slide--vision .hero_vision-media {
+		position: relative;
+		width: 100%;
+		max-height: 280px;
+		min-height: 220px;
+	}
+
+	.hero_slide--vision .hero_vision-media img {
+		min-height: 220px;
+		max-height: 280px;
+	}
 }
 /* Welcome slide — split: image left, dark content right */
 /* Welcome slide — dual images, centered text */
@@ -789,4 +850,31 @@ audio:focus {
 	line-height: 1.5;
 	margin: 0;
 	opacity: 0.95;
+}
+/* Golden line — Vision slide only */
+.hero_slide--vision .hero_golden-line {
+	display: block;
+	width: min(280px, 100%);
+	height: 2px;
+	margin: 16px 0 20px;
+	position: relative;
+	background: linear-gradient(90deg, transparent, #d5ab5b 50%, transparent);
+	box-shadow: 0 0 10px rgba(213, 171, 91, 0.5);
+}
+
+.hero_slide--vision .hero_golden-line::after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: radial-gradient(circle, #fff 0%, #f5d78e 40%, transparent 70%);
+	box-shadow: 0 0 14px 5px rgba(245, 215, 142, 0.95);
+}
+
+.hero_slide--vision .special-heading {
+	margin-bottom: 0;
 }
