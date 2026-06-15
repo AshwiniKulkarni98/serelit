@@ -215,7 +215,22 @@ audio:focus {
 	min-height: var(--home-hero-height) !important;
 	max-height: var(--home-hero-height) !important;
 }
+/* Prevent inactive slides from overlapping during fade */
+.hero_slide {
+	position: relative;
+	overflow: hidden;
+}
 
+.home_hero_slider .slides > li:not(.flex-active-slide) .hero_content,
+.home_hero_slider .slides > li:not(.flex-active-slide) .hero_slide__dual-bg,
+.home_hero_slider .slides > li:not(.flex-active-slide) .hero_slide__dual-overlay {
+	opacity: 0 !important;
+	visibility: hidden !important;
+}
+
+.home_hero_slider .slides > li.flex-active-slide {
+	z-index: 2;
+}
 /* Arrows only — hide dots (theme treats data-dots="false" as truthy string) */
 .home_hero_slider .flex-control-nav {
 	display: none !important;
@@ -427,56 +442,146 @@ audio:focus {
 }
 
 /* Mission slide — match Über Uns layout inside slider */
-/* Mission slide — dark bg, image left, content right */
+/* Mission & Vision slides */
 .hero_slide--mission,
 .hero_slide--vision {
 	background-color: #1a1a1a !important;
 	width: 100%;
+	overflow: hidden;
 }
 
-.hero_slide--mission .container {
+.hero_slide--mission .container,
+.hero_slide--vision .container {
 	height: 100%;
+	display: flex;
+	align-items: center;
 }
 
-.hero_slide--mission .images-wrap-item {
-	margin-top: 0;
-	margin-left: 30px;
-	display: inline-block;
+.hero_slide--mission .row,
+.hero_slide--vision .row {
+	width: 100%;
 }
 
-.hero_slide--mission .images-wrap-item img:first-child {
-	max-width: 280px;
+/* Mission — left image with right-edge fade */
+/* Mission — full-bleed left image */
+.hero_slide--mission {
 	position: relative;
+}
+
+.hero_slide--mission .hero_mission-media {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	min-height: 380px;
+	max-height: var(--home-hero-height, 580px);
+	overflow: hidden;
 	z-index: 1;
 }
 
-.hero_slide--mission .images-wrap-item img.image-back {
-	max-width: 220px;
-	top: -20px;
-	left: -20px;
+.hero_slide--mission .hero_mission-media img {
+	width: 100%;
+	height: 100%;
+	min-height: 380px;
+	max-height: var(--home-hero-height, 580px);
+	object-fit: cover;
+	object-position: center;
+	display: block;
 }
 
-.hero_slide--mission .special-heading {
+.hero_slide--mission .hero_mission-media::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(
+		to right,
+		transparent 0%,
+		transparent 45%,
+		rgba(26, 26, 26, 0.7) 80%,
+		#1a1a1a 100%
+	);
+	pointer-events: none;
+	z-index: 2;
+}
+
+.hero_slide--mission .container {
+	position: relative;
+	z-index: 2;
+}
+@media (min-width: 992px) {
+	.hero_slide--mission .container {
+		max-width: 100%;
+		padding-right: 48px;
+	}
+
+	.hero_slide--mission .row {
+		justify-content: flex-end;
+	}
+
+	.hero_slide--mission .home_hero_text {
+		max-width: 420px;
+		padding-right: 24px;
+	}
+}
+
+@media (max-width: 991px) {
+	.hero_slide--mission .hero_mission-media {
+		position: relative;
+		width: 100%;
+		max-height: 280px;
+		min-height: 220px;
+	}
+
+	.hero_slide--mission .hero_mission-media img {
+		min-height: 220px;
+		max-height: 280px;
+	}
+}
+
+/* Mission & Vision text */
+.hero_slide--mission .special-heading,
+.hero_slide--vision .special-heading {
 	color: #fff;
 	font-size: 42px;
 	font-weight: 900;
 	margin-bottom: 10px;
 }
 
-.hero_slide--mission .subheading {
+.hero_slide--mission .subheading,
+.hero_slide--vision .subheading {
 	color: #fff;
 	font-size: 14px;
 }
 
-.hero_slide--mission .subheading.with-line:after {
+.hero_slide--mission .subheading.with-line:after,
+.hero_slide--vision .subheading.with-line:after {
 	background-color: #d5ab5b;
 	width: 80px;
 }
 
-.hero_slide--mission .home_hero_paragraph p {
+.hero_slide--mission .home_hero_paragraph p,
+.hero_slide--vision .home_hero_paragraph p {
 	color: #fff;
 	font-size: 14px;
 	line-height: 1.6;
+}
+
+/* Vision slide — logo image (no duplicate stack) */
+.hero_slide--vision .images-wrap-item {
+	margin-top: 0;
+	margin-left: 30px;
+	display: inline-block;
+}
+
+.hero_slide--vision .images-wrap-item img:first-child {
+	max-width: 280px;
+	position: relative;
+	z-index: 1;
+}
+
+.hero_slide--vision .images-wrap-item img.image-back {
+	display: none;
 }
 /* Welcome slide — split: image left, dark content right */
 /* Welcome slide — dual images, centered text */
@@ -622,31 +727,22 @@ audio:focus {
 	font-size: clamp(28px, 4vw, 52px);
 	font-weight: 900;
 	line-height: 1.15;
+	margin-bottom: 14px;
+}
+.hero_slide--dual .hero_title {
 	margin-bottom: 0;
 }
-/* Glowing golden line under title */
+
 .hero_slide--dual .hero_golden-line {
 	display: block;
 	width: min(460px, 75vw);
 	height: 2px;
 	margin: 18px auto 22px;
 	position: relative;
-	background: linear-gradient(
-		90deg,
-		transparent 0%,
-		rgba(213, 171, 91, 0.15) 15%,
-		rgba(213, 171, 91, 0.7) 40%,
-		#f5d78e 50%,
-		rgba(213, 171, 91, 0.7) 60%,
-		rgba(213, 171, 91, 0.15) 85%,
-		transparent 100%
-	);
-	box-shadow:
-		0 0 8px rgba(213, 171, 91, 0.6),
-		0 0 20px rgba(213, 171, 91, 0.35);
+	background: linear-gradient(90deg, transparent, #d5ab5b 50%, transparent);
+	box-shadow: 0 0 10px rgba(213, 171, 91, 0.5);
 }
 
-/* Center sparkle */
 .hero_slide--dual .hero_golden-line::after {
 	content: '';
 	position: absolute;
@@ -656,8 +752,35 @@ audio:focus {
 	width: 10px;
 	height: 10px;
 	border-radius: 50%;
-	background: radial-gradient(circle, #ffffff 0%, #f5d78e 35%, transparent 70%);
+	background: radial-gradient(circle, #fff 0%, #f5d78e 40%, transparent 70%);
 	box-shadow: 0 0 14px 5px rgba(245, 215, 142, 0.95);
+}
+/* Golden line on Mission slide — left-aligned like slide 1 style */
+.hero_slide--mission .hero_golden-line {
+	display: block;
+	width: min(280px, 100%);
+	height: 2px;
+	margin: 16px 0 20px;
+	position: relative;
+	background: linear-gradient(90deg, transparent, #d5ab5b 50%, transparent);
+	box-shadow: 0 0 10px rgba(213, 171, 91, 0.5);
+}
+
+.hero_slide--mission .hero_golden-line::after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: radial-gradient(circle, #fff 0%, #f5d78e 40%, transparent 70%);
+	box-shadow: 0 0 14px 5px rgba(245, 215, 142, 0.95);
+}
+
+.hero_slide--mission .special-heading {
+	margin-bottom: 0;
 }
 .hero_slide--dual .hero_subtitle {
 	color: #fff;

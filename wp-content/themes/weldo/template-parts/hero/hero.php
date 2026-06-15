@@ -5,7 +5,10 @@
 // $theme_uri = get_template_directory_uri();
 $theme_uri = get_template_directory_uri();
 $slide1_bg_left  = $theme_uri . '/img/catalog-glass-bg.jpeg';
-$slide1_bg_right = $theme_uri . '/img/reference_image.jpeg';  // same image, darkened with CSS
+$slide1_bg_right = $theme_uri . '/img/reference_image.jpeg';
+$uploads = content_url( '/uploads' );
+$slide2_image = $uploads . '/2026/06/slide_2.jpeg'; 
+ // same image, darkened with CSS
 
 // Mission slide images — use FULL URL only (no $uploads_base prefix)
 $mission_img_front = content_url( '/uploads/2026/06/logo_2.png' );
@@ -39,31 +42,30 @@ $vision_img_back  = content_url( '/uploads/2026/06/logo_3.png' );  // second ima
 
 			<!-- Slide 2: Our Mission -->
 		<!-- Slide 2: Unsere Mission (from Über Uns) -->
-<li class="hero_slide hero_slide--split hero_slide--mission ds">
-	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-lg-6 mb-4 mb-lg-0 text-center text-lg-left">
-				<div class="images-wrap-item img-left">
-					<img src="<?php echo esc_url( $mission_img_front ); ?>" alt="<?php esc_attr_e( 'Unsere Mission', 'weldo' ); ?>">
-					<img class="image-back" src="<?php echo esc_url( $mission_img_back ); ?>" alt="">
+			<!-- Slide 2: Unsere Mission -->
+			<li class="hero_slide hero_slide--split hero_slide--mission ds">
+				<div class="hero_mission-media">
+					<img src="<?php echo esc_url( $slide2_image ); ?>" alt="<?php esc_attr_e( 'Unsere Mission', 'weldo' ); ?>">
 				</div>
-			</div>
-			<div class="col-lg-6">
-				<div class="home_hero_text">
-					<h3 class="big special-heading">
-						<span class="color-main">Unsere</span> Mission
-					</h3>
-					<p class="special-heading subheading with-line">
-						<span class="big-letter-spacing">WILLKOMMEN!</span>
-					</p>
-					<div class="home_hero_paragraph">
-						<p>Ein Aluminiumunternehmen zu sein, das die Bedürfnisse und Erwartungen der Kunden versteht, indem es globalen technologischen und industriellen Trends folgt. Die Kundenzufriedenheit steht bei allen von uns angebotenen Dienstleistungen an erster Stelle. Um alle Bedürfnisse und Erwartungen unserer Kunden zu erfüllen, versuchen wir, ihre Wünsche vollständig und vollständig zu verstehen, und als SERELiT Aluminium sind wir bestrebt, jederzeit und für jeden Kunden Qualität und Service zu bieten, die die Erwartungen übertreffen.</p>
+				<div class="container">
+					<div class="row align-items-center h-100">
+						<div class="col-lg-8 d-none d-lg-block"></div>
+						<div class="col-lg-4">
+							<div class="home_hero_text">
+								<h3 class="big special-heading">
+									<span class="color-main">Unsere</span> Mission
+								</h3>
+								<!-- <p class="special-heading subheading with-line"> -->
+								<span class="hero_golden-line" aria-hidden="true"></span>
+								<!-- </p> -->
+								<div class="home_hero_paragraph">
+									<p>Ein Aluminiumunternehmen zu sein, das die Bedürfnisse und Erwartungen der Kunden versteht, indem es globalen technologischen und industriellen Trends folgt. Die Kundenzufriedenheit steht bei allen von uns angebotenen Dienstleistungen an erster Stelle. Um alle Bedürfnisse und Erwartungen unserer Kunden zu erfüllen, versuchen wir, ihre Wünsche vollständig und vollständig zu verstehen, und als SERELiT Aluminium sind wir bestrebt, jederzeit und für jeden Kunden Qualität und Service zu bieten, die die Erwartungen übertreffen.</p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-	</div>
-</li>
+			</li>
 
 			<!-- Slide 3: Our Vision -->
 			<!-- Slide 3: Unsere Vision -->
