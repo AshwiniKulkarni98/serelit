@@ -33,4 +33,9 @@ $options = weldo_get_options();
 			</li>
 		<?php endif; ?>
 	</ul>
+	<span class="social-icons footer-social-icons">
+		<a href="https://www.facebook.com/YOUR_PAGE" class="fa fa-facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook"></a>
+		<a href="https://twitter.com/YOUR_ACCOUNT" class="fa fa-twitter" target="_blank" rel="noopener noreferrer" aria-label="Twitter"></a>
+		<a href="https://www.instagram.com/serelit.gmbh?igsh=MXJhbnl4enVxZHAzYQ==" class="fa fa-instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram"></a>
+	</span>
 </div>
