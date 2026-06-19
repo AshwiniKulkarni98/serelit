@@ -56,6 +56,47 @@ add_filter( 'body_class', function( $classes ) {
  * Move "Online Termin" into Kontakt dropdown (below FAQ)
  * and remove it from the Header "Links" sidebar widget.
  */
+
+/**
+ * Resolve the Online Termin / Appointment page URL.
+ */
+function weldo_get_online_termin_url() {
+	static $url = null;
+
+	if ( null !== $url ) {
+		return $url;
+	}
+
+	$slugs = array( 'online-termine', 'appointment', 'online-termin', 'online-terminbuchung' );
+
+	foreach ( $slugs as $slug ) {
+		$page = get_page_by_path( $slug );
+		if ( $page && 'publish' === $page->post_status ) {
+			$url = get_permalink( $page );
+			return $url;
+		}
+	}
+
+	$titles = array( 'Online appointments', 'Online Termin', 'Appointment' );
+
+	foreach ( $titles as $title ) {
+		$pages = get_posts(
+			array(
+				'post_type'      => 'page',
+				'title'          => $title,
+				'posts_per_page' => 1,
+				'post_status'    => 'publish',
+			)
+		);
+
+		if ( ! empty( $pages[0] ) ) {
+			$url = get_permalink( $pages[0] );
+			return $url;
+		}
+	}
+	$url = home_url( '/online-termine/' );
+	return $url;
+} 
 add_filter( 'wp_nav_menu_objects', 'weldo_move_online_termin_to_kontakt', 10, 2 );
 
 function weldo_move_online_termin_to_kontakt( $items, $args ) {
@@ -67,36 +108,36 @@ function weldo_move_online_termin_to_kontakt( $items, $args ) {
 	}
 
 	// Find Online Termin URL from an existing menu item (if present).
-	$online_termin_url = '';
+	$online_termin_url = weldo_get_online_termin_url();
 	foreach ( $items as $item ) {
 		if ( 'Online Termin' === $item->title ) {
 			$online_termin_url = $item->url;
 			break;
 		}
 	}
-
+	$online_termin_url = weldo_get_online_termin_url();
 	// Fallback: find page by slug/title.
-	if ( ! $online_termin_url ) {
-		$page = get_page_by_path( 'online-termin' );
-		if ( ! $page ) {
-			$page = get_page_by_path( 'online-terminbuchung' );
-		}
-		if ( ! $page ) {
-			$pages = get_posts( array(
-				'post_type'      => 'page',
-				'title'          => 'Online Termin',
-				'posts_per_page' => 1,
-			) );
-			$page = ! empty( $pages[0] ) ? $pages[0] : null;
-		}
-		if ( $page ) {
-			$online_termin_url = get_permalink( $page );
-		}
-	}
+	// if ( ! $online_termin_url ) {
+	// 	$page = get_page_by_path( 'online-termin' );
+	// 	if ( ! $page ) {
+	// 		$page = get_page_by_path( 'online-terminbuchung' );
+	// 	}
+	// 	if ( ! $page ) {
+	// 		$pages = get_posts( array(
+	// 			'post_type'      => 'page',
+	// 			'title'          => 'Online Termin',
+	// 			'posts_per_page' => 1,
+	// 		) );
+	// 		$page = ! empty( $pages[0] ) ? $pages[0] : null;
+	// 	}
+	// 	if ( $page ) {
+	// 		$online_termin_url = get_permalink( $page );
+	// 	}
+	// }
 
-	if ( ! $online_termin_url ) {
-		$online_termin_url = home_url( '/online-termin/' );
-	}
+	// if ( ! $online_termin_url ) {
+	// 	$online_termin_url = home_url( '/online-termin/' );
+	// }
 
 	// --- Sidebar Links widget: remove Online Termin ---
 	if ( $is_links_widget ) {
@@ -129,6 +170,7 @@ function weldo_move_online_termin_to_kontakt( $items, $args ) {
 
 		if ( 'Online Termin' === $item->title && (int) $item->menu_item_parent === $kontakt_id ) {
 			$already_in_kontakt = true;
+			$item->url = $online_termin_url; // fix broken /online-termin/ link
 		}
 	}
 

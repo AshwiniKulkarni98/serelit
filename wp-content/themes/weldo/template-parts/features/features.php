@@ -10,22 +10,22 @@
                 <div class="feature_icon">
                     <i class="fa fa-heart"></i>
                 </div>
-                <h3 class="feature_title">Wholesale Pricing</h3>
-                <p class="feature_description">Competitive rates for businesses & projects</p>
+                <h3 class="feature_title">Großhandelspreise</h3>
+                <p class="feature_description">Wettbewerbsfähige Preise für Unternehmen und Projekte</p>
             </div>
             <div class="col-md-4 col-sm-12 feature_item">
                 <div class="feature_icon">
                     <i class="fa fa-diamond"></i>
                 </div>
-                <h3 class="feature_title">Premium Quality</h3>
-                <p class="feature_description">Finest materials and meticulous craftsmanship</p>
+                <h3 class="feature_title">Premium-Qualität</h3>
+                <p class="feature_description">Hochwertigste Materialien und sorgfältige Handwerkskunst</p>
             </div>
             <div class="col-md-4 col-sm-12 feature_item">
                 <div class="feature_icon">
                     <i class="fa fa-cube"></i>
                 </div>
-                <h3 class="feature_title">Custom Solutions</h3>
-                <p class="feature_description">Tailored glass designs made for your needs.</p>
+                <h3 class="feature_title">Maßgeschneiderte Lösungen</h3>
+                <p class="feature_description">Maßgeschneiderte Aluminiumkonstruktionen, die genau auf Ihre Bedürfnisse zugeschnitten sind.</p>
             </div>
         </div>
     </div>

@@ -37,7 +37,7 @@ $references_page_url = $katalog_page
 ?>
 <section class="products_section s-pt-60 s-pb-60" id="products">
     <div class="container">
-        <h2 class="section_title">Our Featured References</h2>
+        <h2 class="section_title">Unsere ausgewählten Referenzen</h2>
         
         <div class="products_carousel">
             <div class="products_list">
@@ -64,7 +64,7 @@ $references_page_url = $katalog_page
         </div>
         
         <div class="products_action">
-            <a href="<?php echo esc_url( $references_page_url ); ?>" class="view_all_button">View All References</a>
+            <a href="<?php echo esc_url( $references_page_url ); ?>" class="view_all_button">Sehen Sie sich unseren Katalog an</a>
         </div>
     </div>
 </section>

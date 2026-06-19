@@ -15,14 +15,11 @@ $section = weldo_get_section_options( $options, 'footer_' );
 	<?php echo ( ! empty( $section['section_background_image'] ) ) ? 'style="' . esc_attr( $section['section_background_image'] ) . '"' : ''; ?>
 >
 	<div class="container<?php echo esc_attr( $section['section_container_class_suffix'] ); ?>">
-		<div class="row<?php echo esc_attr( $section['section_row_class_suffix'] ); ?>">
-			<div class="col-xl-4 col-md-6">
-				<?php dynamic_sidebar( 'sidebar-footer-1' ); ?>
-			</div>
-			<div class="col-xl-4 col-md-6 footer-col-contact">
+	<div class="row justify-content-xl-between footer-columns-right<?php echo esc_attr( $section['section_row_class_suffix'] ); ?>">
+			<div class="col-xl-5 col-lg-6 col-md-6 footer-col-contact">
 				<?php get_template_part( 'template-parts/footer/footer-contact-icons' ); ?>
 			</div>
-			<div class="col-xl-4 col-md-6 footer-col-qr">
+			<div class="col-xl-4 col-lg-5 col-md-6 footer-col-qr">
 				<?php dynamic_sidebar( 'sidebar-footer-3' ); ?>
 			</div>
 		</div>

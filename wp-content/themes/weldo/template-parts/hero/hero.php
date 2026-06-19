@@ -35,7 +35,7 @@ $vision_img_back  = content_url( '/uploads/2026/06/logo_3.png' );  // second ima
 	</div>
 	<span class="hero_slide__dual-overlay"></span>
 <div class="hero_content hero_content--center">
-	<h1 class="hero_title">Welcome to Serelite</h1>
+	<h1 class="hero_title">Willkommen bei Serelite</h1>
 	<span class="hero_golden-line" aria-hidden="true"></span>
 	<p class="hero_subtitle">Seit seiner Gründung im Jahr 2020 hat sich SERELIT zu einem der angesehensten Hersteller von Bau-, sonstigem und dekorativem Stahl für den Mehrfamilien-, Gewerbe- und Wohnungsbau in Istanbul entwickelt.</p>
 </div>

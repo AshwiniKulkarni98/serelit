@@ -888,7 +888,7 @@ audio:focus {
 
 .page_footer .widget_icons_list .footer-social-icons a {
 	color: #fff;
-	font-size: 16px;
+	font-size: 18px;
 	margin-right: 14px;
 	text-decoration: none;
 	transition: color 0.3s ease;
@@ -898,9 +898,34 @@ audio:focus {
 	color: #d5ab5b;
 }
 
+/* Footer — Kontakt + QR aligned right */
+.page_footer .footer-columns-right {
+	padding-top: 40px;
+	padding-bottom: 35px;
+}
+
+@media (min-width: 1200px) {
+	.page_footer .footer-columns-right {
+		justify-content: space-between;
+	}
+
+	.page_footer .footer-col-contact {
+		flex: 0 0 auto;
+		max-width: 42%;
+		padding-right: 0;
+	}
+
+	.page_footer .footer-col-qr {
+		flex: 0 0 auto;
+		max-width: 28%;
+		padding-left: 0;
+		text-align: right;
+	}
+}
+
 /* Footer Kontakt column */
 .page_footer .footer-col-contact .widget-title {
-	font-size: 22px;
+	font-size: 28px;
 	font-style: italic;
 	font-weight: 700;
 	margin-bottom: 15px;
@@ -915,7 +940,7 @@ audio:focus {
 .page_footer .footer-col-contact .widget_icons_list li a,
 .page_footer .footer-col-contact .widget_icons_list li span {
 	color: #fff;
-	font-size: 14px;
+	font-size: 16px;
 }
 
 .page_footer .footer-col-contact .widget_icons_list .color-main {
@@ -929,19 +954,19 @@ audio:focus {
 
 /* Footer QR column */
 .page_footer .footer-col-qr .widget-title {
-	font-size: 15px;
+	font-size: 18px;
 	font-style: italic;
 	font-weight: 700;
 	line-height: 1.35;
 	margin-bottom: 14px;
 	color: #fff;
-	text-align: left;
+	text-align: right;
 }
 
 .page_footer .footer-col-qr .widget_media_image img,
 .page_footer .footer-col-qr .widget img {
-	max-width: 120px;
-	width: 120px;
+	max-width: 150px;
+	width: 150px;
 	height: auto;
 	display: block;
 	margin-left: auto;
@@ -955,4 +980,7 @@ audio:focus {
 	.page_footer .footer-col-qr .widget_media_image img {
 		margin-left: 0;
 	}
+}
+.page_footer .footer-col-contact .widget_icons_list .ico {
+	font-size: 16px;
 }
