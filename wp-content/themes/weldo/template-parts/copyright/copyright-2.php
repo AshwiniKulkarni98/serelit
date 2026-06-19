@@ -17,9 +17,10 @@ $section = weldo_get_section_options( $options, 'copyright_' );
 	<div class="container<?php echo esc_attr( $section['section_container_class_suffix'] ); ?>">
 		<div class="row align-items-center">
 			<div class="col-12 text-center">
-				<?php echo ( ! empty ( $options['copyright_text'] ) )
+			<?php echo esc_html( 'Copyright © 2026 Serelit Glassdesign GmbH. All rights reserved.' ); ?>
+				<!-- <?php echo ( ! empty ( $options['copyright_text'] ) )
 					? wp_kses_post( $options['copyright_text'] )
-					: esc_html__( 'Powered by WordPress', 'weldo' ) . ' &copy; ' . date('Y' ); ?>
+					: esc_html__( 'Powered by WordPress', 'weldo' ) . ' &copy; ' . date('Y' ); ?> -->
 			</div>
 		</div>
 	</div>
