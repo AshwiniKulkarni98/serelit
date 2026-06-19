@@ -900,8 +900,10 @@ audio:focus {
 
 /* Footer — Kontakt + QR aligned right */
 .page_footer .footer-columns-right {
-	padding-top: 40px;
-	padding-bottom: 35px;
+	/* padding-top: 40px;
+	padding-bottom: 35px; */
+	padding-top: 0;
+	padding-bottom: 0;
 }
 
 @media (min-width: 1200px) {
@@ -983,4 +985,19 @@ audio:focus {
 }
 .page_footer .footer-col-contact .widget_icons_list .ico {
 	font-size: 16px;
+}
+/* Footer — reduce top/bottom gap */
+.page_footer > .container {
+	padding-top: 35px !important;
+	padding-bottom: 25px !important;
+}
+
+.page_footer .footer-columns-right {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.page_footer .footer-col-contact .widget,
+.page_footer .footer-col-qr .widget {
+	margin-bottom: 0;
 }
