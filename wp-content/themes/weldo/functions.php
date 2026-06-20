@@ -217,3 +217,27 @@ add_filter( 'widget_nav_menu_args', function( $nav_menu_args, $nav_menu, $args, 
 	}
 	return $nav_menu_args;
 }, 10, 4 );
+/**
+ * References section carousel arrow controls.
+ */
+add_action( 'wp_footer', function() {
+	if ( ! is_front_page() ) {
+		return;
+	}
+	?>
+	<script>
+	jQuery(function($) {
+		var $carousel = $('.references_carousel');
+		if ( ! $carousel.length || typeof $.fn.owlCarousel === 'undefined' ) {
+			return;
+		}
+		$('.references_prev').on('click', function() {
+			$carousel.trigger('prev.owl.carousel');
+		});
+		$('.references_next').on('click', function() {
+			$carousel.trigger('next.owl.carousel');
+		});
+	});
+	</script>
+	<?php
+}, 99 );

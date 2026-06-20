@@ -955,3 +955,46 @@ if ( ! function_exists( 'weldo_get_reference_image_url' ) ) {
         return esc_url( get_template_directory_uri() . '/img/' . $image );
     }
 }
+
+if ( ! function_exists( 'weldo_render_footer_contact_form' ) ) {
+	function weldo_render_footer_contact_form() {
+		if ( ! function_exists( 'fw_ext' ) ) {
+			return '';
+		}
+
+		$extension = fw_ext( 'contact-forms' );
+		if ( ! $extension ) {
+			return '';
+		}
+
+		$form_id   = 'd5558059591e149c9f7878195b82208b';
+		$form_data = get_option( 'fw:ext:cf:fd:' . $form_id );
+
+		if ( empty( $form_data ) || empty( $form_data['form'] ) ) {
+			return '';
+		}
+
+		$extension->_set_form_db_data( $form_id, $form_data );
+
+		$view_data = array_diff_key(
+			$form_data,
+			array(
+				'width'  => true,
+				'mailer' => true,
+				'form'   => true,
+				'id'     => true,
+			)
+		);
+
+		return $extension->render(
+			array(
+				'id'                 => $form_id,
+				'form'               => $form_data['form'],
+				'submit_button_text' => ! empty( $form_data['submit_button_text'] )
+					? $form_data['submit_button_text']
+					: 'Send Message',
+			),
+			$view_data
+		);
+	}
+}

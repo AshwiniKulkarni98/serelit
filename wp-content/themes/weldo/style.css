@@ -907,20 +907,20 @@ audio:focus {
 }
 
 @media (min-width: 1200px) {
-	.page_footer .footer-columns-right {
-		justify-content: space-between;
+	.page_footer .footer-columns-three {
+		justify-content: center;
 	}
 
-	.page_footer .footer-col-contact {
-		flex: 0 0 auto;
-		max-width: 42%;
-		padding-right: 0;
+	.page_footer .footer-col-contact,
+	.page_footer .footer-col-form,
+	.page_footer .footer-col-qr {
+		flex: 0 0 33.333%;
+		max-width: 33.333%;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 
 	.page_footer .footer-col-qr {
-		flex: 0 0 auto;
-		max-width: 28%;
-		padding-left: 0;
 		text-align: right;
 	}
 }
@@ -1011,4 +1011,201 @@ audio:focus {
 	inset: 0;
 	z-index: 2;
 	display: block;
+}
+/* References carousel — sleek layout, equal cards, balanced arrows */
+.references_carousel_wrap {
+	display: grid;
+	grid-template-columns: 48px minmax(0, 1fr) 48px;
+	align-items: center;
+	column-gap: 24px;
+	margin-bottom: 40px;
+}
+
+.references_carousel_wrap .carousel_nav {
+	flex-shrink: 0;
+	width: 44px;
+	height: 44px;
+	font-size: 16px;
+	border-width: 1px;
+	margin: 0;
+	padding: 0;
+}
+
+.references_carousel.products_list.owl-carousel {
+	display: block;
+	width: 100%;
+	min-width: 0;
+	max-width: 100%;
+}
+
+.references_carousel .owl-stage-outer,
+.references_carousel .owl-stage,
+.references_carousel .owl-item {
+	width: 100%;
+}
+
+.references_carousel .owl-item {
+	display: flex;
+	height: auto;
+}
+
+/* Equal-height cards */
+.references_carousel .reference_card {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	min-height: 340px;
+	background-color: rgba(255, 255, 255, 0.02) !important;
+	border: 1px solid rgba(213, 171, 91, 0.22);
+	border-radius: 2px;
+	overflow: hidden;
+	transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.references_carousel .reference_card:hover {
+	border-color: #d5ab5b;
+	box-shadow: 0 6px 20px rgba(213, 171, 91, 0.12);
+	transform: translateY(-2px);
+}
+
+.references_carousel .reference_card .product_image {
+	height: 220px !important;
+	flex-shrink: 0;
+}
+
+.references_carousel .reference_card .product_image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+/* Fixed caption area — same height on every card */
+.references_carousel .reference_info {
+	flex: 1;
+	min-height: 88px;
+	padding: 16px 14px !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background: linear-gradient(135deg, rgba(213, 171, 91, 0.06) 0%, rgba(0, 0, 0, 0.25) 100%);
+}
+
+.references_carousel .reference_title {
+	margin: 0;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 1.35;
+	letter-spacing: 1px;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+@media (max-width: 767px) {
+	.references_carousel_wrap {
+		grid-template-columns: 40px minmax(0, 1fr) 40px;
+		column-gap: 12px;
+	}
+
+	.references_carousel_wrap .carousel_nav {
+		width: 38px;
+		height: 38px;
+	}
+
+	.references_carousel .reference_card {
+		min-height: 300px;
+	}
+
+	.references_carousel .reference_card .product_image {
+		height: 180px !important;
+	}
+
+	.references_carousel .reference_info {
+		min-height: 72px;
+	}
+}
+.page_footer .footer-form-heading,
+.page_footer .footer-form-subtitle {
+	text-align: center;
+}
+/* Footer middle — contact form */
+.page_footer .footer-form-heading {
+	color: #fff;
+	font-size: 20px;
+	font-style: italic;
+	font-weight: 700;
+	margin-bottom: 8px;
+}
+
+.page_footer .footer-form-heading mark {
+	color: #d5ab5b;
+	background: transparent;
+}
+
+.page_footer .footer-form-subtitle {
+	color: rgba(255, 255, 255, 0.85);
+	font-size: 11px;
+	letter-spacing: 1px;
+	margin-bottom: 16px;
+}
+
+.page_footer .footer-form-fields .form-control,
+.page_footer .footer-form-fields input,
+.page_footer .footer-form-fields textarea {
+	font-size: 14px;
+}
+.page_footer .footer-form-fields .form-wrapper {
+	padding: 0 !important;
+	background: transparent !important;
+}
+
+.page_footer .footer-form-fields .form-control,
+.page_footer .footer-form-fields input:not([type="submit"]),
+.page_footer .footer-form-fields textarea {
+	width: 100%;
+}
+
+/* @media (min-width: 992px) {
+	
+	.page_footer .footer-form-fields form > .row:first-of-type > [class*="col-"] {
+		flex: 0 0 50% !important;
+		max-width: 50% !important;
+		width: 50% !important;
+	}
+	.page_footer .footer-form-fields form > .row:not(:first-of-type) > [class*="col-"] {
+		flex: 0 0 100% !important;
+		max-width: 100% !important;
+		width: 100% !important;
+	}
+} */
+@media (min-width: 992px) {
+	.page_footer .footer-form-fields form .row > [class*="col-"] {
+		flex: 0 0 100% !important;
+		max-width: 100% !important;
+		width: 100% !important;
+	}
+}
+@media (max-width: 991px) {
+	.page_footer .footer-col-form {
+		margin: 30px 0;
+	}
+}
+
+/* Hide old form above footer (remove later if you edit pages in WP Admin) */
+section#contact-fields {
+	display: none !important;
+}
+.page_footer .footer-form-fields .wrap-forms .col-12 {
+	text-align: center;
+}
+
+.page_footer .footer-form-fields .wrap-forms input[type="submit"] {
+	display: inline-block;
+	width: auto;
+	min-width: 220px;
+	max-width: 100%;
 }

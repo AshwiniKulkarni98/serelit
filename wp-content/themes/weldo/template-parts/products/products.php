@@ -35,6 +35,13 @@ $products = array(
         'video_url'   => $uploads . '/2026/06/video_1.mp4',
         'description' => '',
     ),
+    array(
+        'type'        => 'video',
+        'title'       => 'VIDEO-2',
+        'image'       => $uploads . '/2026/06/logo_2.png',
+        'video_url'   => $uploads . '/2026/06/video_2.mp4',
+        'description' => '',
+    ),
 
 );
 
@@ -47,8 +54,21 @@ $references_page_url = $katalog_page
     <div class="container">
         <h2 class="section_title">Unsere ausgewählten Referenzen</h2>
         
-        <div class="products_carousel">
-            <div class="products_list">
+        <div class="products_carousel references_carousel_wrap">
+            <button type="button" class="carousel_nav references_prev" aria-label="<?php esc_attr_e( 'Previous', 'weldo' ); ?>">
+                <i class="ico ico-prev"></i>
+            </button>
+
+            <div class="products_list owl-carousel owl-theme references_carousel"
+                 data-nav="false"
+                 data-dots="false"
+                 data-loop="false"
+                 data-margin="16"
+                 data-items="4"
+                 data-responsive-xs="1"
+                 data-responsive-sm="2"
+                 data-responsive-md="3"
+                 data-responsive-lg="4">
             <?php if ( ! empty( $products ) ) : ?>
                     <?php foreach ( $products as $product ) : ?>
                         <div class="product_card reference_card">
@@ -86,6 +106,10 @@ $references_page_url = $katalog_page
                     <?php endforeach; ?>
                 <?php endif; ?>
             </div>
+
+            <button type="button" class="carousel_nav references_next" aria-label="<?php esc_attr_e( 'Next', 'weldo' ); ?>">
+                <i class="ico ico-next"></i>
+            </button>
         </div>
         
         <div class="products_action">
