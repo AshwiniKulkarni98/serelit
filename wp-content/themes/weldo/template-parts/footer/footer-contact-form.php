@@ -14,10 +14,10 @@ if ( empty( $form_html ) ) {
 ?>
 <div class="footer-contact-form-widget">
 	<h4 class="footer-form-heading">
-		Do you need <mark>Undershooters?</mark>?
+		Brauchen Sie <mark>Unterschützen?</mark>?
 	</h4>
 	<p class="footer-form-subtitle">
-		PLEASE DO NOT HESITATE TO CONTACT US.
+		ZÖGERN SIE BITTE NICHT, UNS ZU KONTAKTIEREN.
 	</p>
 	<div class="footer-form-fields">
 		<?php echo $form_html; ?>
