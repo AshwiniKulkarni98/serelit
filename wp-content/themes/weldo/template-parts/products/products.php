@@ -28,6 +28,14 @@ $products = array(
 		'image'       => $uploads . '/2026/06/reference_4.jpg',
 		'description' => '',
 	),
+    array(
+        'type'        => 'video',
+        'title'       => 'VIDEO-1',
+        'image'       => $uploads . '/2026/06/logo_2.png',
+        'video_url'   => $uploads . '/2026/06/video_1.mp4',
+        'description' => '',
+    ),
+
 );
 
 $katalog_page = get_page_by_path( 'katalog' );
@@ -44,12 +52,29 @@ $references_page_url = $katalog_page
             <?php if ( ! empty( $products ) ) : ?>
                     <?php foreach ( $products as $product ) : ?>
                         <div class="product_card reference_card">
-                            <div class="product_image">
-                                <a href="<?php echo esc_url( $product['image'] ); ?>"
-                                   class="photoswipe-link"
-                                   title="<?php echo esc_attr( $product['title'] ); ?>">
+                        <?php
+                            $is_video = ! empty( $product['type'] ) && 'video' === $product['type'] && ! empty( $product['video_url'] );
+                            $image_class = 'product_image' . ( $is_video ? ' cover-image s-overlay' : '' );
+                            ?>
+                            <div class="<?php echo esc_attr( $image_class ); ?>">
+                                <?php if ( $is_video ) : ?>
+                                    <?php
+                                    $video_html = '<video controls autoplay playsinline style="width:100%;max-height:80vh;">'
+                                        . '<source src="' . esc_url( $product['video_url'] ) . '" type="video/mp4">'
+                                        . '</video>';
+                                    ?>
                                     <img src="<?php echo esc_url( $product['image'] ); ?>" alt="<?php echo esc_attr( $product['title'] ); ?>">
-                                </a>
+                                    <a href=""
+                                       class="video-link photoswipe-link"
+                                       data-iframe="<?php echo esc_attr( $video_html ); ?>"
+                                       title="<?php echo esc_attr( $product['title'] ); ?>"></a>
+                                <?php else : ?>
+                                    <a href="<?php echo esc_url( $product['image'] ); ?>"
+                                       class="photoswipe-link"
+                                       title="<?php echo esc_attr( $product['title'] ); ?>">
+                                        <img src="<?php echo esc_url( $product['image'] ); ?>" alt="<?php echo esc_attr( $product['title'] ); ?>">
+                                    </a>
+                                <?php endif; ?>
                             </div>
                             <div class="product_info reference_info">
                                 <h3 class="product_title reference_title"><?php echo esc_html( $product['title'] ); ?></h3>

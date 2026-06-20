@@ -1001,3 +1001,14 @@ audio:focus {
 .page_footer .footer-col-qr .widget {
 	margin-bottom: 0;
 }
+/* Reference video card — play overlay */
+.reference_card .product_image.cover-image {
+	position: relative;
+}
+
+.reference_card .product_image .video-link {
+	position: absolute;
+	inset: 0;
+	z-index: 2;
+	display: block;
+}

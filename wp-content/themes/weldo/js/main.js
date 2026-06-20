@@ -316,14 +316,23 @@
                     var pswpGallery = new PhotoSwipe(gallery, PhotoSwipeUI_Default, items, options);
                     pswpGallery.init();
 
-                    //pausing video on close and on slide change
+                    // Pausing video on close and on slide change (iframe + HTML5 video)
                     pswpGallery.listen('afterChange', function() {
                         $(pswpGallery.container).find('iframe').each(function() {
-                            $(this)[0].contentWindow.postMessage('{"method":"pause","event":"command","func":"pauseVideo","args":""}', '*')
+                            $(this)[0].contentWindow.postMessage('{"method":"pause","event":"command","func":"pauseVideo","args":""}', '*');
+                        });
+                        $(pswpGallery.container).find('video').each(function() {
+                            this.pause();
                         });
                     });
                     pswpGallery.listen('close', function() {
                         $(pswpGallery.container).find('iframe').each(function() {
+                            $(this).remove();
+                        });
+                        $(pswpGallery.container).find('video').each(function() {
+                            this.pause();
+                            this.removeAttribute('src');
+                            this.load();
                             $(this).remove();
                         });
                     });
