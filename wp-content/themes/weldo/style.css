@@ -1209,3 +1209,9 @@ section#contact-fields {
 	min-width: 220px;
 	max-width: 100%;
 }
+/* Hide References in top header menu */
+.page_header .top-nav li.menu-item:has(a[href*="references"]),
+.page_header .top-nav li.menu-item:has(a[href*="referenzen"]),
+.page_header .top-nav li.menu-item:has(a[href*="referenze"]) {
+	display: none !important;
+}
