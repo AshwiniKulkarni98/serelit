@@ -1005,6 +1005,21 @@ audio:focus {
 .reference_card .product_image.cover-image {
 	position: relative;
 }
+/* Video cards — show full thumbnail, no zoom/crop */
+.references_carousel .reference_card .product_image.cover-image {
+	background-size: contain !important;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: rgba(0, 0, 0, 0.35);
+}
+
+@media (min-width: 992px) {
+	.references_carousel .reference_card .product_image.cover-image {
+		position: relative !important;
+		width: 100% !important;
+		height: 220px !important;
+	}
+}
 
 .reference_card .product_image .video-link {
 	position: absolute;
