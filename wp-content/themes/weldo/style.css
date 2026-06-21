@@ -1386,6 +1386,19 @@ body.page-katalog .katalog-more-btn {
 	line-height: 1.2;
 }
 
+/* Header dropdown submenus — Roboto */
+.page_header .top-nav .sf-menu ul a,
+.page_header .top-nav .sf-menu li > ul a,
+.page_header .top-nav .sf-menu .mega-menu ul a {
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: 0;
+	text-transform: none;
+	line-height: 1.4;
+}
+
 /* References section + footer headings — Roboto, same sizes as before */
 .products_section .section_title {
 	font-family: "Roboto", sans-serif;
