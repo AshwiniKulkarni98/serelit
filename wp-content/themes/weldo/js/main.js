@@ -1208,16 +1208,23 @@
                 });
 
                 let quantity_init = () => {
-                    var $numberInput = $('input[type="number"]');
-                    $numberInput.before('<input type="button" value="+" class="plus"><i class="fa fa-caret-up" aria-hidden="true"></i>');
-                    $numberInput.after('<input type="button" value="-" class="minus"><i class="fa fa-caret-down" aria-hidden="true"></i>');
+                    var $numberInput = $('.quantity input[type="number"]').not('.serelit-dim-stepper input[type="number"]');
+                    $numberInput.each(function () {
+                        var $input = $(this);
+                        if ($input.data('weldo-qty-init')) {
+                            return;
+                        }
+                        $input.data('weldo-qty-init', true);
+                        $input.before('<input type="button" value="+" class="plus"><i class="fa fa-caret-up" aria-hidden="true"></i>');
+                        $input.after('<input type="button" value="-" class="minus"><i class="fa fa-caret-down" aria-hidden="true"></i>');
+                    });
 
-                    $('.plus').on('click', function (e) {
+                    $('.quantity .plus').off('click.weldoQty').on('click.weldoQty', function () {
                         var numberField = $(this).parent().find('[type="number"]');
                         var currentVal = ( numberField.val() === '' ) ? 0 : numberField.val();
                         numberField.val(parseFloat(currentVal) + 1).trigger('change');
                     });
-                    $('.minus').on('click', function (e) {
+                    $('.quantity .minus').off('click.weldoQty').on('click.weldoQty', function () {
                         var numberField = $(this).parent().find('[type="number"]');
                         var currentVal = numberField.val();
                         numberField.val(parseFloat(currentVal) - 1).trigger('change');

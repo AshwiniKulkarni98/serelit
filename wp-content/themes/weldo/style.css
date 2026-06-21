@@ -1415,9 +1415,127 @@ body.page-katalog .katalog-more-btn {
 .page_title h2 {
 	font-weight: 700;
 }
+
+/* About Us (Über Uns) — Roboto for headings and subheadings */
+body.page-uber-uns h1,
+body.page-uber-uns h2,
+body.page-uber-uns h3,
+body.page-uber-uns h4,
+body.page-uber-uns h5,
+body.page-uber-uns h6,
+body.page-uber-uns .special-heading,
+body.page-uber-uns .special-heading span,
+body.page-uber-uns .special-heading mark,
+body.page-uber-uns .anton-font {
+	font-family: "Roboto", sans-serif;
+	font-variant-numeric: normal;
+	font-feature-settings: normal;
+}
+
 .single-fw-portfolio .single-gallery .cat-links {
 	display: none;
 }
 .single-fw-portfolio .entry-meta {
 	display: none;
+}
+
+/* Fly screen page — dimension steppers + card typography */
+body.page-fly-screen .serelit-fly-dimensions-card {
+	box-shadow: 0 0 24px rgba(216, 174, 94, 0.18);
+}
+
+body.page-fly-screen .serelit-fly-dimensions-card h3,
+body.page-fly-screen div[style*="border:2px solid #D8AE5E"] h3,
+body.page-fly-screen div[style*="border: 2px solid #D8AE5E"] h3 {
+	font-family: "Roboto", sans-serif !important;
+	font-weight: 700 !important;
+	letter-spacing: 0 !important;
+	margin-bottom: 18px !important;
+}
+
+body.page-fly-screen .serelit-dim-field {
+	margin-bottom: 16px;
+}
+
+body.page-fly-screen .serelit-dim-field:last-child {
+	margin-bottom: 0;
+}
+
+body.page-fly-screen .serelit-dim-label,
+body.page-fly-screen .serelit-fly-dimensions-card label {
+	display: block;
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	color: #d8ae5e;
+	margin-bottom: 8px;
+}
+
+body.page-fly-screen .serelit-dim-stepper {
+	display: flex !important;
+	flex-direction: row !important;
+	align-items: stretch;
+	width: 100%;
+	border: 1px solid #d8ae5e;
+	border-radius: 8px;
+	overflow: hidden;
+	background: #1a1a1a;
+}
+
+body.page-fly-screen .serelit-dim-stepper input[type="number"] {
+	flex: 1 1 auto;
+	min-width: 0;
+	width: auto !important;
+	height: 46px !important;
+	margin: 0 !important;
+	padding: 0 12px !important;
+	border: none !important;
+	border-radius: 0 !important;
+	background: #1a1a1a !important;
+	color: #fff !important;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	text-align: center;
+	-moz-appearance: textfield;
+	box-shadow: none !important;
+}
+
+body.page-fly-screen .serelit-dim-stepper input[type="number"]::-webkit-inner-spin-button,
+body.page-fly-screen .serelit-dim-stepper input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+body.page-fly-screen .serelit-dim-btn {
+	flex: 0 0 48px;
+	width: 48px;
+	height: 46px;
+	border: none;
+	border-radius: 0;
+	background: linear-gradient(180deg, #e8c878 0%, #d8ae5e 100%);
+	color: #111;
+	font-family: "Roboto", sans-serif;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 1;
+	cursor: pointer;
+	padding: 0;
+	transition: filter 0.2s ease;
+}
+
+body.page-fly-screen .serelit-dim-btn:hover {
+	filter: brightness(1.08);
+}
+
+body.page-fly-screen .serelit-dim-btn:active {
+	filter: brightness(0.95);
+}
+
+body.page-fly-screen .serelit-dim-minus {
+	border-right: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+body.page-fly-screen .serelit-dim-plus {
+	border-left: 1px solid rgba(0, 0, 0, 0.15);
 }

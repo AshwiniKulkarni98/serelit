@@ -49,10 +49,34 @@ if (!defined('FW') && file_exists(WELDO_THEME_PATH . '/inc/framework/bootstrap.p
  */
 require_once WELDO_THEME_PATH . '/inc/init.php';
 require_once WELDO_THEME_PATH . '/inc/project-gallery.php';
+
+/**
+ * Fly screen service page (German + English slugs).
+ */
+function weldo_is_fly_screen_page() {
+	if ( is_page( array( 'fliegengittersysteme', 'fly-screen-systems' ) ) ) {
+		return true;
+	}
+
+	if ( is_singular( 'fw-services' ) ) {
+		$slug = get_post_field( 'post_name', get_queried_object_id() );
+
+		return in_array( $slug, array( 'fliegengittersysteme', 'fly-screen-systems' ), true );
+	}
+
+	return false;
+}
+
 add_filter( 'body_class', function( $classes ) {
 	$classes[] = 'header_show_all_menu_items';
 	if ( is_page( 'katalog' ) ) {
 		$classes[] = 'page-katalog';
+	}
+	if ( is_page( 'uber-uns' ) ) {
+		$classes[] = 'page-uber-uns';
+	}
+	if ( weldo_is_fly_screen_page() ) {
+		$classes[] = 'page-fly-screen';
 	}
 	return $classes;
 } );
@@ -278,6 +302,81 @@ add_action(
 					})
 				);
 			});
+		});
+		</script>
+		<?php
+	},
+	100
+);
+
+/**
+ * Fly screen page — horizontal +/- steppers for dimension inputs.
+ */
+add_action(
+	'wp_footer',
+	function() {
+		if ( ! weldo_is_fly_screen_page() ) {
+			return;
+		}
+		?>
+		<script>
+		jQuery(function($) {
+			function initFlyDimensionSteppers() {
+				$('h3').filter(function() {
+					return /Maße eingeben|Enter dimensions/i.test($(this).text().trim());
+				}).closest('div').first().addClass('serelit-fly-dimensions-card');
+
+				$('.serelit-fly-dimensions-card input[type="number"]').each(function() {
+					var $input = $(this);
+
+					if ($input.closest('.serelit-dim-stepper').length) {
+						return;
+					}
+
+					$input.siblings('.plus, .minus, .fa-caret-up, .fa-caret-down').remove();
+
+					var $label = $input.closest('p').find('label').first();
+					var labelText = $label.text().trim();
+					var $wrap = $input.closest('p');
+					if (!$wrap.length) {
+						$wrap = $label.parent();
+					}
+					var $field = $('<div class="serelit-dim-field"></div>');
+					var $stepper = $('<div class="serelit-dim-stepper"></div>');
+					var $minus = $('<button type="button" class="serelit-dim-btn serelit-dim-minus" aria-label="Decrease">−</button>');
+					var $plus = $('<button type="button" class="serelit-dim-btn serelit-dim-plus" aria-label="Increase">+</button>');
+
+					if (labelText) {
+						$field.append($('<label class="serelit-dim-label"></label>').text(labelText));
+					}
+
+					$input.removeAttr('style').attr({
+						min: '0',
+						step: '1',
+						inputmode: 'numeric',
+						placeholder: '0'
+					});
+
+					$input.detach();
+					$stepper.append($minus, $input, $plus);
+					$field.append($stepper);
+
+					$wrap.empty().append($field);
+
+					$plus.on('click', function() {
+						var current = parseFloat($input.val()) || 0;
+						$input.val(current + 1).trigger('change');
+					});
+
+					$minus.on('click', function() {
+						var current = parseFloat($input.val()) || 0;
+						$input.val(Math.max(0, current - 1)).trigger('change');
+					});
+				});
+			}
+
+			initFlyDimensionSteppers();
+			$(window).on('load', initFlyDimensionSteppers);
 		});
 		</script>
 		<?php
