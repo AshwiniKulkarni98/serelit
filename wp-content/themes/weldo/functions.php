@@ -50,6 +50,9 @@ if (!defined('FW') && file_exists(WELDO_THEME_PATH . '/inc/framework/bootstrap.p
 require_once WELDO_THEME_PATH . '/inc/init.php';
 add_filter( 'body_class', function( $classes ) {
 	$classes[] = 'header_show_all_menu_items';
+	if ( is_page( 'katalog' ) ) {
+		$classes[] = 'page-katalog';
+	}
 	return $classes;
 } );
 /**
@@ -241,3 +244,42 @@ add_action( 'wp_footer', function() {
 	</script>
 	<?php
 }, 99 );
+
+/**
+ * Katalog page — inject More button on Page Builder portfolio tiles.
+ */
+add_action(
+	'wp_footer',
+	function() {
+		if ( ! is_page( 'katalog' ) ) {
+			return;
+		}
+		?>
+		<script>
+		jQuery(function($) {
+			$('body.page-katalog .vertical-item.item-gallery').each(function() {
+				var $item = $(this);
+				var $media = $item.find('.item-media').first();
+
+				if ( ! $media.length || $media.find('.katalog-more-btn').length ) {
+					return;
+				}
+
+				var href = $media.find('a.abs-link').attr('href')
+					|| $item.find('.item-content a[href]').first().attr('href')
+					|| '#';
+
+				$media.append(
+					$('<a>', {
+						class: 'btn btn-maincolor btn-small katalog-more-btn',
+						href: href,
+						text: 'More'
+					})
+				);
+			});
+		});
+		</script>
+		<?php
+	},
+	100
+);

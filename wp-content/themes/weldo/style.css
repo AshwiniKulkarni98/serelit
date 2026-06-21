@@ -23,6 +23,7 @@ see css/main.css for all of the styles
 
 ** WordPress Required
 */
+
 .alignnone {
     margin: 5px 20px 20px 0;
     clear: both;
@@ -563,7 +564,7 @@ audio:focus {
 .hero_slide--mission .home_hero_paragraph p,
 .hero_slide--vision .home_hero_paragraph p {
 	color: #fff;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 1.6;
 }
 
@@ -784,8 +785,10 @@ audio:focus {
 }
 
 .hero_slide--dual .hero_title {
-	color: #fff;
+	color: #d8ae5e;
 	font-size: clamp(28px, 4vw, 52px);
+	font-family: "Anton", sans-serif;
+	font-size: 700;
 	font-weight: 900;
 	line-height: 1.15;
 	margin-bottom: 14px;
@@ -927,8 +930,9 @@ audio:focus {
 
 /* Footer Kontakt column */
 .page_footer .footer-col-contact .widget-title {
+	font-family: "Roboto", sans-serif;
 	font-size: 28px;
-	font-style: italic;
+	font-style: normal;
 	font-weight: 700;
 	margin-bottom: 15px;
 	color: #fff;
@@ -956,8 +960,9 @@ audio:focus {
 
 /* Footer QR column */
 .page_footer .footer-col-qr .widget-title {
+	font-family: "Roboto", sans-serif;
 	font-size: 18px;
-	font-style: italic;
+	font-style: normal;
 	font-weight: 700;
 	line-height: 1.35;
 	margin-bottom: 14px;
@@ -1149,9 +1154,10 @@ audio:focus {
 }
 /* Footer middle — contact form */
 .page_footer .footer-form-heading {
+	font-family: "Roboto", sans-serif;
 	color: #fff;
 	font-size: 20px;
-	font-style: italic;
+	font-style: normal;
 	font-weight: 700;
 	margin-bottom: 8px;
 }
@@ -1229,4 +1235,150 @@ section#contact-fields {
 .page_header .top-nav li.menu-item:has(a[href*="referenzen"]),
 .page_header .top-nav li.menu-item:has(a[href*="referenze"]) {
 	display: none !important;
+}
+
+/* Project 4050 — extra portfolio cards (code-managed grid) */
+.weldo-project-extra-cards {
+	margin-top: 30px;
+}
+
+.weldo-project-extra-cards .vertical-item {
+	height: 100%;
+}
+
+.weldo-project-extra-cards .item-media {
+	overflow: hidden;
+}
+
+.weldo-project-extra-cards .item-media img {
+	width: 100%;
+	height: 280px;
+	object-fit: cover;
+	object-position: center;
+	transition: transform 0.35s ease;
+}
+
+.weldo-project-extra-cards .vertical-item:hover .item-media img {
+	transform: scale(1.04);
+}
+
+.weldo-project-extra-cards .item-content {
+	min-height: 52px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.weldo-project-extra-cards .item-meta {
+	margin: 0;
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+
+@media (max-width: 767px) {
+	.weldo-project-extra-cards .item-media img {
+		height: 220px;
+	}
+}
+
+/* Katalog page — uniform code-managed grid (page-katalog.php) */
+.weldo-katalog-grid {
+	background-color: transparent;
+}
+
+.weldo-katalog-grid .katalog-grid-card {
+	overflow: hidden;
+	border-radius: 2px;
+	background-color: rgba(255, 255, 255, 0.02);
+}
+
+.weldo-katalog-grid .katalog-grid-link {
+	display: block;
+	overflow: hidden;
+	line-height: 0;
+}
+
+.weldo-katalog-grid .katalog-grid-link img {
+	width: 100%;
+	height: 320px;
+	object-fit: cover;
+	object-position: center;
+	display: block;
+	transition: transform 0.35s ease;
+}
+
+.weldo-katalog-grid .katalog-grid-card:hover img {
+	transform: scale(1.04);
+}
+
+.weldo-katalog-grid .katalog-grid-image-wrap {
+	position: relative;
+}
+
+.weldo-katalog-grid .katalog-more-btn {
+	position: absolute;
+	bottom: 16px;
+	right: 16px;
+	z-index: 2;
+	padding: 8px 18px;
+	font-size: 11px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	border-radius: 0;
+}
+
+/* Page Builder katalog tiles (live /katalog/ layout) */
+body.page-katalog .vertical-item.item-gallery .item-media {
+	position: relative;
+}
+
+body.page-katalog .katalog-more-btn {
+	position: absolute;
+	bottom: 16px;
+	right: 16px;
+	z-index: 5;
+	padding: 8px 18px;
+	font-size: 11px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	border-radius: 0;
+}
+
+@media (max-width: 991px) {
+	.weldo-katalog-grid .katalog-grid-link img {
+		height: 260px;
+	}
+}
+
+@media (max-width: 767px) {
+	.weldo-katalog-grid .katalog-grid-link img {
+		height: 220px;
+	}
+}
+
+/* Header navigation — 16px Roboto */
+.page_header .top-nav .sf-menu > li > a {
+	font-family: "Roboto", sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: 0;
+	text-transform: none;
+	line-height: 1.2;
+}
+
+/* References section + footer headings — Roboto, same sizes as before */
+.products_section .section_title {
+	font-family: "Roboto", sans-serif;
+	font-size: 36px;
+	font-weight: 700;
+	letter-spacing: 0;
+}
+
+/* Features section headings — Roboto */
+.features_section .feature_title {
+	font-family: "Roboto", sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 0;
 }

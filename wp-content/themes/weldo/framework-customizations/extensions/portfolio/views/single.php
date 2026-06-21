@@ -98,6 +98,13 @@ $column_classes = weldo_get_columns_classes( true );
 						</div><!-- .entry-meta -->
 						<?php
 						the_content();
+
+						$show_extra_project_cards = ( 4050 === (int) $pID )
+							|| ( '4050' === get_post_field( 'post_name', $pID ) );
+						if ( $show_extra_project_cards ) {
+							get_template_part( 'template-parts/portfolio/project-extra-cards' );
+						}
+
 						if ( function_exists( 'weldo_the_categories' ) ) {
 							weldo_the_categories( array(
 								'items_separator' => ' ',
