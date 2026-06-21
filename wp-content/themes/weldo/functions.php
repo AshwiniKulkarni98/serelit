@@ -48,6 +48,7 @@ if (!defined('FW') && file_exists(WELDO_THEME_PATH . '/inc/framework/bootstrap.p
  * https://github.com/ThemeFuse/Theme-Includes
  */
 require_once WELDO_THEME_PATH . '/inc/init.php';
+require_once WELDO_THEME_PATH . '/inc/project-gallery.php';
 add_filter( 'body_class', function( $classes ) {
 	$classes[] = 'header_show_all_menu_items';
 	if ( is_page( 'katalog' ) ) {

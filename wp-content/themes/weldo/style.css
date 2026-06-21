@@ -1237,17 +1237,33 @@ section#contact-fields {
 	display: none !important;
 }
 
-/* Project 4050 — extra portfolio cards (code-managed grid) */
+/* Project pages — uniform gallery cards with zoom */
 .weldo-project-extra-cards {
 	margin-top: 30px;
 }
 
 .weldo-project-extra-cards .vertical-item {
 	height: 100%;
+	border: 1px solid rgba(213, 171, 91, 0.15);
+	background-color: rgba(255, 255, 255, 0.02);
 }
 
 .weldo-project-extra-cards .item-media {
+	position: relative;
 	overflow: hidden;
+}
+
+.weldo-project-extra-cards .media-links {
+	display: block;
+}
+
+.weldo-project-extra-cards .vertical-item:hover .media-links:before {
+	opacity: 0.45;
+}
+
+.weldo-project-extra-cards .vertical-item:hover .links-wrap {
+	opacity: 1;
+	visibility: visible;
 }
 
 .weldo-project-extra-cards .item-media img {
@@ -1271,8 +1287,11 @@ section#contact-fields {
 
 .weldo-project-extra-cards .item-meta {
 	margin: 0;
+	font-family: "Roboto", sans-serif;
 	font-size: 12px;
+	font-weight: 700;
 	letter-spacing: 1px;
+	text-transform: uppercase;
 }
 
 @media (max-width: 767px) {
@@ -1381,4 +1400,24 @@ body.page-katalog .katalog-more-btn {
 	font-size: 20px;
 	font-weight: 700;
 	letter-spacing: 0;
+}
+
+/* Page title + breadcrumbs (e.g. Katalog) — Roboto */
+.page_title h1,
+.page_title h2,
+.page_title .breadcrumb {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	letter-spacing: 0;
+}
+
+.page_title h1,
+.page_title h2 {
+	font-weight: 700;
+}
+.single-fw-portfolio .single-gallery .cat-links {
+	display: none;
+}
+.single-fw-portfolio .entry-meta {
+	display: none;
 }
