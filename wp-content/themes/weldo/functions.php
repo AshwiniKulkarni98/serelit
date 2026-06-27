@@ -72,7 +72,7 @@ add_filter( 'body_class', function( $classes ) {
 	if ( is_page( 'katalog' ) ) {
 		$classes[] = 'page-katalog';
 	}
-	if ( is_page( 'uber-uns' ) ) {
+	if ( is_page( array( 'uber-uns', 'about-us' ) ) ) {
 		$classes[] = 'page-uber-uns';
 	}
 	if ( weldo_is_fly_screen_page() ) {
@@ -80,6 +80,42 @@ add_filter( 'body_class', function( $classes ) {
 	}
 	return $classes;
 } );
+
+/**
+ * About Us mission logos — use local logo instead of old serelit.de imports.
+ */
+function weldo_get_about_mission_logo_url() {
+	return content_url( '/uploads/2026/06/changed_image.png' );
+}
+
+add_filter(
+	'the_content',
+	function( $content ) {
+		if ( ! is_page( array( 'uber-uns', 'about-us' ) ) ) {
+			return $content;
+		}
+
+		$old_urls = array(
+			'https://www.serelit.de/wp-content/uploads/2024/05/vizyon-misyon-500x500.png',
+			'http://www.serelit.de/wp-content/uploads/2024/05/vizyon-misyon-500x500.png',
+			'https://www.serelit.de/wp-content/uploads/2024/05/1-600x400.png',
+			'http://www.serelit.de/wp-content/uploads/2024/05/1-600x400.png',
+			content_url( '/uploads/2026/06/logo_2.png' ),
+			content_url( '/uploads/2026/06/logo_3.png' ),
+			content_url( '/uploads/2026/06/logo1.jpeg' ),
+		);
+
+		$new_url = weldo_get_about_mission_logo_url();
+		$content = str_replace( $old_urls, $new_url, $content );
+
+		// Show only one logo — drop the decorative back layer from Page Builder.
+		$content = preg_replace( '/<img\s+class="image-back"[^>]*\/?>/i', '', $content );
+
+		return $content;
+	},
+	20
+);
+
 /**
  * Move "Online Termin" into Kontakt dropdown (below FAQ)
  * and remove it from the Header "Links" sidebar widget.
@@ -298,7 +334,7 @@ add_action(
 					$('<a>', {
 						class: 'btn btn-maincolor btn-small katalog-more-btn',
 						href: href,
-						text: 'More'
+						text: 'Mehr'
 					})
 				);
 			});
@@ -312,6 +348,16 @@ add_action(
 /**
  * Fly screen page — horizontal +/- steppers for dimension inputs.
  */
+add_filter( 'joinchat_get_settings', function( $settings ) {
+	$settings['telephone'] = '491623614442'; // +49 162 3614442 — no +, spaces, or dashes
+
+	// Optional: German popup text
+	$settings['message_text']  = 'Hallo! Wie können wir Ihnen helfen?';
+	$settings['message_send']    = 'Hallo Serelit! Ich hätte eine Frage.';
+	$settings['button_text']     = 'Chat öffnen';
+
+	return $settings;
+} );
 add_action(
 	'wp_footer',
 	function() {

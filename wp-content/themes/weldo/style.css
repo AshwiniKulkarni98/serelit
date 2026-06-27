@@ -544,8 +544,9 @@ audio:focus {
 .hero_slide--mission .special-heading,
 .hero_slide--vision .special-heading {
 	color: #fff;
+	font-family: "Roboto", sans-serif;
 	font-size: 42px;
-	font-weight: 900;
+	font-weight: 700;
 	margin-bottom: 10px;
 }
 
@@ -564,7 +565,9 @@ audio:focus {
 .hero_slide--mission .home_hero_paragraph p,
 .hero_slide--vision .home_hero_paragraph p {
 	color: #fff;
+	font-family: "Roboto", sans-serif;
 	font-size: 16px;
+	font-weight: 400;
 	line-height: 1.6;
 }
 
@@ -786,10 +789,9 @@ audio:focus {
 
 .hero_slide--dual .hero_title {
 	color: #d8ae5e;
+	font-family: "Roboto", sans-serif;
 	font-size: clamp(28px, 4vw, 52px);
-	font-family: "Anton", sans-serif;
-	font-size: 700;
-	font-weight: 900;
+	font-weight: 700;
 	line-height: 1.15;
 	margin-bottom: 14px;
 }
@@ -848,8 +850,10 @@ audio:focus {
 }
 .hero_slide--dual .hero_subtitle {
 	color: #fff;
+	font-family: "Roboto", sans-serif;
 	font-size: clamp(14px, 2vw, 20px);
 	font-weight: 400;
+	font-style: normal;
 	line-height: 1.5;
 	margin: 0;
 	opacity: 0.95;
@@ -1445,10 +1449,37 @@ body.page-uber-uns .anton-font {
 	font-feature-settings: normal;
 }
 
-.single-fw-portfolio .single-gallery .cat-links {
-	display: none;
+/* About Us — single logo only (no stacked back image) */
+body.page-uber-uns .images-wrap-item img.image-back {
+	display: none !important;
 }
-.single-fw-portfolio .entry-meta {
+
+body.page-uber-uns .images-wrap-item {
+	margin-top: 0;
+}
+
+body.page-uber-uns .images-wrap-item.img-left {
+	margin-left: 40px;
+}
+
+body.page-uber-uns .images-wrap-item img:first-child {
+	box-shadow: 0 16px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Vision block — nudge logo toward the right edge */
+body.page-uber-uns .images-wrap-item.img-right {
+	margin-right: 0 !important;
+	position: relative;
+	left: 80px;
+}
+
+@media (min-width: 992px) {
+	body.page-uber-uns .text-lg-right .images-wrap-item.img-right {
+		left: 100px;
+	}
+}
+
+.single-fw-portfolio .single-gallery .cat-links {
 	display: none;
 }
 

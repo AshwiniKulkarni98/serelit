@@ -12,11 +12,11 @@ $slide3_image = $uploads . '/2026/06/slide_4.jpeg';
  // same image, darkened with CSS
 
 // Mission slide images — use FULL URL only (no $uploads_base prefix)
-$mission_img_front = content_url( '/uploads/2026/06/logo_2.png' );
-$mission_img_back  = content_url( '/uploads/2026/06/logo_2.png' ); 
+$mission_img_front = content_url( '/uploads/2026/06/logo1.jpeg' );
+$mission_img_back  = content_url( '/uploads/2026/06/logo1.jpeg' ); 
 // Vision slide images
-$vision_img_front = content_url( '/uploads/2026/06/logo_3.png' );  // change to your vision image
-$vision_img_back  = content_url( '/uploads/2026/06/logo_3.png' );  // second image for overlap, optional // same image, or a second one if you add it
+$vision_img_front = content_url( '/uploads/2026/06/logo1.jpeg' );  // change to your vision image
+$vision_img_back  = content_url( '/uploads/2026/06/logo1.jpeg' );  // second image for overlap, optional // same image, or a second one if you add it
 ?>
 <section class="hero_section intro_section page_slider home_hero_slider ds nav-arrow">
 	<div class="flexslider" data-nav="true" data-dots="false" data-speed="7000">

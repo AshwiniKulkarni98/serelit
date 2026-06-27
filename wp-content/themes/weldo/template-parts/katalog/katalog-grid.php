@@ -58,7 +58,7 @@ if ( empty( $images ) ) {
 							</a>
 							<a href="#"
 							   class="btn btn-maincolor btn-small katalog-more-btn">
-								<?php esc_html_e( 'More', 'weldo' ); ?>
+								<?php esc_html_e( 'Mehr', 'weldo' ); ?>
 							</a>
 						</div>
 					</div>
